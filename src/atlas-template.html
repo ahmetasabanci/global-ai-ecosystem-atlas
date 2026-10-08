@@ -46,7 +46,8 @@ const ORIGINAL_BODY=document.body.innerHTML.replace(/<script>[\s\S]*?<\/script>/
 document.documentElement.lang=lang;document.title=t(ORIGINAL_TITLE);
 
 function initialize(savedState=null){
-const $=id=>document.getElementById(id),esc=s=>String(t(s)).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const $=id=>document.getElementById(id),escapeAttribute=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const esc=s=>escapeAttribute(t(s));
 const source=id=>A.sources.find(s=>s.id===id),org=id=>A.organizations.find(o=>o.id===id),lname=id=>A.layers.find(l=>l.id===id).name;
 const srcLinks=ids=>ids.map(id=>{const s=source(id);return `<a data-original-title="true" href="${s.url}" target="_blank" rel="noopener">${id} · ${s.title.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}</a>`}).join('<br>');
 const types=[...new Set(A.organizations.map(o=>o.type))],regions=[...new Set(A.organizations.map(o=>o.region))];
@@ -65,7 +66,7 @@ document.querySelectorAll('.layer').forEach(b=>b.onclick=()=>selectLayer(b.datas
 function dependencies(){return A.dependencies.map(d=>`<div class="dependency"><div class="status">${esc(d.status)}</div><h3>${esc(d.label)}</h3><p>${esc(d.desc)}</p><p class="mini">${srcLinks([d.source])}${d.a==='turkcell'?'<br>'+srcLinks(org('turkcell').sources):''}</p></div>`).join('')}
 $('stackdeps').innerHTML=dependencies();$('sourcedeps').innerHTML=dependencies();
 for(const l of A.layers)$('layerfilter').add(new Option(l.name,l.id));for(const t of types)$('typefilter').add(new Option(t,t));let region='',country='';
-$('regions').innerHTML=['All regions',...regions].map(r=>`<button data-region="${r==='All regions'?'':esc(r)}">${esc(r)}</button>`).join('');
+$('regions').innerHTML=['All regions',...regions].map(r=>`<button data-region="${r==='All regions'?'':escapeAttribute(r)}">${esc(r)}</button>`).join('');
 document.querySelectorAll('[data-region]').forEach(b=>b.onclick=()=>{region=b.dataset.region;country='';renderWorld();});
 function cards(os,target){return os.map(o=>`<article class="orgcard"><button data-org="${o.id}" data-target="${target}">${esc(o.name)}</button><p class="mini">${esc(o.locationType)} · ${esc(o.city)}, ${esc(o.country)}<br>${esc(o.type)}</p><p>${esc(o.description)}</p><div>${o.layers.map(l=>`<span class="badge">${esc(lname(l))}</span>`).join('')}</div></article>`).join('')}
 const color=t=>t==='Company'?'#238197':t==='Public / academic research'?'#12878e':t==='Government / intergovernmental'?'#866120':'#DE8859';
