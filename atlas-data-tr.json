@@ -1,0 +1,1953 @@
+{
+  "title": "Küresel Yapay Zekâ Ekosistemi Atlası",
+  "edition": "Ekim 2026",
+  "checked": "8 Ekim 2026",
+  "layers": [
+    {
+      "id": "physical",
+      "name": "Fiziksel kaynaklar",
+      "subtitle": "Elektrik, su, mineraller, arazi ve soğutma",
+      "desc": "Yapay zekâ fiziksel makineler üzerinde çalışır. Bu makinelerin yapımı ve işletilmesi malzeme, elektrik ve soğutma gerektirir; etkiler yere, zamana ve tasarıma bağlıdır.",
+      "question": "Elektriği ve suyu kim sağlıyor, yerel maliyetleri kim üstleniyor?",
+      "evidence": "Şebeke bağlantı anlaşmaları, izinler, saatlik elektrik üretim bileşimi, su çekimi ve tüketimi, ekipman tedarik sözleşmeleri."
+    },
+    {
+      "id": "chips",
+      "name": "Çipler",
+      "subtitle": "Tasarım → üretim → bellek → paketleme",
+      "desc": "Çip tasarımcıları işlemcilerin özelliklerini belirler. Dökümhaneler silikonu işler; bellek ve paketleme parçaları birleştirir. GPU’lar paralel hesaplamayı hızlandırır, ancak CPU’lar ve diğer hızlandırıcılar da önemlidir.",
+      "question": "Hangi tedarikçi veya ihracat kısıtlaması bu sistemi kesintiye uğratabilir?",
+      "evidence": "Tedarikçi bildirimleri, çip özellikleri, üretim ve paketleme yerleri, ihracat lisansları."
+    },
+    {
+      "id": "compute",
+      "name": "Hesaplama altyapısı",
+      "subtitle": "Veri merkezleri, bulut hizmetleri ve kamu süperbilgisayarları",
+      "desc": "Hesaplama kapasitesi, işlemleri çalıştırma gücüdür. Bulut hizmeti makinelere erişim satar; veri merkezi bu makineleri barındırır. Kamu araştırma kümelerinin kullanıcıları ticari bulutların kullanıcılarından farklıdır.",
+      "question": "Kapasiteye kim, hangi fiyatla ve hangi ülkenin hukuku altında erişebiliyor?",
+      "evidence": "Güncel hizmet bölgesi listeleri, erişim kuralları, satın alma kayıtları, kullanım oranları ve kuyruk süreleri."
+    },
+    {
+      "id": "data",
+      "name": "Veri ve insan emeği",
+      "subtitle": "Toplama, lisanslama, etiketleme ve değerlendirme",
+      "desc": "İnsanlar veriyi toplar, temizler, etiketler ve değerlendirir. Eğitim malzemesi lisanslı, kamuya açık, kişisel ve sentetik veriler içerebilir. Herkese açık olmak, serbestçe yeniden kullanılabilir olmak demek değildir.",
+      "question": "Kimin emeği ve dili temsil ediliyor, karşılığı ödeniyor veya dışarıda bırakılıyor?",
+      "evidence": "Veri kümesi belgeleri, lisanslar, çalışan sözleşmeleri, ücret kayıtları, rıza ve şikâyet süreçleri."
+    },
+    {
+      "id": "models",
+      "name": "Modeller",
+      "subtitle": "Dil, görüntü, konuşma ve tahmin için öğrenilmiş parametreler",
+      "desc": "Eğitim, örnekler ve bir hedef kullanarak sayısal parametreleri değiştirir. Çıkarım, eğitilmiş modeli yeni girdilere uygular. Büyük dil modeli bağlamdan token üretir; akıcı bir yanıt yine de yanlış olabilir.",
+      "question": "Ne, hangi verilerle eğitildi ve performansı bağımsız olarak nasıl sınandı?",
+      "evidence": "Model kartları, eğitim raporları, değerlendirme veri kümeleri, lisanslar ve tekrarlanabilir testler."
+    },
+    {
+      "id": "tools",
+      "name": "Geliştirici araçları",
+      "subtitle": "Çatılar, API’ler, model platformları ve bilgi getirme",
+      "desc": "Araçlar geliştiricilerin modelleri eğitmesine, kullanmasına ve birbirine bağlamasına yardımcı olur. API bir hizmet arayüzüdür. Bilgi getirme, kullanım sırasında belge ekler; ajanlar araç çağırıp eylem gerçekleştirebilir.",
+      "question": "Hangi dış hizmetler kullanıcı verilerini alıyor veya temel işlevleri kontrol ediyor?",
+      "evidence": "Mimari şemaları, API koşulları, veri akış kayıtları, saklama kuralları ve araç izinleri."
+    },
+    {
+      "id": "apps",
+      "name": "Uygulamalar",
+      "subtitle": "Sohbet, çeviri, konuşma, öneriler ve kararlar",
+      "desc": "Uygulamalar modelleri arayüzler, iş kuralları ve insanlarla birleştirir. Yapay zekâ içerik sıralar, talep tahmin eder ve örüntü tespit eder; sohbet botlarının çok ötesine uzanır.",
+      "question": "Etkilenen kişi için ne değişiyor ve sonuca itiraz edebiliyor mu?",
+      "evidence": "Öncesi/sonrası iş akışı kayıtları, gruplara göre hata oranları, itirazlar, olay kayıtları ve kullanıcı görüşmeleri."
+    },
+    {
+      "id": "research",
+      "name": "Araştırma ve topluluklar",
+      "subtitle": "Tüm katmanlarda: bilgi, beceri, değerlendirme ve alternatifler",
+      "desc": "Üniversiteler, kamu laboratuvarları ve topluluklar her katmanda yöntem, veri kümesi ve beceri üretir. Ticari ve kamusal araştırma kesişir, ancak teşvikleri ve erişim koşulları farklıdır.",
+      "question": "Araştırmayı kim finanse ediyor, karşılaştırma ölçütünü kim belirliyor ve kim tekrarlayabiliyor?",
+      "evidence": "Finansman açıklamaları, yayınlar, hesaplama kapasitesine erişim ve katılım kuralları."
+    },
+    {
+      "id": "governance",
+      "name": "Yönetişim ve hesap verebilirlik",
+      "subtitle": "Tüm katmanlarda: yasalar, standartlar, denetim ve sivil toplum",
+      "desc": "Yönetişim tüm yaşam döngüsünü biçimlendirir. Bağlayıcı yasalar, gönüllü çerçeveler, etik tavsiyeler ve bağımsız izleme haberciliği farklı araçlardır.",
+      "question": "Bağlayıcı yetki kimde ve yapay zekâ zarar verdiğinde hangi başvuru yolları var?",
+      "evidence": "Hukuki metinler, düzenleyici kararları, denetimler, satın alma kuralları ve şikâyet kayıtları."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "schneider",
+      "name": "Schneider Electric",
+      "region": "Avrupa",
+      "country": "Fransa",
+      "city": "Rueil-Malmaison",
+      "lon": 2.18,
+      "lat": 48.88,
+      "type": "Şirket",
+      "layers": [
+        "physical"
+      ],
+      "description": "Veri merkezleri için güç yönetimi ve soğutma sistemleri sağlar.",
+      "operations": "Küresel ekipman sağlayıcısıdır; konum işareti belirli bir müşteriyi göstermez.",
+      "prompt": "Verimlilik iddiası tesisin tamamını ve enerji kaynağını kapsıyor mu?",
+      "locationType": "Konum",
+      "sources": [
+        "S04"
+      ]
+    },
+    {
+      "id": "asml",
+      "name": "ASML",
+      "region": "Avrupa",
+      "country": "Hollanda",
+      "city": "Veldhoven",
+      "lon": 5.4,
+      "lat": 51.42,
+      "type": "Şirket",
+      "layers": [
+        "chips"
+      ],
+      "description": "Çip üretiminde kullanılan litografi ekipmanlarını üretir.",
+      "operations": "Hollanda, ABD, Almanya ve Asya’da Ar-Ge/üretim yapar; seçili tesisler faaliyetler görünümünde gösterilir.",
+      "prompt": "Bileşenler nereden geliyor ve hangi satışlar lisans gerektiriyor?",
+      "locationType": "Merkez",
+      "sources": [
+        "S05"
+      ]
+    },
+    {
+      "id": "tel",
+      "name": "Tokyo Electron",
+      "region": "Doğu Asya",
+      "country": "Japonya",
+      "city": "Tokyo",
+      "lon": 139.69,
+      "lat": 35.69,
+      "type": "Şirket",
+      "layers": [
+        "chips"
+      ],
+      "description": "Yarı iletken üretim ekipmanları sağlar.",
+      "operations": "Çip üretim pazarlarında ekipman ve hizmet sunar.",
+      "prompt": "Hangi işlem adımları ithal ekipmana bağımlı?",
+      "locationType": "Konum",
+      "sources": [
+        "S06"
+      ]
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "region": "Kuzey Amerika",
+      "country": "ABD",
+      "city": "Santa Clara",
+      "lon": -121.96,
+      "lat": 37.35,
+      "type": "Şirket",
+      "layers": [
+        "chips",
+        "tools"
+      ],
+      "description": "GPU tasarlar ve CUDA yazılım platformunu sağlar.",
+      "operations": "Çipleri iş ortakları üretir; seçili TSMC üretimi ayrıca belgelenmiştir.",
+      "prompt": "Yazılıma bağımlılık, donanım fiyatı kadar önemli mi?",
+      "locationType": "Merkez",
+      "sources": [
+        "S07",
+        "S52"
+      ]
+    },
+    {
+      "id": "tsmc",
+      "name": "TSMC",
+      "region": "Doğu Asya",
+      "country": "Tayvan",
+      "city": "Hsinchu",
+      "lon": 120.97,
+      "lat": 24.8,
+      "type": "Şirket",
+      "layers": [
+        "chips"
+      ],
+      "description": "Diğer şirketler için sözleşmeli çip üretimi yapan dökümhanedir.",
+      "operations": "Merkezi Tayvan’dadır; seçili Arizona üretimi ayrıca gösterilir.",
+      "prompt": "Üretim ve paketleme gerçekte nerede yapılıyor?",
+      "locationType": "Merkez",
+      "sources": [
+        "S08"
+      ]
+    },
+    {
+      "id": "skhynix",
+      "name": "SK hynix",
+      "region": "Doğu Asya",
+      "country": "Güney Kore",
+      "city": "Icheon",
+      "lon": 127.44,
+      "lat": 37.28,
+      "type": "Şirket",
+      "layers": [
+        "chips"
+      ],
+      "description": "Yapay zekâ hesaplamasında kullanılan yüksek bant genişlikli bellek dahil bellek üretir.",
+      "operations": "Icheon ve Cheongju’da üretim yapar; yurt dışı tesislerinin tamamı haritada gösterilmez.",
+      "prompt": "Bellek veya paketleme darboğazı kullanıma geçişi sınırlayabilir mi?",
+      "locationType": "Merkez",
+      "sources": [
+        "S09"
+      ]
+    },
+    {
+      "id": "arm",
+      "name": "Arm",
+      "region": "Avrupa",
+      "country": "Birleşik Krallık",
+      "city": "Cambridge",
+      "lon": 0.12,
+      "lat": 52.2,
+      "type": "Şirket",
+      "layers": [
+        "chips"
+      ],
+      "description": "İşlemci mimarisi ve tasarım teknolojisi sağlar.",
+      "operations": "Küresel ofisleri ve teknoloji lisanslama faaliyetleri vardır; üretim ayrı bir faaliyettir.",
+      "prompt": "Tasarım hakları kime ait ve lisansı kim kontrol ediyor?",
+      "locationType": "Merkez",
+      "sources": [
+        "S10"
+      ]
+    },
+    {
+      "id": "aws",
+      "name": "Amazon Web Services",
+      "region": "Kuzey Amerika",
+      "country": "ABD",
+      "city": "Seattle",
+      "lon": -122.33,
+      "lat": 47.61,
+      "type": "Şirket",
+      "layers": [
+        "compute",
+        "tools"
+      ],
+      "description": "Bulut altyapısı ve yönetilen yapay zekâ hizmetleri sunar.",
+      "operations": "Küresel bulut bölgeleri bulunur; belirli bir iş yükü için güncel bölge listesine bakın.",
+      "prompt": "İş yükü hangi bölgede çalışıyor ve şifreleme anahtarlarını kim kontrol ediyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "id": "ovh",
+      "name": "OVHcloud",
+      "region": "Avrupa",
+      "country": "Fransa",
+      "city": "Roubaix",
+      "lon": 3.17,
+      "lat": 50.69,
+      "type": "Şirket",
+      "layers": [
+        "compute"
+      ],
+      "description": "Yapay zekâ için GPU hizmetleri içeren bulut altyapısı sunar.",
+      "operations": "Uluslararası veri merkezleri vardır; şirket merkezi ile hesaplamanın yapıldığı yer farklıdır.",
+      "prompt": "Müşteri modellerini ve verilerini başka bir sağlayıcıya taşıyabiliyor mu?",
+      "locationType": "Konum",
+      "sources": [
+        "S12",
+        "S53"
+      ]
+    },
+    {
+      "id": "alibaba",
+      "name": "Alibaba Cloud",
+      "region": "Doğu Asya",
+      "country": "Çin",
+      "city": "Hangzhou",
+      "lon": 120.16,
+      "lat": 30.27,
+      "type": "Şirket",
+      "layers": [
+        "compute",
+        "tools"
+      ],
+      "description": "Birden fazla pazarda bulut altyapısı sunar.",
+      "operations": "Çalışan bulut bölgeleri ile duyurulan bölgeler ayrı listelenir.",
+      "prompt": "Veriyi gerçekte hangi hizmet bölgesi ve tüzel kişi işliyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S13"
+      ]
+    },
+    {
+      "id": "appen",
+      "name": "Appen",
+      "region": "Okyanusya",
+      "country": "Avustralya",
+      "city": "Sidney",
+      "lon": 151.21,
+      "lat": -33.87,
+      "type": "Şirket",
+      "layers": [
+        "data"
+      ],
+      "description": "İnsan desteğiyle yapay zekâ verisi toplama, etiketleme ve değerlendirme hizmetleri sağlar.",
+      "operations": "Şirket merkezi Sidney, ABD merkezi Kirkland’dadır; Filipinler, Hindistan ve Vietnam’da da ofisleri vardır.",
+      "prompt": "İş başına ücretler, reddedilen işler ve çalışan itirazları nasıl ele alınıyor?",
+      "locationType": "Merkez",
+      "sources": [
+        "S14"
+      ]
+    },
+    {
+      "id": "sama",
+      "name": "Sama",
+      "region": "Kuzey Amerika",
+      "country": "ABD",
+      "city": "San Francisco",
+      "lon": -122.42,
+      "lat": 37.77,
+      "type": "Şirket",
+      "layers": [
+        "data"
+      ],
+      "description": "İnsanlar tarafından doğrulanan veri etiketleme ve değerlendirme hizmetleri sağlar.",
+      "operations": "Kenya ve Uganda’daki ekipleri/tesisleri belgelenmiştir; faaliyet işaretleri Nairobi ve Gulu’yu gösterir.",
+      "prompt": "Çalışanlar ücret, izleme ve şikâyet süreçlerine ilişkin iddiaları doğrulayabiliyor mu?",
+      "locationType": "Konum",
+      "sources": [
+        "S15",
+        "S55"
+      ]
+    },
+    {
+      "id": "commoncrawl",
+      "name": "Common Crawl",
+      "region": "Kuzey Amerika",
+      "country": "ABD",
+      "city": "ABD’de kuruluş / küresel web derlemi",
+      "lon": -98,
+      "lat": 39,
+      "type": "Kâr amacı gütmeyen / topluluk",
+      "layers": [
+        "data"
+      ],
+      "description": "Web tarama veri kümelerini araştırma ve diğer kullanımlar için erişime açar.",
+      "operations": "Derlem küreseldir; kuruluşun ABD’de bulunması bütün verilerin kökenini göstermez.",
+      "prompt": "Hangi siteler, diller ve haklar dahil ediliyor veya dışlanıyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S16"
+      ]
+    },
+    {
+      "id": "masakhane",
+      "name": "Masakhane",
+      "region": "Afrika",
+      "country": "Dağınık",
+      "city": "Afrika’ya yayılmış topluluk",
+      "lon": null,
+      "lat": null,
+      "type": "Kâr amacı gütmeyen / topluluk",
+      "layers": [
+        "data",
+        "research"
+      ],
+      "description": "Afrika dilleri için doğal dil işleme alanında çalışan taban örgütlenmesi niteliğinde bir araştırma topluluğudur.",
+      "operations": "Katılımcıları farklı yerlerdedir; tek bir merkez atanmamıştır.",
+      "prompt": "Dil önceliklerini kim belirliyor ve ortaya çıkan kaynaklar kime ait?",
+      "locationType": "Konum",
+      "sources": [
+        "S17"
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "region": "Kuzey Amerika",
+      "country": "ABD",
+      "city": "San Francisco",
+      "lon": -122.42,
+      "lat": 37.77,
+      "type": "Şirket",
+      "layers": [
+        "models",
+        "tools",
+        "apps",
+        "research"
+      ],
+      "description": "Yapay zekâ modelleri, API’ler ve ChatGPT geliştirir.",
+      "operations": "Ürün ve araştırmaları birçok pazara ulaşır; merkez işareti her çıkarım isteğinin yerini göstermez.",
+      "prompt": "İddiayı hangi model/sürüm, veri uygulamaları ve değerlendirmeler destekliyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S18"
+      ]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "region": "Kuzey Amerika",
+      "country": "ABD",
+      "city": "San Francisco",
+      "lon": -122.42,
+      "lat": 37.77,
+      "type": "Şirket",
+      "layers": [
+        "models",
+        "tools",
+        "apps",
+        "research"
+      ],
+      "description": "Claude modelleri, ürünleri ve güvenlik araştırmaları geliştirir.",
+      "operations": "Bulut ortaklıkları arasında AWS vardır; atlas seçili bir eğitim ilişkisini belgeler.",
+      "prompt": "Kontrolün ne kadarı bulut ortaklarında ve model işletmecilerinde?",
+      "locationType": "Konum",
+      "sources": [
+        "S19"
+      ]
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "region": "Avrupa",
+      "country": "Birleşik Krallık",
+      "city": "Londra araştırma merkezi",
+      "lon": -0.13,
+      "lat": 51.51,
+      "type": "Şirket",
+      "layers": [
+        "models",
+        "research"
+      ],
+      "description": "Modeller ve bilimsel uygulamalar geliştiren yapay zekâ araştırma kuruluşudur.",
+      "operations": "Google bünyesindedir; araştırma ekipleri ve kullanım altyapısı farklı ülkelere yayılır.",
+      "prompt": "Bilimsel bir iddiayı veya karşılaştırma sonucunu kim bağımsız olarak tekrarlayabiliyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S20"
+      ]
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "region": "Avrupa",
+      "country": "Fransa",
+      "city": "Paris",
+      "lon": 2.35,
+      "lat": 48.86,
+      "type": "Şirket",
+      "layers": [
+        "models",
+        "tools",
+        "apps"
+      ],
+      "description": "Le Chat dahil yapay zekâ modelleri ve hizmetleri geliştirir.",
+      "operations": "Modele erişim ve lisans koşulları sürüme göre değişir; ilgili model kartını kontrol edin.",
+      "prompt": "Bu, açık ağırlıklı bir model, API hizmeti veya ikisi birden mi?",
+      "locationType": "Konum",
+      "sources": [
+        "S21"
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "region": "Doğu Asya",
+      "country": "Çin",
+      "city": "Hangzhou",
+      "lon": 120.16,
+      "lat": 30.27,
+      "type": "Şirket",
+      "layers": [
+        "models",
+        "tools",
+        "apps"
+      ],
+      "description": "Dil modelleri, sohbet ve API hizmetleri geliştirir.",
+      "operations": "Hizmet işletmecisi Hangzhou DeepSeek’tir; indirilen ağırlıkların ve barındırılan hizmetlerin veri akışları farklıdır.",
+      "prompt": "Haber model ağırlıkları hakkında mı, barındırılan uygulama hakkında mı?",
+      "locationType": "Konum",
+      "sources": [
+        "S22",
+        "S60"
+      ]
+    },
+    {
+      "id": "sarvam",
+      "name": "Sarvam AI",
+      "region": "Güney ve Güneydoğu Asya",
+      "country": "Hindistan",
+      "city": "Bengaluru",
+      "lon": 77.59,
+      "lat": 12.97,
+      "type": "Şirket",
+      "layers": [
+        "models",
+        "tools",
+        "apps"
+      ],
+      "description": "Hindistan dilleri için metin, konuşma ve dil yapay zekâsı geliştirir.",
+      "operations": "Bengaluru adresine sahiptir; çok dilli modeller ve API’ler Hindistan dillerine yönelik kullanım alanlarına hizmet eder.",
+      "prompt": "Bağımsız testler lehçeler ve konuşma sırasında dil değiştirme konusunda ne gösteriyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S23",
+        "S54"
+      ]
+    },
+    {
+      "id": "aisg",
+      "name": "AI Singapore / SEA-LION",
+      "region": "Güney ve Güneydoğu Asya",
+      "country": "Singapur",
+      "city": "Singapur",
+      "lon": 103.82,
+      "lat": 1.35,
+      "type": "Kamu / akademik araştırma",
+      "layers": [
+        "models",
+        "data",
+        "research"
+      ],
+      "description": "Güneydoğu Asya için çok dilli modeller ve değerlendirme kaynakları geliştirir.",
+      "operations": "Bölgesel dil kapsamına sahiptir; program Singapur merkezlidir.",
+      "prompt": "Hangi diller ve kültürel bağlamlar yerel konuşurlar tarafından sınanıyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S24"
+      ]
+    },
+    {
+      "id": "tii",
+      "name": "Technology Innovation Institute",
+      "region": "Orta Doğu",
+      "country": "Birleşik Arap Emirlikleri",
+      "city": "Abu Dabi",
+      "lon": 54.37,
+      "lat": 24.45,
+      "type": "Kamu / akademik araştırma",
+      "layers": [
+        "models",
+        "research"
+      ],
+      "description": "Falcon model ailesiyle ilişkili uygulamalı araştırma enstitüsüdür.",
+      "operations": "BAE’de araştırma yapar; erişilebilirlik ve lisanslar model sürümüne bağlıdır.",
+      "prompt": "Dışarıdan araştırmacılar neleri inceleyip tekrarlayabiliyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S25"
+      ]
+    },
+    {
+      "id": "cenia",
+      "name": "CENIA / LatamGPT",
+      "region": "Latin Amerika",
+      "country": "Şili",
+      "city": "Santiago",
+      "lon": -70.67,
+      "lat": -33.45,
+      "type": "Kamu / akademik araştırma",
+      "layers": [
+        "models",
+        "data",
+        "research"
+      ],
+      "description": "Latin Amerika dil modeli girişimini koordine eden yapay zekâ araştırma merkezidir.",
+      "operations": "Bölgesel işbirliğine dayanır; Şili’deki koordinasyon bütün katkıcıların yerini göstermez.",
+      "prompt": "Derleme kim katkıda bulundu ve bölgedeki topluluklar nasıl temsil ediliyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S26",
+        "S56"
+      ]
+    },
+    {
+      "id": "lelapa",
+      "name": "Lelapa AI",
+      "region": "Afrika",
+      "country": "Güney Afrika",
+      "city": "Güney Afrika / ülke düzeyinde işaret",
+      "lon": 24,
+      "lat": -29,
+      "type": "Şirket",
+      "layers": [
+        "models",
+        "apps"
+      ],
+      "description": "Vulavula dahil çok dilli konuşma ve çeviri araçları geliştirir.",
+      "operations": "Afrika dilleri ve konuşma sırasında dil değiştirme üzerine çalışır; burada şehir düzeyinde merkez iddiası yoktur.",
+      "prompt": "Performans gerçek yerel dildeki görüşmeler üzerinde doğrulanabiliyor mu?",
+      "locationType": "Konum",
+      "sources": [
+        "S27"
+      ]
+    },
+    {
+      "id": "hf",
+      "name": "Hugging Face",
+      "region": "Kuzey Amerika",
+      "country": "ABD",
+      "city": "New York konumu / uluslararası ekip",
+      "lon": -74.01,
+      "lat": 40.71,
+      "type": "Şirket",
+      "layers": [
+        "tools",
+        "data",
+        "models"
+      ],
+      "description": "Modelleri, veri kümelerini ve geliştiricilerin işbirliği araçlarını barındırır.",
+      "operations": "Uluslararası platform ve topluluktur; barındırdığı depoların kendi lisansları vardır.",
+      "prompt": "Deponun lisansı ağırlıkların yanı sıra verileri de kapsıyor mu?",
+      "locationType": "Konum",
+      "sources": [
+        "S28"
+      ]
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch Foundation",
+      "region": "Kuzey Amerika",
+      "country": "ABD",
+      "city": "ABD’de vakıf / küresel katkıcılar",
+      "lon": -98,
+      "lat": 39,
+      "type": "Kâr amacı gütmeyen / topluluk",
+      "layers": [
+        "tools",
+        "research"
+      ],
+      "description": "PyTorch makine öğrenmesi yazılım ekosistemini destekler.",
+      "operations": "Linux Foundation bünyesindedir; geliştirme uluslararası olarak dağılmıştır.",
+      "prompt": "Bakımı kim finanse ediyor ve kullanıcılar kodu tekrarlayabiliyor veya denetleyebiliyor mu?",
+      "locationType": "Konum",
+      "sources": [
+        "S29"
+      ]
+    },
+    {
+      "id": "deepl",
+      "name": "DeepL",
+      "region": "Avrupa",
+      "country": "Almanya",
+      "city": "Köln",
+      "lon": 6.96,
+      "lat": 50.94,
+      "type": "Şirket",
+      "layers": [
+        "apps",
+        "tools"
+      ],
+      "description": "Çeviri, yazım ve dil hizmeti arayüzleri sağlar.",
+      "operations": "Tescilli adresi Köln’dedir; kullanıcıları ve ürün erişimi farklı pazarlara yayılır.",
+      "prompt": "Hangi metinler saklanıyor ve çeviri hataları nerede anlamı etkiliyor?",
+      "locationType": "Tescilli adres",
+      "sources": [
+        "S30"
+      ]
+    },
+    {
+      "id": "mila",
+      "name": "Mila",
+      "region": "Kuzey Amerika",
+      "country": "Kanada",
+      "city": "Montréal",
+      "lon": -73.57,
+      "lat": 45.5,
+      "type": "Kamu / akademik araştırma",
+      "layers": [
+        "research"
+      ],
+      "description": "Üniversite araştırmacılarını bir araya getiren, kâr amacı gütmeyen yapay zekâ araştırma enstitüsüdür.",
+      "operations": "Montréal’de araştırma yapar; uluslararası işbirlikleri vardır.",
+      "prompt": "Sponsor finansmanı ve hesaplama erişimi araştırma önceliklerini nasıl biçimlendiriyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S31"
+      ]
+    },
+    {
+      "id": "riken",
+      "name": "RIKEN R-CCS",
+      "region": "Doğu Asya",
+      "country": "Japonya",
+      "city": "Kobe",
+      "lon": 135.2,
+      "lat": 34.69,
+      "type": "Kamu / akademik araştırma",
+      "layers": [
+        "compute",
+        "research"
+      ],
+      "description": "Hesaplamalı bilim ve süperbilgisayar araştırma merkezidir.",
+      "operations": "Kobe merkezindedir; kamu bilimsel hesaplama altyapısı yapay zekâ dahil birçok alana hizmet eder.",
+      "prompt": "Kapasite kimlere tahsis ediliyor ve kamu hangi araştırmaları inceleyebiliyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S32"
+      ]
+    },
+    {
+      "id": "lncc",
+      "name": "LNCC / Santos Dumont",
+      "region": "Latin Amerika",
+      "country": "Brezilya",
+      "city": "Petrópolis",
+      "lon": -43.18,
+      "lat": -22.51,
+      "type": "Kamu / akademik araştırma",
+      "layers": [
+        "compute",
+        "research"
+      ],
+      "description": "Santos Dumont’u barındıran ulusal bilimsel hesaplama laboratuvarıdır.",
+      "operations": "Brezilya araştırma hesaplama altyapısıdır; yalnızca yapay zekâya yönelik bir tesis değildir.",
+      "prompt": "Büyük şehirler dışındaki araştırmacılara ne kadar kamu hesaplama kapasitesi sunuluyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S33"
+      ]
+    },
+    {
+      "id": "dsn",
+      "name": "Data Science Nigeria",
+      "region": "Afrika",
+      "country": "Nijerya",
+      "city": "Lagos",
+      "lon": 3.38,
+      "lat": 6.52,
+      "type": "Kâr amacı gütmeyen / topluluk",
+      "layers": [
+        "research",
+        "apps"
+      ],
+      "description": "Yapay zekâ becerileri, araştırmaları ve toplumsal etki uygulamaları geliştirir.",
+      "operations": "Lagos araştırma merkezi, yaygın eğitim faaliyetleri ve uluslararası işbirlikleri vardır.",
+      "prompt": "Kimler beceri ve erişim kazanıyor, hangi yararlar ölçülüyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S34"
+      ]
+    },
+    {
+      "id": "csiro",
+      "name": "CSIRO",
+      "region": "Okyanusya",
+      "country": "Avustralya",
+      "city": "Avustralya / ülke düzeyinde işaret",
+      "lon": 134,
+      "lat": -25,
+      "type": "Kamu / akademik araştırma",
+      "layers": [
+        "research"
+      ],
+      "description": "Avustralya’nın ulusal bilim kurumu yapay zekâ araştırmaları ve uygulamalı çalışmalar yürütür.",
+      "operations": "Avustralya’da birden fazla tesisi vardır; işaret belirli bir laboratuvarı değil kurumu temsil eder.",
+      "prompt": "Projeyi hangi sorun, doğrulama ve kamusal yarar gerekçelendiriyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S35"
+      ]
+    },
+    {
+      "id": "unesco",
+      "name": "UNESCO",
+      "region": "Avrupa",
+      "country": "Fransa",
+      "city": "Paris sekretaryası",
+      "lon": 2.35,
+      "lat": 48.86,
+      "type": "Kamu / hükümetler arası",
+      "layers": [
+        "governance"
+      ],
+      "description": "Yapay zekâ etiği üzerine küresel bir tavsiye yayımlar.",
+      "operations": "Uluslararası üyeliğe sahiptir; etik tavsiye, ulusal düzeyde yaptırımdan farklıdır.",
+      "prompt": "İlkeleri bütçesi olan ve uygulanabilir pratiklere kim dönüştürüyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S36"
+      ]
+    },
+    {
+      "id": "oecd",
+      "name": "OECD.AI",
+      "region": "Avrupa",
+      "country": "Fransa",
+      "city": "Paris sekretaryası",
+      "lon": 2.35,
+      "lat": 48.86,
+      "type": "Kamu / hükümetler arası",
+      "layers": [
+        "governance"
+      ],
+      "description": "Yapay zekâ politikası analizleri, ilkeleri ve olay kaynakları sunar.",
+      "operations": "Hükümetler arası çalışmalar yürütür; üye kapsamı bütün dünyanın temsili değildir.",
+      "prompt": "Verilerde kimlerin yaşadığı olaylar ve hangi ülkelerin deneyimleri görünür?",
+      "locationType": "Konum",
+      "sources": [
+        "S37"
+      ]
+    },
+    {
+      "id": "eu",
+      "name": "Avrupa Komisyonu / Yapay Zekâ Ofisi",
+      "region": "Avrupa",
+      "country": "Belçika",
+      "city": "Brüksel",
+      "lon": 4.35,
+      "lat": 50.85,
+      "type": "Kamu / hükümetler arası",
+      "layers": [
+        "governance"
+      ],
+      "description": "AB kurumları Yapay Zekâ Yasası çerçevesini uygular ve koordine eder.",
+      "operations": "AB’nin yetkisi bazı AB dışı aktörlere ulaşabilir; hukuki yükümlülükler somut duruma bağlıdır.",
+      "prompt": "Hangi yükümlülük geçerli, kim denetliyor ve hangi kanıtlar var?",
+      "locationType": "Konum",
+      "sources": [
+        "S38"
+      ]
+    },
+    {
+      "id": "nist",
+      "name": "NIST",
+      "region": "Kuzey Amerika",
+      "country": "ABD",
+      "city": "Gaithersburg",
+      "lon": -77.2,
+      "lat": 39.14,
+      "type": "Kamu / hükümetler arası",
+      "layers": [
+        "governance"
+      ],
+      "description": "Gönüllü Yapay Zekâ Risk Yönetimi Çerçevesi’ni yayımlar.",
+      "operations": "ABD standartlar enstitüsüdür; gönüllü kullanım bağlayıcı hukuki gereklilikten farklıdır.",
+      "prompt": "Şirket gerçek kontrolleri mi raporluyor, yoksa yalnızca uyum iddiasında mı bulunuyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S39"
+      ]
+    },
+    {
+      "id": "algorithmwatch",
+      "name": "AlgorithmWatch",
+      "region": "Avrupa",
+      "country": "Almanya",
+      "city": "Berlin",
+      "lon": 13.4,
+      "lat": 52.52,
+      "type": "Kâr amacı gütmeyen / topluluk",
+      "layers": [
+        "governance",
+        "research"
+      ],
+      "description": "Otomatik sistemleri ve toplumsal etkilerini araştırır.",
+      "operations": "Avrupa’da sivil toplum çalışmaları yürütür; düzenleyici kurum değildir.",
+      "prompt": "Şirketlerin kapalı tuttuğu sistemleri kim araştırabiliyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S40"
+      ]
+    },
+    {
+      "id": "truba",
+      "name": "TÜBİTAK ULAKBİM / TRUBA",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Ankara / araştırma altyapısı",
+      "lon": 32.86,
+      "lat": 39.93,
+      "type": "Kamu / akademik araştırma",
+      "layers": [
+        "compute",
+        "research"
+      ],
+      "description": "ARF ve ARF-ACC GPU kümesi dahil ulusal araştırma hesaplama altyapısı sağlar.",
+      "operations": "Yayımlanan ARF-ACC kuyruk belgeleri NVIDIA H100/H200 donanımını listeler.",
+      "prompt": "GPU süresini kim alıyor, kuyruklar ne kadar uzun ve kümeyi hangi tedarikçiler destekliyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S41",
+        "S61",
+        "S62"
+      ]
+    },
+    {
+      "id": "turkcell",
+      "name": "Turkcell",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "İstanbul",
+      "lon": 28.98,
+      "lat": 41.01,
+      "type": "Şirket",
+      "layers": [
+        "compute"
+      ],
+      "description": "Türkiye’de veri merkezi/bulut altyapısı işletir; planlanan Google Cloud bölgesi için ortaklığı vardır.",
+      "operations": "Mevcut altyapı, 2025 bildiriminde 2028–2029 civarında açılması beklenen Google bölgesinden farklıdır.",
+      "prompt": "Hangi kapasite çalışır durumda, hangi kısım yatırım taahhüdü?",
+      "locationType": "Konum",
+      "sources": [
+        "S42"
+      ]
+    },
+    {
+      "id": "t3",
+      "name": "T3 Vakfı / T3 AI",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "İstanbul",
+      "lon": 28.98,
+      "lat": 41.01,
+      "type": "Kâr amacı gütmeyen / topluluk",
+      "layers": [
+        "models",
+        "data",
+        "research"
+      ],
+      "description": "T3 Vakfı öncülüğünde Türkçe model ve topluluk girişimidir.",
+      "operations": "Vakıf projeyi açık kaynaklı olarak tanımlar; bunu lisans sınıfı kabul etmeden önce yayımlanan dosyaları inceleyin.",
+      "prompt": "Hangi veriler, ağırlıklar, kod ve değerlendirmeler gerçekten erişilebilir?",
+      "locationType": "Merkez",
+      "sources": [
+        "S43"
+      ]
+    },
+    {
+      "id": "havelsan",
+      "name": "HAVELSAN / MAIN",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Ankara",
+      "lon": 32.86,
+      "lat": 39.93,
+      "type": "Şirket",
+      "layers": [
+        "models",
+        "tools",
+        "apps"
+      ],
+      "description": "Kapalı ağlarda kurulum dahil MAIN kurumsal yapay zekâ platformunu sağlar.",
+      "operations": "Şirket yerli yapay zekâ yeteneklerini pazarlıyor; bu iddia tamamen yerli bir tedarik zincirini kanıtlamaz.",
+      "prompt": "Hangi bileşenler yerel olarak geliştiriliyor, lisanslanıyor veya ithal ediliyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S44",
+        "S57"
+      ]
+    },
+    {
+      "id": "sestek",
+      "name": "SESTEK",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "İstanbul",
+      "lon": 28.98,
+      "lat": 41.01,
+      "type": "Şirket",
+      "layers": [
+        "apps",
+        "models"
+      ],
+      "description": "Konuşma tabanlı otomasyon ve konuşma teknolojisi geliştirir.",
+      "operations": "Türkiye’de faaliyet gösterir; Unifonic bünyesinde olması yerel ekosistem dışındaki sahipliği örnekler.",
+      "prompt": "Modeller, müşteri kayıtları ve sahipliğe ilişkin kararlar nerede bulunuyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S45",
+        "S58"
+      ]
+    },
+    {
+      "id": "boun",
+      "name": "Boğaziçi Üniversitesi / BOUN Treebank",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "İstanbul",
+      "lon": 29.05,
+      "lat": 41.09,
+      "type": "Kamu / akademik araştırma",
+      "layers": [
+        "data",
+        "research"
+      ],
+      "description": "Üniversite araştırmaları elle etiketlenmiş Türkçe kaynaklar içerir.",
+      "operations": "BOUN Treebank belgelenmiş bir araştırma kaynağıdır; atıf yapılan makale geçmişe aittir, 2026 sürümü iddiası değildir.",
+      "prompt": "Türkçe verileri kim etiketliyor, hangi lisans ve kapsam sınırları geçerli?",
+      "locationType": "Konum",
+      "sources": [
+        "S46",
+        "S59"
+      ]
+    },
+    {
+      "id": "trai",
+      "name": "Türkiye Yapay Zekâ İnisiyatifi (TRAI)",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "İstanbul ekosistem platformu",
+      "lon": 28.98,
+      "lat": 41.01,
+      "type": "Kâr amacı gütmeyen / topluluk",
+      "layers": [
+        "research"
+      ],
+      "description": "İşletmeleri bir araya getirir, eğitim sunar ve yapay zekâ girişimleri haritasını tutar.",
+      "operations": "Ticari bir ekosistem platformudur, bağımsız düzenleyici değildir; dizini keşif aracıdır.",
+      "prompt": "Listelenmek, kullanıma geçişi, geliri veya özgün model geliştirmeyi kanıtlıyor mu?",
+      "locationType": "Konum",
+      "sources": [
+        "S47"
+      ]
+    },
+    {
+      "id": "kvkk",
+      "name": "KVKK",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Ankara",
+      "lon": 32.86,
+      "lat": 39.93,
+      "type": "Kamu / hükümetler arası",
+      "layers": [
+        "governance"
+      ],
+      "description": "Türkiye’nin kişisel veri koruma otoritesi üretken yapay zekâ hakkında rehberlik yayımlar.",
+      "operations": "Kişisel verileri denetler; rehberlik, yasal yükümlülüklerden ve kararlardan ayrı değerlendirilmelidir.",
+      "prompt": "Kişisel veriler nereye gönderiliyor, hangi hukuki dayanak ve başvuru yolu var?",
+      "locationType": "Konum",
+      "sources": [
+        "S48"
+      ]
+    },
+    {
+      "id": "ministry",
+      "name": "Sanayi ve Teknoloji Bakanlığı",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Ankara",
+      "lon": 32.86,
+      "lat": 39.93,
+      "type": "Kamu / hükümetler arası",
+      "layers": [
+        "governance"
+      ],
+      "description": "Sanayi teknolojisi politikasını ve yapay zekâ yatırımlarına ilişkin girişimleri koordine eder.",
+      "operations": "Bakanlığın Eylül 2026 haberi 2026–2030 yapay zekâ eylem planına değinir; duyuru, uygulama denetimi değildir.",
+      "prompt": "Kabul edilen plan, bütçe, kilometre taşları ve kamuya açık ilerleme raporları nerede?",
+      "locationType": "Konum",
+      "sources": [
+        "S49"
+      ]
+    },
+    {
+      "id": "statkraft",
+      "name": "Statkraft",
+      "region": "Avrupa",
+      "country": "Norveç",
+      "city": "Norveç / ülke düzeyinde işaret",
+      "lon": 9,
+      "lat": 61,
+      "type": "Şirket",
+      "layers": [
+        "physical"
+      ],
+      "description": "Veri merkezleri için yenilenebilir elektrik ve yerleşim çözümleri sunar.",
+      "operations": "Norveç’te yerleşim çözümleri ve elektrik piyasası faaliyetleri vardır; belirli bir müşteriye bağımlılık çıkarımı yapılmaz.",
+      "prompt": "Yenilenebilirlik iddiası yıllık sertifikaları mı, saatlik elektrik eşleştirmesini mi anlatıyor?",
+      "locationType": "Konum",
+      "sources": [
+        "S50"
+      ]
+    },
+    {
+      "id": "glencore",
+      "name": "Glencore",
+      "region": "Avrupa",
+      "country": "İsviçre",
+      "city": "Baar",
+      "lon": 8.52,
+      "lat": 47.2,
+      "type": "Şirket",
+      "layers": [
+        "physical"
+      ],
+      "description": "Bakır ve kobalt dahil metaller üretir ve pazarlar.",
+      "operations": "Küresel madencilik ve emtia faaliyetleri yürütür; burada yer alması maddi temelleri örnekler, belirli bir yapay zekâ şirketine tedarik iddiası değildir.",
+      "prompt": "Belirli bir malzeme madenden bu altyapıya kadar izlenebiliyor mu?",
+      "locationType": "Merkez",
+      "sources": [
+        "S51"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "IEA - Energy and AI",
+      "url": "https://www.iea.org/reports/energy-and-ai",
+      "claim": "Fiziksel enerji gereksinimleri ve veri merkezi bağlamı.",
+      "kind": "Hükümetler arası rapor",
+      "published": "2025",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S02",
+      "title": "Google ML Crash Course - language models",
+      "url": "https://developers.google.com/machine-learning/crash-course/llm",
+      "claim": "Token’lar, öğrenilen dil örüntüleri ve modelin temelleri.",
+      "kind": "Teknik belgeler",
+      "published": "Güncelleme: 2026-01-09",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S03",
+      "title": "Vaswani et al. - Attention Is All You Need",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "claim": "Transformer mimarisi ve öz-dikkat mekanizması.",
+      "kind": "Araştırma makalesi",
+      "published": "2017",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S04",
+      "title": "Schneider - data-centre solutions",
+      "url": "https://www.se.com/ww/en/work/solutions/data-centers-and-networks/",
+      "claim": "Veri merkezleri için güç yönetimi ve soğutma sistemleri sağlar. Konum/faaliyetler: Rueil-Malmaison; Küresel ekipman sağlayıcısıdır; konum işareti belirli bir müşteriyi göstermez.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S05",
+      "title": "ASML - company and locations",
+      "url": "https://www.asml.com/en/company/about-asml",
+      "claim": "Çip üretiminde kullanılan litografi ekipmanlarını üretir. Konum/faaliyetler: Veldhoven; Hollanda, ABD, Almanya ve Asya’da Ar-Ge/üretim yapar; seçili tesisler faaliyetler görünümünde gösterilir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S06",
+      "title": "Tokyo Electron - about TEL",
+      "url": "https://www.tel.com/about/",
+      "claim": "Yarı iletken üretim ekipmanları sağlar. Konum/faaliyetler: Tokyo; Çip üretim pazarlarında ekipman ve hizmet sunar.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S07",
+      "title": "NVIDIA - contact and corporate location",
+      "url": "https://www.nvidia.com/en-us/contact/",
+      "claim": "GPU tasarlar ve CUDA yazılım platformunu sağlar. Konum/faaliyetler: Santa Clara; Çipleri iş ortakları üretir; seçili TSMC üretimi ayrıca belgelenmiştir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S08",
+      "title": "TSMC - business contacts",
+      "url": "https://www.tsmc.com/english/aboutTSMC/business_contacts",
+      "claim": "Diğer şirketler için sözleşmeli çip üretimi yapan dökümhanedir. Konum/faaliyetler: Hsinchu; Merkezi Tayvan’dadır; seçili Arizona üretimi ayrıca gösterilir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S09",
+      "title": "SK hynix - where chips are made",
+      "url": "https://news.skhynix.com/en/semiconductor-101-sk-hynix-on-where-chips-are-made-and-used/",
+      "claim": "Yapay zekâ hesaplamasında kullanılan yüksek bant genişlikli bellek dahil bellek üretir. Konum/faaliyetler: Icheon; Icheon ve Cheongju’da üretim yapar; yurt dışı tesislerinin tamamı haritada gösterilmez.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S10",
+      "title": "Arm - company and headquarters",
+      "url": "https://www.arm.com/company",
+      "claim": "İşlemci mimarisi ve tasarım teknolojisi sağlar. Konum/faaliyetler: Cambridge; Küresel ofisleri ve teknoloji lisanslama faaliyetleri vardır; üretim ayrı bir faaliyettir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S11",
+      "title": "AWS - global infrastructure",
+      "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+      "claim": "Bulut altyapısı ve yönetilen yapay zekâ hizmetleri sunar. Konum/faaliyetler: Seattle; Küresel bulut bölgeleri bulunur; belirli bir iş yükü için güncel bölge listesine bakın.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S12",
+      "title": "OVHcloud - about and GPU services",
+      "url": "https://www.ovhcloud.com/en/about-us/",
+      "claim": "Yapay zekâ için GPU hizmetleri içeren bulut altyapısı sunar. Konum/faaliyetler: Roubaix; Uluslararası veri merkezleri vardır; şirket merkezi ile hesaplamanın yapıldığı yer farklıdır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S13",
+      "title": "Alibaba Cloud - global locations",
+      "url": "https://www.alibabacloud.com/en/global-locations",
+      "claim": "Birden fazla pazarda bulut altyapısı sunar. Konum/faaliyetler: Hangzhou; Çalışan bulut bölgeleri ile duyurulan bölgeler ayrı listelenir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S14",
+      "title": "Appen - about, headquarters and offices",
+      "url": "https://www.appen.com/about-us",
+      "claim": "İnsan desteğiyle yapay zekâ verisi toplama, etiketleme ve değerlendirme hizmetleri sağlar. Konum/faaliyetler: Sidney; Şirket merkezi Sidney, ABD merkezi Kirkland’dadır; Filipinler, Hindistan ve Vietnam’da da ofisleri vardır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S15",
+      "title": "Sama - contact locations",
+      "url": "https://www.sama.com/contact-us",
+      "claim": "İnsanlar tarafından doğrulanan veri etiketleme ve değerlendirme hizmetleri sağlar. Konum/faaliyetler: San Francisco; Kenya ve Uganda’daki ekipleri/tesisleri belgelenmiştir; faaliyet işaretleri Nairobi ve Gulu’yu gösterir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S16",
+      "title": "Common Crawl - overview",
+      "url": "https://commoncrawl.org/overview",
+      "claim": "Web tarama veri kümelerini araştırma ve diğer kullanımlar için erişime açar. Konum/faaliyetler: ABD’de kuruluş / küresel web derlemi; Derlem küreseldir; kuruluşun ABD’de bulunması bütün verilerin kökenini göstermez.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S17",
+      "title": "Masakhane - mission and community",
+      "url": "https://www.masakhane.io/",
+      "claim": "Afrika dilleri için doğal dil işleme alanında çalışan taban örgütlenmesi niteliğinde bir araştırma topluluğudur. Konum/faaliyetler: Afrika’ya yayılmış topluluk; Katılımcıları farklı yerlerdedir; tek bir merkez atanmamıştır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S18",
+      "title": "OpenAI - about and product links",
+      "url": "https://openai.com/about/",
+      "claim": "Yapay zekâ modelleri, API’ler ve ChatGPT geliştirir. Konum/faaliyetler: San Francisco; Ürün ve araştırmaları birçok pazara ulaşır; merkez işareti her çıkarım isteğinin yerini göstermez.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S19",
+      "title": "Anthropic - company",
+      "url": "https://www.anthropic.com/company",
+      "claim": "Claude modelleri, ürünleri ve güvenlik araştırmaları geliştirir. Konum/faaliyetler: San Francisco; Bulut ortaklıkları arasında AWS vardır; atlas seçili bir eğitim ilişkisini belgeler.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S20",
+      "title": "Google DeepMind - about",
+      "url": "https://deepmind.google/about/",
+      "claim": "Modeller ve bilimsel uygulamalar geliştiren yapay zekâ araştırma kuruluşudur. Konum/faaliyetler: Londra araştırma merkezi; Google bünyesindedir; araştırma ekipleri ve kullanım altyapısı farklı ülkelere yayılır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S21",
+      "title": "Mistral - about",
+      "url": "https://mistral.ai/about/",
+      "claim": "Le Chat dahil yapay zekâ modelleri ve hizmetleri geliştirir. Konum/faaliyetler: Paris; Modele erişim ve lisans koşulları sürüme göre değişir; ilgili model kartını kontrol edin.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S22",
+      "title": "DeepSeek - privacy and service operator",
+      "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
+      "claim": "Dil modelleri, sohbet ve API hizmetleri geliştirir. Konum/faaliyetler: Hangzhou; Hizmet işletmecisi Hangzhou DeepSeek’tir; indirilen ağırlıkların ve barındırılan hizmetlerin veri akışları farklıdır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S23",
+      "title": "Sarvam - about",
+      "url": "https://www.sarvam.ai/about-us",
+      "claim": "Hindistan dilleri için metin, konuşma ve dil yapay zekâsı geliştirir. Konum/faaliyetler: Bengaluru; Bengaluru adresine sahiptir; çok dilli modeller ve API’ler Hindistan dillerine yönelik kullanım alanlarına hizmet eder.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S24",
+      "title": "SEA-LION - models and regional evaluation",
+      "url": "https://sea-lion.ai/",
+      "claim": "Güneydoğu Asya için çok dilli modeller ve değerlendirme kaynakları geliştirir. Konum/faaliyetler: Singapur; Bölgesel dil kapsamına sahiptir; program Singapur merkezlidir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S25",
+      "title": "TII - research institute",
+      "url": "https://www.tii.ae/",
+      "claim": "Falcon model ailesiyle ilişkili uygulamalı araştırma enstitüsüdür. Konum/faaliyetler: Abu Dabi; BAE’de araştırma yapar; erişilebilirlik ve lisanslar model sürümüne bağlıdır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S26",
+      "title": "LatamGPT - regional initiative",
+      "url": "https://www.latamgpt.org/en",
+      "claim": "Latin Amerika dil modeli girişimini koordine eden yapay zekâ araştırma merkezidir. Konum/faaliyetler: Santiago; Bölgesel işbirliğine dayanır; Şili’deki koordinasyon bütün katkıcıların yerini göstermez.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S27",
+      "title": "Lelapa - products and research links",
+      "url": "https://lelapa.ai/",
+      "claim": "Vulavula dahil çok dilli konuşma ve çeviri araçları geliştirir. Konum/faaliyetler: Güney Afrika / ülke düzeyinde işaret; Afrika dilleri ve konuşma sırasında dil değiştirme üzerine çalışır; burada şehir düzeyinde merkez iddiası yoktur.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S28",
+      "title": "Hugging Face - model and dataset hub",
+      "url": "https://huggingface.co/",
+      "claim": "Modelleri, veri kümelerini ve geliştiricilerin işbirliği araçlarını barındırır. Konum/faaliyetler: New York konumu / uluslararası ekip; Uluslararası platform ve topluluktur; barındırdığı depoların kendi lisansları vardır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S29",
+      "title": "PyTorch Foundation - mission",
+      "url": "https://pytorch.org/foundation/",
+      "claim": "PyTorch makine öğrenmesi yazılım ekosistemini destekler. Konum/faaliyetler: ABD’de vakıf / küresel katkıcılar; Linux Foundation bünyesindedir; geliştirme uluslararası olarak dağılmıştır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S30",
+      "title": "DeepL - publisher and product links",
+      "url": "https://www.deepl.com/en/publisher",
+      "claim": "Çeviri, yazım ve dil hizmeti arayüzleri sağlar. Konum/faaliyetler: Köln; Tescilli adresi Köln’dedir; kullanıcıları ve ürün erişimi farklı pazarlara yayılır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S31",
+      "title": "Mila - about",
+      "url": "https://mila.quebec/en/about/about-mila",
+      "claim": "Üniversite araştırmacılarını bir araya getiren, kâr amacı gütmeyen yapay zekâ araştırma enstitüsüdür. Konum/faaliyetler: Montréal; Montréal’de araştırma yapar; uluslararası işbirlikleri vardır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S32",
+      "title": "RIKEN - computational science and contact",
+      "url": "https://www.riken.jp/en/research/labs/r-ccs/",
+      "claim": "Hesaplamalı bilim ve süperbilgisayar araştırma merkezidir. Konum/faaliyetler: Kobe; Kobe merkezindedir; kamu bilimsel hesaplama altyapısı yapay zekâ dahil birçok alana hizmet eder.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S33",
+      "title": "LNCC - Santos Dumont",
+      "url": "https://www.gov.br/lncc/pt-br/supercomputador-santos-dumont",
+      "claim": "Santos Dumont’u barındıran ulusal bilimsel hesaplama laboratuvarıdır. Konum/faaliyetler: Petrópolis; Brezilya araştırma hesaplama altyapısıdır; yalnızca yapay zekâya yönelik bir tesis değildir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S34",
+      "title": "Data Science Nigeria - about",
+      "url": "https://datasciencenigeria.org/about-data-science-nigeria/",
+      "claim": "Yapay zekâ becerileri, araştırmaları ve toplumsal etki uygulamaları geliştirir. Konum/faaliyetler: Lagos; Lagos araştırma merkezi, yaygın eğitim faaliyetleri ve uluslararası işbirlikleri vardır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S35",
+      "title": "CSIRO - artificial intelligence",
+      "url": "https://www.csiro.au/en/research/technology-space/ai",
+      "claim": "Avustralya’nın ulusal bilim kurumu yapay zekâ araştırmaları ve uygulamalı çalışmalar yürütür. Konum/faaliyetler: Avustralya / ülke düzeyinde işaret; Avustralya’da birden fazla tesisi vardır; işaret belirli bir laboratuvarı değil kurumu temsil eder.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S36",
+      "title": "UNESCO - recommendation on AI ethics",
+      "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+      "claim": "Yapay zekâ etiği üzerine küresel bir tavsiye yayımlar. Konum/faaliyetler: Paris sekretaryası; Uluslararası üyeliğe sahiptir; etik tavsiye, ulusal düzeyde yaptırımdan farklıdır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S37",
+      "title": "OECD.AI - policies and analysis",
+      "url": "https://oecd.ai/",
+      "claim": "Yapay zekâ politikası analizleri, ilkeleri ve olay kaynakları sunar. Konum/faaliyetler: Paris sekretaryası; Hükümetler arası çalışmalar yürütür; üye kapsamı bütün dünyanın temsili değildir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S38",
+      "title": "European Commission - AI Act framework",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "claim": "AB kurumları Yapay Zekâ Yasası çerçevesini uygular ve koordine eder. Konum/faaliyetler: Brüksel; AB’nin yetkisi bazı AB dışı aktörlere ulaşabilir; hukuki yükümlülükler somut duruma bağlıdır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S39",
+      "title": "NIST - AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "claim": "Gönüllü Yapay Zekâ Risk Yönetimi Çerçevesi’ni yayımlar. Konum/faaliyetler: Gaithersburg; ABD standartlar enstitüsüdür; gönüllü kullanım bağlayıcı hukuki gereklilikten farklıdır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S40",
+      "title": "AlgorithmWatch - investigations",
+      "url": "https://algorithmwatch.org/en/",
+      "claim": "Otomatik sistemleri ve toplumsal etkilerini araştırır. Konum/faaliyetler: Berlin; Avrupa’da sivil toplum çalışmaları yürütür; düzenleyici kurum değildir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S41",
+      "title": "TRUBA - ARF-ACC queue specifications",
+      "url": "https://docs.truba.gov.tr/1-kaynaklar/arf_acc/arf_acc_kuyruk_bilgisi.html",
+      "claim": "ARF ve ARF-ACC GPU kümesi dahil ulusal araştırma hesaplama altyapısı sağlar. Konum/faaliyetler: Ankara / araştırma altyapısı; Yayımlanan ARF-ACC kuyruk belgeleri NVIDIA H100/H200 donanımını listeler.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Resmî indeks alıntısı kontrol edildi; doğrudan erişim 502 hatası verdi"
+    },
+    {
+      "id": "S42",
+      "title": "Turkcell - 2025 Form 20-F",
+      "url": "https://s.turkcell.com.tr/SiteAssets/Hakkimizda/yatirimci-iliskileri/documents/pdf/20F2025.pdf",
+      "claim": "Türkiye’de veri merkezi/bulut altyapısı işletir; planlanan Google Cloud bölgesi için ortaklığı vardır. Konum/faaliyetler: İstanbul; Mevcut altyapı, 2025 bildiriminde 2028–2029 civarında açılması beklenen Google bölgesinden farklıdır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S43",
+      "title": "T3 Foundation - T3 AI",
+      "url": "https://www.t3vakfi.org/tr/projelerimiz/t3-ai",
+      "claim": "T3 Vakfı öncülüğünde Türkçe model ve topluluk girişimidir. Konum/faaliyetler: İstanbul; Vakıf projeyi açık kaynaklı olarak tanımlar; bunu lisans sınıfı kabul etmeden önce yayımlanan dosyaları inceleyin.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S44",
+      "title": "HAVELSAN - MAIN platform",
+      "url": "https://www.havelsan.com/tr/urunler/main-kurumsal-yapay-zeka-platformu",
+      "claim": "Kapalı ağlarda kurulum dahil MAIN kurumsal yapay zekâ platformunu sağlar. Konum/faaliyetler: Ankara; Şirket yerli yapay zekâ yeteneklerini pazarlıyor; bu iddia tamamen yerli bir tedarik zincirini kanıtlamaz.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S45",
+      "title": "SESTEK - about and ownership",
+      "url": "https://www.sestek.com/about-us",
+      "claim": "Konuşma tabanlı otomasyon ve konuşma teknolojisi geliştirir. Konum/faaliyetler: İstanbul; Türkiye’de faaliyet gösterir; Unifonic bünyesinde olması yerel ekosistem dışındaki sahipliği örnekler.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S46",
+      "title": "BOUN Treebank paper",
+      "url": "https://arxiv.org/abs/2002.10416",
+      "claim": "Üniversite araştırmaları elle etiketlenmiş Türkçe kaynaklar içerir. Konum/faaliyetler: İstanbul; BOUN Treebank belgelenmiş bir araştırma kaynağıdır; atıf yapılan makale geçmişe aittir, 2026 sürümü iddiası değildir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S47",
+      "title": "TRAI - ecosystem and startup map",
+      "url": "https://turkiye.ai/",
+      "claim": "İşletmeleri bir araya getirir, eğitim sunar ve yapay zekâ girişimleri haritasını tutar. Konum/faaliyetler: İstanbul ekosistem platformu; Ticari bir ekosistem platformudur, bağımsız düzenleyici değildir; dizini keşif aracıdır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S48",
+      "title": "KVKK - generative AI guide, 15 questions",
+      "url": "https://www.kvkk.gov.tr/Icerik/8547/uretken-yapay-zeka-ve-kisisel-verilerin-korunmasi-rehberi-15-soruda",
+      "claim": "Türkiye’nin kişisel veri koruma otoritesi üretken yapay zekâ hakkında rehberlik yayımlar. Konum/faaliyetler: Ankara; Kişisel verileri denetler; rehberlik, yasal yükümlülüklerden ve kararlardan ayrı değerlendirilmelidir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S49",
+      "title": "Ministry - September 2026 GITEX remarks",
+      "url": "https://www.sanayi.gov.tr/medya/haber/bakan-kacir-gitex-aida-konustu",
+      "claim": "Sanayi teknolojisi politikasını ve yapay zekâ yatırımlarına ilişkin girişimleri koordine eder. Konum/faaliyetler: Ankara; Bakanlığın Eylül 2026 haberi 2026–2030 yapay zekâ eylem planına değinir; duyuru, uygulama denetimi değildir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Resmî indeks alıntısı kontrol edildi; doğrudan sayfa isteği reddedildi"
+    },
+    {
+      "id": "S50",
+      "title": "Statkraft - data-centre solutions",
+      "url": "https://prosjekter.statkraft.no/solutions-for-industry/data-center-solutions/",
+      "claim": "Veri merkezleri için yenilenebilir elektrik ve yerleşim çözümleri sunar. Konum/faaliyetler: Norveç / ülke düzeyinde işaret; Norveç’te yerleşim çözümleri ve elektrik piyasası faaliyetleri vardır; belirli bir müşteriye bağımlılık çıkarımı yapılmaz.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S51",
+      "title": "Glencore - metals and minerals",
+      "url": "https://www.glencore.com/what-we-do/metals-and-minerals",
+      "claim": "Bakır ve kobalt dahil metaller üretir ve pazarlar. Konum/faaliyetler: Baar; Küresel madencilik ve emtia faaliyetleri yürütür; burada yer alması maddi temelleri örnekler, belirli bir yapay zekâ şirketine tedarik iddiası değildir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S52",
+      "title": "NVIDIA - CUDA platform",
+      "url": "https://developer.nvidia.com/cuda-zone",
+      "claim": "CUDA, NVIDIA’nın paralel hesaplama platformudur.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S53",
+      "title": "OVHcloud - legal headquarters",
+      "url": "https://www.ovhcloud.com/en-gb/terms-and-conditions/",
+      "claim": "Roubaix merkez adresi.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S54",
+      "title": "Sarvam - models",
+      "url": "https://www.sarvam.ai/models",
+      "claim": "Metin, konuşma ve çeviri ürün aileleri.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S55",
+      "title": "Sama - human data teams",
+      "url": "https://www.sama.com/why-sama",
+      "claim": "Kenya ve Uganda’daki veri etiketleme ekipleri.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S56",
+      "title": "CENIA - research centre",
+      "url": "https://cenia.cl/",
+      "claim": "Şili araştırma merkezi ve bölgesel çalışmalar.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S57",
+      "title": "HAVELSAN - contact",
+      "url": "https://www.havelsan.com/en/contact-us",
+      "claim": "Ankara iletişim adresi.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S58",
+      "title": "SESTEK - demo contact",
+      "url": "https://www.sestek.com/request-a-demo",
+      "claim": "İstanbul faaliyet adresi.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S59",
+      "title": "Boğaziçi - computer engineering",
+      "url": "https://cmpe.boun.edu.tr/tr/node?page=11",
+      "claim": "Üniversite laboratuvar listesi ve İstanbul adresi.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Resmî indeks alıntısı kontrol edildi"
+    },
+    {
+      "id": "S60",
+      "title": "DeepSeek - services and model downloads",
+      "url": "https://www.deepseek.com/",
+      "claim": "Sohbet, API ve model sürümü bağlantıları.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S61",
+      "title": "TÜBİTAK - research computing at MODSIMMER",
+      "url": "https://tubitak.gov.tr/tr/haber/tubitaktan-arastirmacilara-buyuk-hizmet",
+      "claim": "Ankara’da ARF/TRUBA araştırma altyapısı; EuroHPC katılımı.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "2024 raporu; tarihsel bağlam",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S62",
+      "title": "TÜBİTAK - 2025 annual report",
+      "url": "https://tubitak.gov.tr/sites/default/files/2026-03/TUBITAK_2025_Yili_Faaliyet_Raporu.pdf",
+      "claim": "2025 TRUBA hesaplama faaliyeti; tarihsel sıralamalar güncel olarak sunulmaz.",
+      "kind": "Kamuya açık yıllık rapor",
+      "published": "2026-03",
+      "checked": "2026-10-08",
+      "access": "Resmî indeks alıntısı kontrol edildi"
+    },
+    {
+      "id": "S63",
+      "title": "NVIDIA - Blackwell at TSMC Arizona",
+      "url": "https://blogs.nvidia.com/blog/tsmc-blackwell-manufacturing/",
+      "claim": "TSMC Arizona’da Blackwell yonga plakası ve seri üretim kilometre taşı.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "2025-10-17",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S64",
+      "title": "Anthropic - Amazon compute collaboration",
+      "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
+      "claim": "Başlıca eğitim/bulut ilişkisi; gelecekteki kapasite taahhütlerini içerir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "2026 duyurusu; güncel sayfa kontrol edildi",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S65",
+      "title": "TRUBA - ARF-ACC hardware queues",
+      "url": "https://docs.truba.gov.tr/1-kaynaklar/arf_acc/arf_acc_kuyruk_bilgisi.html",
+      "claim": "Kuyruk yapılandırması NVIDIA GPU donanımını belirtir.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-08",
+      "access": "Resmî indeks alıntısı kontrol edildi; doğrudan erişim 502 hatası verdi"
+    },
+    {
+      "id": "S66",
+      "title": "Google Cloud - planned Türkiye region",
+      "url": "https://cloud.google.com/blog/products/infrastructure/new-google-cloud-region-coming-to-turkiye",
+      "claim": "Planlanan bölge ve Turkcell ortaklığı.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "2025 duyurusu",
+      "checked": "2026-10-08",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    }
+  ],
+  "dependencies": [
+    {
+      "a": "nvidia",
+      "b": "tsmc",
+      "label": "NVIDIA → TSMC: çip üretimi",
+      "status": "Belgelenmiş / üretim kilometre taşı",
+      "desc": "NVIDIA, 17 Ekim 2025’te TSMC Arizona’da Blackwell seri üretimini duyurdu. Bu, üretim ilişkisini destekler; her NVIDIA çipinin orada üretildiği iddiasını değil.",
+      "source": "S63"
+    },
+    {
+      "a": "anthropic",
+      "b": "aws",
+      "label": "Anthropic → AWS: eğitim/bulut kapasitesi",
+      "status": "Belgelenmiş / ortaklık ve kapasite taahhütleri",
+      "desc": "Anthropic, 2026 hesaplama güncellemesinde AWS’yi başlıca eğitim/bulut sağlayıcısı olarak tanımlar. Anlaşmadaki geleceğe dönük kapasitenin tamamı çalışır kabul edilmez.",
+      "source": "S64"
+    },
+    {
+      "a": "truba",
+      "b": "nvidia",
+      "label": "TRUBA ARF-ACC → NVIDIA: GPU donanımı",
+      "status": "Belgelenmiş / kurulu yapılandırma",
+      "desc": "Yayımlanmış kuyruk tablosu NVIDIA H100 ve H200 GPU’larını belirtir. Bu, NVIDIA ile doğrudan satın alma sözleşmesini kanıtlamaz.",
+      "source": "S65"
+    },
+    {
+      "a": "turkcell",
+      "b": null,
+      "label": "Turkcell ↔ Google Cloud: planlanan Türkiye bölgesi",
+      "status": "Belgelenmiş / planlanan",
+      "desc": "Google Türkiye bölgesi ortaklığını duyurdu. Turkcell’in 2025 bildirimi 2028–2029 civarında faaliyete geçiş öngörür. Mevcut Turkcell veri merkezleri bu bölge olarak yeniden adlandırılmaz.",
+      "source": "S66"
+    }
+  ],
+  "operations": [
+    {
+      "org": "asml",
+      "city": "San Diego",
+      "country": "ABD",
+      "lon": -117.16,
+      "lat": 32.72,
+      "role": "Ar-Ge / ışık kaynağı üretimi",
+      "status": "Faaliyetteki tesis",
+      "source": "S05"
+    },
+    {
+      "org": "asml",
+      "city": "Berlin",
+      "country": "Almanya",
+      "lon": 13.4,
+      "lat": 52.52,
+      "role": "Ar-Ge / bileşen üretimi",
+      "status": "Faaliyetteki tesis",
+      "source": "S05"
+    },
+    {
+      "org": "asml",
+      "city": "Linkou",
+      "country": "Tayvan",
+      "lon": 121.39,
+      "lat": 25.08,
+      "role": "Üretim / destek",
+      "status": "Faaliyetteki tesis",
+      "source": "S05"
+    },
+    {
+      "org": "tsmc",
+      "city": "Phoenix",
+      "country": "ABD",
+      "lon": -112.07,
+      "lat": 33.45,
+      "role": "Blackwell çip üretimi",
+      "status": "Belgelenmiş 2025 üretim kilometre taşı",
+      "source": "S63"
+    },
+    {
+      "org": "sama",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "lon": 36.82,
+      "lat": -1.29,
+      "role": "Veri emeği / etiketleme",
+      "status": "Faaliyetteki tesis",
+      "source": "S15"
+    },
+    {
+      "org": "sama",
+      "city": "Gulu",
+      "country": "Uganda",
+      "lon": 32.3,
+      "lat": 2.77,
+      "role": "Veri emeği / etiketleme",
+      "status": "Faaliyetteki tesis",
+      "source": "S15"
+    },
+    {
+      "org": "appen",
+      "city": "Kirkland",
+      "country": "ABD",
+      "lon": -122.21,
+      "lat": 47.68,
+      "role": "ABD merkezi",
+      "status": "Ek merkez",
+      "source": "S14"
+    },
+    {
+      "org": "appen",
+      "city": "Cavite",
+      "country": "Filipinler",
+      "lon": 120.88,
+      "lat": 14.48,
+      "role": "Ofis",
+      "status": "Faaliyetteki tesis",
+      "source": "S14"
+    },
+    {
+      "org": "appen",
+      "city": "Hyderabad",
+      "country": "Hindistan",
+      "lon": 78.49,
+      "lat": 17.39,
+      "role": "Ofis",
+      "status": "Faaliyetteki tesis",
+      "source": "S14"
+    },
+    {
+      "org": "appen",
+      "city": "Hanoi",
+      "country": "Vietnam",
+      "lon": 105.83,
+      "lat": 21.03,
+      "role": "Ofis",
+      "status": "Faaliyetteki tesis",
+      "source": "S14"
+    }
+  ],
+  "glossary": [
+    [
+      "Yapay zekâ / makine öğrenmesi",
+      "Yapay zekâ geniş bir alandır. Makine öğrenmesi veriden model öğrenir; tahmin, sıralama ve üretimi kapsar."
+    ],
+    [
+      "Sinir ağı",
+      "Eğitim sırasında ayarlanan, birbirine bağlı sayısal parametrelerden oluşan model."
+    ],
+    [
+      "Transformer",
+      "Girdinin parçalarını ilişkilendirmek için dikkat mekanizması kullanan sinir ağı mimarisi; dil ve çok modlu modellerde etkilidir."
+    ],
+    [
+      "Eğitim / çıkarım",
+      "Eğitim model parametrelerini değiştirir. Çıkarım, çıktı hesaplamak için eğitilmiş modeli kullanır. Sıradan bir istem modeli mutlaka yeniden eğitmez."
+    ],
+    [
+      "Token / bağlam",
+      "Token’lar girdi/çıktı parçalarıdır. Bağlam, o anki hesaplamada kullanılabilen bilgidir; eğitim veri kümesinin tamamı değildir."
+    ],
+    [
+      "Parametreler / ağırlıklar",
+      "Eğitim sırasında öğrenilen sayısal değerlerdir. Modelin büyüklüğü tek başına kaliteyi veya doğruluğu kanıtlamaz."
+    ],
+    [
+      "İnce ayar / bilgi getirme",
+      "İnce ayar ağırlıkları değiştirir. Bilgi getirme, genellikle ağırlıkları değiştirmeden o anki bağlama malzeme getirir."
+    ],
+    [
+      "Açık ağırlıklar / açık kaynak",
+      "İndirilebilir ağırlıklar tek başına açık kaynak statüsü sağlamaz. İlgili sürümün kodunu, veri bilgilerini, lisanslarını ve izin verilen kullanımlarını kontrol edin."
+    ],
+    [
+      "API / ajan",
+      "API bir hizmeti yazılıma açar. Ajan, eylem gerçekleştirmek için modelleri araçlar ve iş akışıyla birleştirir."
+    ],
+    [
+      "Halüsinasyon / değerlendirme",
+      "Makul görünen ancak dayanağı olmayan çıktıya sıklıkla halüsinasyon denir. Görev performansını ve hataları dil, grup ve bağlama göre değerlendirin."
+    ],
+    [
+      "Veri egemenliği",
+      "Konumu, hukuki kontrolü, sahipliği, altyapı tedarikçilerini, erişimi ve uygulanabilir çıkış seçeneklerini ayrı ayrı sorgulayın."
+    ]
+  ],
+  "methodology": "Bu çalışma bir sıralama veya sayım değil, editoryal örneklemdir. Farklı işlevleri, kurum türlerini, bölgeleri ve dil topluluklarını göstermek için seçilmiştir. Bir kuruluş birden fazla katmanda yer alabilir. Boş alanlar yapay zekâ faaliyeti bulunmadığını değil, örneklerin kapsam dışında kaldığını gösterir. Merkez/konum işaretleri kuruluşları tanımlar; tüm hesaplamayı, çalışanları, kullanıcıları veya sahipliği göstermez. Koordinatlar yaklaşık şehir veya ülke konumlarıdır, tesis adresleri değildir. Faaliyetler bilerek küçük tutulmuş, kaynaklı bir örneklemdir. İşaret büyüklüğü pazar payını kodlamaz. Kaynaklar 8 Ekim 2026’da kontrol edilmiştir; tarihsel raporlar kendi tarihlerini korur. Şirket açıklamaları belirtilen ürün ve ilişkileri doğrular, doğruluk veya toplumsal yarar iddialarını değil. Bazı resmî sayfalara yalnızca indekslenmiş alıntılar üzerinden erişilebilmiştir; bunlar kaynak dökümünde belirtilir.",
+  "turkiye": [
+    [
+      "Görünür mevcut kapasite",
+      "TRUBA araştırma hesaplaması; yerel ticari altyapı; Türkçe veri ve model girişimleri; konuşma ve kurumsal uygulamalar."
+    ],
+    [
+      "Kanıtlı üç bağlantı",
+      "ARF-ACC NVIDIA donanımı kullanır. Turkcell’in Google bölgesi planlanmaktadır. SESTEK’in İstanbul’da faaliyetleri ve Unifonic sahipliği vardır. Her biri farklı bir uluslararası bağlantı türünü gösterir."
+    ],
+    [
+      "Sloganların ötesinde politika",
+      "Bakanlığın Eylül 2026 haberi 2026–2030 eylem planına değinir. Uygulamayı değerlendirmeden önce kabul edilen metni ve bütçeyi edinin. 2021–2025 stratejisi güncel dönem değil, tarihsel bağlamdır."
+    ],
+    [
+      "“Millî yapay zekâ” için habercilik testi",
+      "Eğitimin kökenini, model lisansını, Türkçe değerlendirmeyi, veri konumunu, hukuki kontrolü, çip/bulut tedarikçilerini ve satın almayı ayırın. Türkçe arayüz veya yerel kurulum diğer boyutları kanıtlamaz."
+    ]
+  ]
+}

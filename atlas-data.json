@@ -1,0 +1,1953 @@
+{
+  "title": "Global AI Ecosystem Atlas",
+  "edition": "October 2026",
+  "checked": "8 October 2026",
+  "layers": [
+    {
+      "id": "physical",
+      "name": "Physical resources",
+      "subtitle": "Electricity, water, minerals, land and cooling",
+      "desc": "AI runs on physical machines. Their construction and operation use materials, electricity and cooling; the impact depends on place, time and design.",
+      "question": "Who supplies the power and water, and who bears the local costs?",
+      "evidence": "Grid connection agreements, permits, hourly electricity mix, water withdrawals and consumption, equipment supply contracts."
+    },
+    {
+      "id": "chips",
+      "name": "Chips",
+      "subtitle": "Design → fabrication → memory → packaging",
+      "desc": "Chip designers specify processors. Foundries manufacture silicon; memory and packaging connect the pieces. GPUs accelerate parallel calculations, but CPUs and other accelerators also matter.",
+      "question": "Which supplier or export restriction could interrupt this system?",
+      "evidence": "Supplier filings, chip specifications, fabrication and packaging locations, export licences."
+    },
+    {
+      "id": "compute",
+      "name": "Compute",
+      "subtitle": "Data centres, cloud services and public supercomputers",
+      "desc": "Compute is the capacity to run calculations. A cloud sells access to machines; a data centre houses them. Public research clusters serve different users from commercial clouds.",
+      "question": "Who can access capacity, at what price, and under whose jurisdiction?",
+      "evidence": "Live service-region lists, access rules, procurement records, utilisation and queue times."
+    },
+    {
+      "id": "data",
+      "name": "Data & human labour",
+      "subtitle": "Collection, licensing, annotation and evaluation",
+      "desc": "People collect, clean, label and evaluate data. Training material can include licensed, public, personal and synthetic data. Publicly accessible does not automatically mean freely reusable.",
+      "question": "Whose work and language are represented, paid for or excluded?",
+      "evidence": "Dataset documentation, licences, worker contracts, pay records, consent and grievance procedures."
+    },
+    {
+      "id": "models",
+      "name": "Models",
+      "subtitle": "Learned parameters for language, images, speech and prediction",
+      "desc": "Training changes numerical parameters using examples and an objective. Inference applies a trained model to new inputs. An LLM generates tokens from context; fluent output can still be wrong.",
+      "question": "What was trained, on which data, and how was performance independently tested?",
+      "evidence": "Model cards, training reports, evaluation datasets, licences and reproducible tests."
+    },
+    {
+      "id": "tools",
+      "name": "Developer tools",
+      "subtitle": "Frameworks, APIs, model hubs and retrieval",
+      "desc": "Tools help developers train, access and connect models. An API is a service interface. Retrieval adds documents at use time; agents can call tools and carry out actions.",
+      "question": "Which external services receive user data or control essential functions?",
+      "evidence": "Architecture diagrams, API terms, data-flow logs, retention rules and tool permissions."
+    },
+    {
+      "id": "apps",
+      "name": "Applications",
+      "subtitle": "Chat, translation, speech, recommendations and decisions",
+      "desc": "Applications combine models with interfaces, business rules and people. AI also ranks content, predicts demand and detects patterns; it extends far beyond chatbots.",
+      "question": "What changes for the person affected, and can they challenge the outcome?",
+      "evidence": "Before/after workflow records, error rates by group, appeals, incidents and user interviews."
+    },
+    {
+      "id": "research",
+      "name": "Research & communities",
+      "subtitle": "Cross-cutting: knowledge, skills, evaluation and alternatives",
+      "desc": "Universities, public labs and communities create methods, datasets and skills across every layer. Commercial research and public research overlap, but incentives and access differ.",
+      "question": "Who funds the research, sets the benchmark and gets to reproduce it?",
+      "evidence": "Funding disclosures, publications, compute access and participation rules."
+    },
+    {
+      "id": "governance",
+      "name": "Governance & accountability",
+      "subtitle": "Cross-cutting: laws, standards, oversight and civil society",
+      "desc": "Governance shapes the entire lifecycle. Binding laws, voluntary frameworks, ethical recommendations and watchdog reporting are different instruments.",
+      "question": "Who has enforceable authority, and what remedy exists when AI causes harm?",
+      "evidence": "Legal texts, regulator decisions, audits, procurement rules and complaint records."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "schneider",
+      "name": "Schneider Electric",
+      "region": "Europe",
+      "country": "France",
+      "city": "Rueil-Malmaison",
+      "lon": 2.18,
+      "lat": 48.88,
+      "type": "Company",
+      "layers": [
+        "physical"
+      ],
+      "description": "Supplies power management and cooling systems for data centres.",
+      "operations": "Global equipment provider; a location marker does not identify a particular customer.",
+      "prompt": "Does the efficiency claim include the whole facility and its energy source?",
+      "locationType": "Base",
+      "sources": [
+        "S04"
+      ]
+    },
+    {
+      "id": "asml",
+      "name": "ASML",
+      "region": "Europe",
+      "country": "Netherlands",
+      "city": "Veldhoven",
+      "lon": 5.4,
+      "lat": 51.42,
+      "type": "Company",
+      "layers": [
+        "chips"
+      ],
+      "description": "Makes lithography equipment used to manufacture chips.",
+      "operations": "R&D/manufacturing in the Netherlands, US, Germany and Asia; selected sites shown in operations view.",
+      "prompt": "Where do components come from, and which sales require licences?",
+      "locationType": "HQ",
+      "sources": [
+        "S05"
+      ]
+    },
+    {
+      "id": "tel",
+      "name": "Tokyo Electron",
+      "region": "East Asia",
+      "country": "Japan",
+      "city": "Tokyo",
+      "lon": 139.69,
+      "lat": 35.69,
+      "type": "Company",
+      "layers": [
+        "chips"
+      ],
+      "description": "Supplies semiconductor production equipment.",
+      "operations": "Equipment and service business across chipmaking markets.",
+      "prompt": "Which processing steps depend on imported equipment?",
+      "locationType": "Base",
+      "sources": [
+        "S06"
+      ]
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "region": "North America",
+      "country": "United States",
+      "city": "Santa Clara",
+      "lon": -121.96,
+      "lat": 37.35,
+      "type": "Company",
+      "layers": [
+        "chips",
+        "tools"
+      ],
+      "description": "Designs GPUs and supplies the CUDA software platform.",
+      "operations": "Chip manufacturing is performed by partners; selected TSMC production is documented separately.",
+      "prompt": "Does software lock-in matter as much as the price of hardware?",
+      "locationType": "HQ",
+      "sources": [
+        "S07",
+        "S52"
+      ]
+    },
+    {
+      "id": "tsmc",
+      "name": "TSMC",
+      "region": "East Asia",
+      "country": "Taiwan",
+      "city": "Hsinchu",
+      "lon": 120.97,
+      "lat": 24.8,
+      "type": "Company",
+      "layers": [
+        "chips"
+      ],
+      "description": "Contract foundry manufacturing chips for other companies.",
+      "operations": "Headquarters in Taiwan; selected Arizona manufacturing shown separately.",
+      "prompt": "Where are fabrication and packaging actually performed?",
+      "locationType": "HQ",
+      "sources": [
+        "S08"
+      ]
+    },
+    {
+      "id": "skhynix",
+      "name": "SK hynix",
+      "region": "East Asia",
+      "country": "South Korea",
+      "city": "Icheon",
+      "lon": 127.44,
+      "lat": 37.28,
+      "type": "Company",
+      "layers": [
+        "chips"
+      ],
+      "description": "Makes memory, including high-bandwidth memory used in AI computing.",
+      "operations": "Icheon and Cheongju fabrication; overseas sites are not exhaustively mapped.",
+      "prompt": "Could a memory or packaging bottleneck constrain deployment?",
+      "locationType": "HQ",
+      "sources": [
+        "S09"
+      ]
+    },
+    {
+      "id": "arm",
+      "name": "Arm",
+      "region": "Europe",
+      "country": "United Kingdom",
+      "city": "Cambridge",
+      "lon": 0.12,
+      "lat": 52.2,
+      "type": "Company",
+      "layers": [
+        "chips"
+      ],
+      "description": "Provides processor architecture and design technology.",
+      "operations": "Global offices and technology licensing; manufacturing is a separate activity.",
+      "prompt": "Who owns the design rights and controls the licence?",
+      "locationType": "HQ",
+      "sources": [
+        "S10"
+      ]
+    },
+    {
+      "id": "aws",
+      "name": "Amazon Web Services",
+      "region": "North America",
+      "country": "United States",
+      "city": "Seattle",
+      "lon": -122.33,
+      "lat": 47.61,
+      "type": "Company",
+      "layers": [
+        "compute",
+        "tools"
+      ],
+      "description": "Cloud infrastructure and managed AI services.",
+      "operations": "Global cloud regions; consult the live region list for any specific workload.",
+      "prompt": "Which region runs the workload and who controls encryption keys?",
+      "locationType": "Base",
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "id": "ovh",
+      "name": "OVHcloud",
+      "region": "Europe",
+      "country": "France",
+      "city": "Roubaix",
+      "lon": 3.17,
+      "lat": 50.69,
+      "type": "Company",
+      "layers": [
+        "compute"
+      ],
+      "description": "Cloud infrastructure with GPU services for AI.",
+      "operations": "International data centres; headquarters and compute location are distinct.",
+      "prompt": "Can the customer move its models and data to another provider?",
+      "locationType": "Base",
+      "sources": [
+        "S12",
+        "S53"
+      ]
+    },
+    {
+      "id": "alibaba",
+      "name": "Alibaba Cloud",
+      "region": "East Asia",
+      "country": "China",
+      "city": "Hangzhou",
+      "lon": 120.16,
+      "lat": 30.27,
+      "type": "Company",
+      "layers": [
+        "compute",
+        "tools"
+      ],
+      "description": "Cloud infrastructure with locations across multiple markets.",
+      "operations": "Operating cloud regions are listed separately from announced regions.",
+      "prompt": "Which service region and legal entity actually handle the data?",
+      "locationType": "Base",
+      "sources": [
+        "S13"
+      ]
+    },
+    {
+      "id": "appen",
+      "name": "Appen",
+      "region": "Oceania",
+      "country": "Australia",
+      "city": "Sydney",
+      "lon": 151.21,
+      "lat": -33.87,
+      "type": "Company",
+      "layers": [
+        "data"
+      ],
+      "description": "Provides human-supported AI data collection, annotation and evaluation.",
+      "operations": "Corporate HQ Sydney; US HQ Kirkland; offices include Philippines, India and Vietnam.",
+      "prompt": "How are task rates, rejected work and worker appeals handled?",
+      "locationType": "HQ",
+      "sources": [
+        "S14"
+      ]
+    },
+    {
+      "id": "sama",
+      "name": "Sama",
+      "region": "North America",
+      "country": "United States",
+      "city": "San Francisco",
+      "lon": -122.42,
+      "lat": 37.77,
+      "type": "Company",
+      "layers": [
+        "data"
+      ],
+      "description": "Provides human-verified data annotation and evaluation.",
+      "operations": "Documented teams/sites in Kenya and Uganda; operations markers show Nairobi and Gulu.",
+      "prompt": "Can workers verify pay, monitoring and grievance claims?",
+      "locationType": "Base",
+      "sources": [
+        "S15",
+        "S55"
+      ]
+    },
+    {
+      "id": "commoncrawl",
+      "name": "Common Crawl",
+      "region": "North America",
+      "country": "United States",
+      "city": "US nonprofit / web-wide corpus",
+      "lon": -98,
+      "lat": 39,
+      "type": "Nonprofit / community",
+      "layers": [
+        "data"
+      ],
+      "description": "Makes web crawl datasets available for research and other uses.",
+      "operations": "The corpus is global; a US organizational base does not describe the origins of all data.",
+      "prompt": "Which sites, languages and rights are included or excluded?",
+      "locationType": "Base",
+      "sources": [
+        "S16"
+      ]
+    },
+    {
+      "id": "masakhane",
+      "name": "Masakhane",
+      "region": "Africa",
+      "country": "Distributed",
+      "city": "Distributed African community",
+      "lon": null,
+      "lat": null,
+      "type": "Nonprofit / community",
+      "layers": [
+        "data",
+        "research"
+      ],
+      "description": "Grassroots research community for African-language NLP.",
+      "operations": "Distributed participants; no single headquarters is assigned.",
+      "prompt": "Who decides language priorities, and who owns the resulting resources?",
+      "locationType": "Base",
+      "sources": [
+        "S17"
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "region": "North America",
+      "country": "United States",
+      "city": "San Francisco",
+      "lon": -122.42,
+      "lat": 37.77,
+      "type": "Company",
+      "layers": [
+        "models",
+        "tools",
+        "apps",
+        "research"
+      ],
+      "description": "Develops AI models, APIs and ChatGPT.",
+      "operations": "Products and research reach many markets; a base marker does not locate every inference request.",
+      "prompt": "Which model/version, data practices and evaluations support the claim?",
+      "locationType": "Base",
+      "sources": [
+        "S18"
+      ]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "region": "North America",
+      "country": "United States",
+      "city": "San Francisco",
+      "lon": -122.42,
+      "lat": 37.77,
+      "type": "Company",
+      "layers": [
+        "models",
+        "tools",
+        "apps",
+        "research"
+      ],
+      "description": "Develops Claude models, products and safety research.",
+      "operations": "Cloud partnerships include AWS; the atlas documents one selected training relationship.",
+      "prompt": "How much control rests with cloud partners and model operators?",
+      "locationType": "Base",
+      "sources": [
+        "S19"
+      ]
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "region": "Europe",
+      "country": "United Kingdom",
+      "city": "London research base",
+      "lon": -0.13,
+      "lat": 51.51,
+      "type": "Company",
+      "layers": [
+        "models",
+        "research"
+      ],
+      "description": "AI research organization developing models and scientific applications.",
+      "operations": "Part of Google; research teams and deployment infrastructure span countries.",
+      "prompt": "Who can independently reproduce a scientific or benchmark claim?",
+      "locationType": "Base",
+      "sources": [
+        "S20"
+      ]
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "region": "Europe",
+      "country": "France",
+      "city": "Paris",
+      "lon": 2.35,
+      "lat": 48.86,
+      "type": "Company",
+      "layers": [
+        "models",
+        "tools",
+        "apps"
+      ],
+      "description": "Develops AI models and services, including Le Chat.",
+      "operations": "Model access and licence terms vary by release; check the specific model card.",
+      "prompt": "Is this an open-weight release, an API service or both?",
+      "locationType": "Base",
+      "sources": [
+        "S21"
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "region": "East Asia",
+      "country": "China",
+      "city": "Hangzhou",
+      "lon": 120.16,
+      "lat": 30.27,
+      "type": "Company",
+      "layers": [
+        "models",
+        "tools",
+        "apps"
+      ],
+      "description": "Develops language models, chat and API services.",
+      "operations": "Service operator is Hangzhou DeepSeek; downloaded weights and hosted services have different data flows.",
+      "prompt": "Is the story about model weights or the hosted application?",
+      "locationType": "Base",
+      "sources": [
+        "S22",
+        "S60"
+      ]
+    },
+    {
+      "id": "sarvam",
+      "name": "Sarvam AI",
+      "region": "South & Southeast Asia",
+      "country": "India",
+      "city": "Bengaluru",
+      "lon": 77.59,
+      "lat": 12.97,
+      "type": "Company",
+      "layers": [
+        "models",
+        "tools",
+        "apps"
+      ],
+      "description": "Develops text, speech and language AI for Indian languages.",
+      "operations": "Bengaluru address; multilingual models and APIs serve Indian-language use cases.",
+      "prompt": "What do independent tests show for dialects and code-switching?",
+      "locationType": "Base",
+      "sources": [
+        "S23",
+        "S54"
+      ]
+    },
+    {
+      "id": "aisg",
+      "name": "AI Singapore / SEA-LION",
+      "region": "South & Southeast Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "lon": 103.82,
+      "lat": 1.35,
+      "type": "Public / academic research",
+      "layers": [
+        "models",
+        "data",
+        "research"
+      ],
+      "description": "Develops multilingual models and evaluation resources for Southeast Asia.",
+      "operations": "Regional language coverage; the program is based in Singapore.",
+      "prompt": "Which languages and cultural contexts are tested by local speakers?",
+      "locationType": "Base",
+      "sources": [
+        "S24"
+      ]
+    },
+    {
+      "id": "tii",
+      "name": "Technology Innovation Institute",
+      "region": "Middle East",
+      "country": "United Arab Emirates",
+      "city": "Abu Dhabi",
+      "lon": 54.37,
+      "lat": 24.45,
+      "type": "Public / academic research",
+      "layers": [
+        "models",
+        "research"
+      ],
+      "description": "Applied research institute associated with the Falcon model family.",
+      "operations": "UAE research base; availability and licences depend on the model release.",
+      "prompt": "What can outside researchers inspect and reproduce?",
+      "locationType": "Base",
+      "sources": [
+        "S25"
+      ]
+    },
+    {
+      "id": "cenia",
+      "name": "CENIA / LatamGPT",
+      "region": "Latin America",
+      "country": "Chile",
+      "city": "Santiago",
+      "lon": -70.67,
+      "lat": -33.45,
+      "type": "Public / academic research",
+      "layers": [
+        "models",
+        "data",
+        "research"
+      ],
+      "description": "AI research centre coordinating a Latin American language-model initiative.",
+      "operations": "Regional collaboration; Chilean coordination is not the location of every contributor.",
+      "prompt": "Who contributed the corpus, and how are regional communities represented?",
+      "locationType": "Base",
+      "sources": [
+        "S26",
+        "S56"
+      ]
+    },
+    {
+      "id": "lelapa",
+      "name": "Lelapa AI",
+      "region": "Africa",
+      "country": "South Africa",
+      "city": "South Africa / country-level marker",
+      "lon": 24,
+      "lat": -29,
+      "type": "Company",
+      "layers": [
+        "models",
+        "apps"
+      ],
+      "description": "Builds multilingual speech and translation tools, including Vulavula.",
+      "operations": "Focus on African-language and code-switching use cases; no city-level HQ claim here.",
+      "prompt": "Can performance be verified on real local-language calls?",
+      "locationType": "Base",
+      "sources": [
+        "S27"
+      ]
+    },
+    {
+      "id": "hf",
+      "name": "Hugging Face",
+      "region": "North America",
+      "country": "United States",
+      "city": "New York base / international team",
+      "lon": -74.01,
+      "lat": 40.71,
+      "type": "Company",
+      "layers": [
+        "tools",
+        "data",
+        "models"
+      ],
+      "description": "Hosts models, datasets and developer collaboration tools.",
+      "operations": "International platform and community; hosted repositories have their own licences.",
+      "prompt": "Does a repository licence cover its data as well as its weights?",
+      "locationType": "Base",
+      "sources": [
+        "S28"
+      ]
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch Foundation",
+      "region": "North America",
+      "country": "United States",
+      "city": "US foundation / global contributors",
+      "lon": -98,
+      "lat": 39,
+      "type": "Nonprofit / community",
+      "layers": [
+        "tools",
+        "research"
+      ],
+      "description": "Supports the PyTorch machine-learning software ecosystem.",
+      "operations": "Under the Linux Foundation; development is distributed internationally.",
+      "prompt": "Who funds maintenance and can users reproduce or audit the code?",
+      "locationType": "Base",
+      "sources": [
+        "S29"
+      ]
+    },
+    {
+      "id": "deepl",
+      "name": "DeepL",
+      "region": "Europe",
+      "country": "Germany",
+      "city": "Cologne",
+      "lon": 6.96,
+      "lat": 50.94,
+      "type": "Company",
+      "layers": [
+        "apps",
+        "tools"
+      ],
+      "description": "Provides translation, writing and language-service interfaces.",
+      "operations": "Cologne registered office; users and product availability span markets.",
+      "prompt": "Which text is retained, and where do translation errors affect meaning?",
+      "locationType": "Registered office",
+      "sources": [
+        "S30"
+      ]
+    },
+    {
+      "id": "mila",
+      "name": "Mila",
+      "region": "North America",
+      "country": "Canada",
+      "city": "Montréal",
+      "lon": -73.57,
+      "lat": 45.5,
+      "type": "Public / academic research",
+      "layers": [
+        "research"
+      ],
+      "description": "Nonprofit AI research institute bringing together university researchers.",
+      "operations": "Montréal research base; international collaborations.",
+      "prompt": "How do sponsor funding and compute access shape research priorities?",
+      "locationType": "Base",
+      "sources": [
+        "S31"
+      ]
+    },
+    {
+      "id": "riken",
+      "name": "RIKEN R-CCS",
+      "region": "East Asia",
+      "country": "Japan",
+      "city": "Kobe",
+      "lon": 135.2,
+      "lat": 34.69,
+      "type": "Public / academic research",
+      "layers": [
+        "compute",
+        "research"
+      ],
+      "description": "Research centre for computational science and supercomputing.",
+      "operations": "Kobe centre; public scientific computing serves multiple fields, including AI research.",
+      "prompt": "Who receives allocations and what research can the public inspect?",
+      "locationType": "Base",
+      "sources": [
+        "S32"
+      ]
+    },
+    {
+      "id": "lncc",
+      "name": "LNCC / Santos Dumont",
+      "region": "Latin America",
+      "country": "Brazil",
+      "city": "Petrópolis",
+      "lon": -43.18,
+      "lat": -22.51,
+      "type": "Public / academic research",
+      "layers": [
+        "compute",
+        "research"
+      ],
+      "description": "National scientific computing laboratory hosting Santos Dumont.",
+      "operations": "Brazilian research computing infrastructure; not exclusively an AI facility.",
+      "prompt": "How much public compute is available to researchers beyond major cities?",
+      "locationType": "Base",
+      "sources": [
+        "S33"
+      ]
+    },
+    {
+      "id": "dsn",
+      "name": "Data Science Nigeria",
+      "region": "Africa",
+      "country": "Nigeria",
+      "city": "Lagos",
+      "lon": 3.38,
+      "lat": 6.52,
+      "type": "Nonprofit / community",
+      "layers": [
+        "research",
+        "apps"
+      ],
+      "description": "Builds AI skills, research and social-impact applications.",
+      "operations": "Lagos research centre and broader training activity; international collaborations.",
+      "prompt": "Who gains skills and access, and what benefits are measured?",
+      "locationType": "Base",
+      "sources": [
+        "S34"
+      ]
+    },
+    {
+      "id": "csiro",
+      "name": "CSIRO",
+      "region": "Oceania",
+      "country": "Australia",
+      "city": "Australia / country-level marker",
+      "lon": 134,
+      "lat": -25,
+      "type": "Public / academic research",
+      "layers": [
+        "research"
+      ],
+      "description": "Australia’s national science agency conducts AI research and applied work.",
+      "operations": "Multiple Australian sites; marker represents the agency rather than a particular lab.",
+      "prompt": "What problem, validation and public benefit justify the project?",
+      "locationType": "Base",
+      "sources": [
+        "S35"
+      ]
+    },
+    {
+      "id": "unesco",
+      "name": "UNESCO",
+      "region": "Europe",
+      "country": "France",
+      "city": "Paris secretariat",
+      "lon": 2.35,
+      "lat": 48.86,
+      "type": "Government / intergovernmental",
+      "layers": [
+        "governance"
+      ],
+      "description": "Publishes a global recommendation on AI ethics.",
+      "operations": "International membership; an ethical recommendation is distinct from domestic enforcement.",
+      "prompt": "Who translates the principles into funded and enforceable practice?",
+      "locationType": "Base",
+      "sources": [
+        "S36"
+      ]
+    },
+    {
+      "id": "oecd",
+      "name": "OECD.AI",
+      "region": "Europe",
+      "country": "France",
+      "city": "Paris secretariat",
+      "lon": 2.35,
+      "lat": 48.86,
+      "type": "Government / intergovernmental",
+      "layers": [
+        "governance"
+      ],
+      "description": "Provides AI policy analysis, principles and incident resources.",
+      "operations": "Intergovernmental work; member coverage is not universal global representation.",
+      "prompt": "Whose incidents and national experiences are visible in the data?",
+      "locationType": "Base",
+      "sources": [
+        "S37"
+      ]
+    },
+    {
+      "id": "eu",
+      "name": "European Commission / AI Office",
+      "region": "Europe",
+      "country": "Belgium",
+      "city": "Brussels",
+      "lon": 4.35,
+      "lat": 50.85,
+      "type": "Government / intergovernmental",
+      "layers": [
+        "governance"
+      ],
+      "description": "EU institutions implement and coordinate the AI Act framework.",
+      "operations": "EU jurisdiction can reach certain actors outside the EU; legal obligations depend on the case.",
+      "prompt": "Which obligation applies, who supervises it, and what evidence exists?",
+      "locationType": "Base",
+      "sources": [
+        "S38"
+      ]
+    },
+    {
+      "id": "nist",
+      "name": "NIST",
+      "region": "North America",
+      "country": "United States",
+      "city": "Gaithersburg",
+      "lon": -77.2,
+      "lat": 39.14,
+      "type": "Government / intergovernmental",
+      "layers": [
+        "governance"
+      ],
+      "description": "Publishes the voluntary AI Risk Management Framework.",
+      "operations": "US standards institute; voluntary use is distinct from a binding legal requirement.",
+      "prompt": "Is the company reporting actual controls or only claiming alignment?",
+      "locationType": "Base",
+      "sources": [
+        "S39"
+      ]
+    },
+    {
+      "id": "algorithmwatch",
+      "name": "AlgorithmWatch",
+      "region": "Europe",
+      "country": "Germany",
+      "city": "Berlin",
+      "lon": 13.4,
+      "lat": 52.52,
+      "type": "Nonprofit / community",
+      "layers": [
+        "governance",
+        "research"
+      ],
+      "description": "Investigates automated systems and their effects on society.",
+      "operations": "European civil-society work; it is not a regulator.",
+      "prompt": "Who can investigate systems that companies keep opaque?",
+      "locationType": "Base",
+      "sources": [
+        "S40"
+      ]
+    },
+    {
+      "id": "truba",
+      "name": "TÜBİTAK ULAKBİM / TRUBA",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Ankara / research infrastructure",
+      "lon": 32.86,
+      "lat": 39.93,
+      "type": "Public / academic research",
+      "layers": [
+        "compute",
+        "research"
+      ],
+      "description": "Provides national research computing, including ARF and the ARF-ACC GPU cluster.",
+      "operations": "Published ARF-ACC queue documentation lists NVIDIA H100/H200 hardware.",
+      "prompt": "Who gets GPU time, how long are queues, and which suppliers support the cluster?",
+      "locationType": "Base",
+      "sources": [
+        "S41",
+        "S61",
+        "S62"
+      ]
+    },
+    {
+      "id": "turkcell",
+      "name": "Turkcell",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Istanbul",
+      "lon": 28.98,
+      "lat": 41.01,
+      "type": "Company",
+      "layers": [
+        "compute"
+      ],
+      "description": "Operates domestic data-centre/cloud infrastructure and has a planned Google Cloud region partnership.",
+      "operations": "Existing infrastructure differs from the planned Google region, expected around 2028-2029 in the 2025 filing.",
+      "prompt": "Which capacity is live, and which part is an investment commitment?",
+      "locationType": "Base",
+      "sources": [
+        "S42"
+      ]
+    },
+    {
+      "id": "t3",
+      "name": "T3 Foundation / T3 AI",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Istanbul",
+      "lon": 28.98,
+      "lat": 41.01,
+      "type": "Nonprofit / community",
+      "layers": [
+        "models",
+        "data",
+        "research"
+      ],
+      "description": "Turkish-language model and community initiative led by T3 Foundation.",
+      "operations": "The foundation describes an open-source project; inspect release artefacts before treating that as a licence classification.",
+      "prompt": "What data, weights, code and evaluation are actually available?",
+      "locationType": "HQ",
+      "sources": [
+        "S43"
+      ]
+    },
+    {
+      "id": "havelsan",
+      "name": "HAVELSAN / MAIN",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Ankara",
+      "lon": 32.86,
+      "lat": 39.93,
+      "type": "Company",
+      "layers": [
+        "models",
+        "tools",
+        "apps"
+      ],
+      "description": "Provides the MAIN enterprise AI platform, including deployment on closed networks.",
+      "operations": "Company markets domestic AI capabilities; the claim does not establish a wholly domestic supply chain.",
+      "prompt": "Which components are developed locally, licensed or imported?",
+      "locationType": "Base",
+      "sources": [
+        "S44",
+        "S57"
+      ]
+    },
+    {
+      "id": "sestek",
+      "name": "SESTEK",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Istanbul",
+      "lon": 28.98,
+      "lat": 41.01,
+      "type": "Company",
+      "layers": [
+        "apps",
+        "models"
+      ],
+      "description": "Develops conversational automation and speech technology.",
+      "operations": "Turkish operating base; part of Unifonic, illustrating ownership beyond the local ecosystem.",
+      "prompt": "Where are models, customer recordings and ownership decisions located?",
+      "locationType": "Base",
+      "sources": [
+        "S45",
+        "S58"
+      ]
+    },
+    {
+      "id": "boun",
+      "name": "Boğaziçi University / BOUN Treebank",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Istanbul",
+      "lon": 29.05,
+      "lat": 41.09,
+      "type": "Public / academic research",
+      "layers": [
+        "data",
+        "research"
+      ],
+      "description": "University research includes manually annotated Turkish-language resources.",
+      "operations": "BOUN Treebank is a documented research resource; the cited paper is historical, not a 2026 release claim.",
+      "prompt": "Who annotates Turkish data, and what licence and coverage limits apply?",
+      "locationType": "Base",
+      "sources": [
+        "S46",
+        "S59"
+      ]
+    },
+    {
+      "id": "trai",
+      "name": "Türkiye AI Initiative (TRAI)",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Istanbul ecosystem platform",
+      "lon": 28.98,
+      "lat": 41.01,
+      "type": "Nonprofit / community",
+      "layers": [
+        "research"
+      ],
+      "description": "Connects businesses, provides training and maintains an AI startup map.",
+      "operations": "A commercial ecosystem platform, not an independent regulator; its directory is a discovery tool.",
+      "prompt": "Does being listed establish deployment, revenue or original model development?",
+      "locationType": "Base",
+      "sources": [
+        "S47"
+      ]
+    },
+    {
+      "id": "kvkk",
+      "name": "KVKK",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Ankara",
+      "lon": 32.86,
+      "lat": 39.93,
+      "type": "Government / intergovernmental",
+      "layers": [
+        "governance"
+      ],
+      "description": "Türkiye’s personal-data protection authority publishes guidance on generative AI.",
+      "operations": "Personal-data oversight; guidance must be distinguished from statutory obligations and decisions.",
+      "prompt": "Where is personal data sent, and what lawful basis and remedy exist?",
+      "locationType": "Base",
+      "sources": [
+        "S48"
+      ]
+    },
+    {
+      "id": "ministry",
+      "name": "Ministry of Industry and Technology",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Ankara",
+      "lon": 32.86,
+      "lat": 39.93,
+      "type": "Government / intergovernmental",
+      "layers": [
+        "governance"
+      ],
+      "description": "Coordinates industrial technology policy and AI-related investment initiatives.",
+      "operations": "September 2026 ministry reporting refers to a 2026-2030 AI action plan; announcement is not an implementation audit.",
+      "prompt": "Where are the adopted plan, budget, milestones and public progress reports?",
+      "locationType": "Base",
+      "sources": [
+        "S49"
+      ]
+    },
+    {
+      "id": "statkraft",
+      "name": "Statkraft",
+      "region": "Europe",
+      "country": "Norway",
+      "city": "Norway / country-level marker",
+      "lon": 9,
+      "lat": 61,
+      "type": "Company",
+      "layers": [
+        "physical"
+      ],
+      "description": "Offers renewable electricity and site solutions for data centres.",
+      "operations": "Norwegian site offerings and power-market activities; no named customer dependency is inferred.",
+      "prompt": "Does the renewable claim describe annual certificates or hourly power matching?",
+      "locationType": "Base",
+      "sources": [
+        "S50"
+      ]
+    },
+    {
+      "id": "glencore",
+      "name": "Glencore",
+      "region": "Europe",
+      "country": "Switzerland",
+      "city": "Baar",
+      "lon": 8.52,
+      "lat": 47.2,
+      "type": "Company",
+      "layers": [
+        "physical"
+      ],
+      "description": "Produces and markets metals including copper and cobalt.",
+      "operations": "Global mining and commodity activities; inclusion illustrates material foundations, not supply to a named AI vendor.",
+      "prompt": "Can a particular material be traced from a mine to this infrastructure?",
+      "locationType": "HQ",
+      "sources": [
+        "S51"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "IEA - Energy and AI",
+      "url": "https://www.iea.org/reports/energy-and-ai",
+      "claim": "Physical energy requirements and data-centre context.",
+      "kind": "Intergovernmental report",
+      "published": "2025",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S02",
+      "title": "Google ML Crash Course - language models",
+      "url": "https://developers.google.com/machine-learning/crash-course/llm",
+      "claim": "Tokens, learned language patterns and model basics.",
+      "kind": "Technical documentation",
+      "published": "Updated 2026-01-09",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S03",
+      "title": "Vaswani et al. - Attention Is All You Need",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "claim": "Transformer architecture and self-attention.",
+      "kind": "Research paper",
+      "published": "2017",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S04",
+      "title": "Schneider - data-centre solutions",
+      "url": "https://www.se.com/ww/en/work/solutions/data-centers-and-networks/",
+      "claim": "Supplies power management and cooling systems for data centres. Location/operations: Rueil-Malmaison; Global equipment provider; a location marker does not identify a particular customer.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S05",
+      "title": "ASML - company and locations",
+      "url": "https://www.asml.com/en/company/about-asml",
+      "claim": "Makes lithography equipment used to manufacture chips. Location/operations: Veldhoven; R&D/manufacturing in the Netherlands, US, Germany and Asia; selected sites shown in operations view.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S06",
+      "title": "Tokyo Electron - about TEL",
+      "url": "https://www.tel.com/about/",
+      "claim": "Supplies semiconductor production equipment. Location/operations: Tokyo; Equipment and service business across chipmaking markets.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S07",
+      "title": "NVIDIA - contact and corporate location",
+      "url": "https://www.nvidia.com/en-us/contact/",
+      "claim": "Designs GPUs and supplies the CUDA software platform. Location/operations: Santa Clara; Chip manufacturing is performed by partners; selected TSMC production is documented separately.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S08",
+      "title": "TSMC - business contacts",
+      "url": "https://www.tsmc.com/english/aboutTSMC/business_contacts",
+      "claim": "Contract foundry manufacturing chips for other companies. Location/operations: Hsinchu; Headquarters in Taiwan; selected Arizona manufacturing shown separately.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S09",
+      "title": "SK hynix - where chips are made",
+      "url": "https://news.skhynix.com/en/semiconductor-101-sk-hynix-on-where-chips-are-made-and-used/",
+      "claim": "Makes memory, including high-bandwidth memory used in AI computing. Location/operations: Icheon; Icheon and Cheongju fabrication; overseas sites are not exhaustively mapped.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S10",
+      "title": "Arm - company and headquarters",
+      "url": "https://www.arm.com/company",
+      "claim": "Provides processor architecture and design technology. Location/operations: Cambridge; Global offices and technology licensing; manufacturing is a separate activity.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S11",
+      "title": "AWS - global infrastructure",
+      "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+      "claim": "Cloud infrastructure and managed AI services. Location/operations: Seattle; Global cloud regions; consult the live region list for any specific workload.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S12",
+      "title": "OVHcloud - about and GPU services",
+      "url": "https://www.ovhcloud.com/en/about-us/",
+      "claim": "Cloud infrastructure with GPU services for AI. Location/operations: Roubaix; International data centres; headquarters and compute location are distinct.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S13",
+      "title": "Alibaba Cloud - global locations",
+      "url": "https://www.alibabacloud.com/en/global-locations",
+      "claim": "Cloud infrastructure with locations across multiple markets. Location/operations: Hangzhou; Operating cloud regions are listed separately from announced regions.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S14",
+      "title": "Appen - about, headquarters and offices",
+      "url": "https://www.appen.com/about-us",
+      "claim": "Provides human-supported AI data collection, annotation and evaluation. Location/operations: Sydney; Corporate HQ Sydney; US HQ Kirkland; offices include Philippines, India and Vietnam.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S15",
+      "title": "Sama - contact locations",
+      "url": "https://www.sama.com/contact-us",
+      "claim": "Provides human-verified data annotation and evaluation. Location/operations: San Francisco; Documented teams/sites in Kenya and Uganda; operations markers show Nairobi and Gulu.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S16",
+      "title": "Common Crawl - overview",
+      "url": "https://commoncrawl.org/overview",
+      "claim": "Makes web crawl datasets available for research and other uses. Location/operations: US nonprofit / web-wide corpus; The corpus is global; a US organizational base does not describe the origins of all data.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S17",
+      "title": "Masakhane - mission and community",
+      "url": "https://www.masakhane.io/",
+      "claim": "Grassroots research community for African-language NLP. Location/operations: Distributed African community; Distributed participants; no single headquarters is assigned.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S18",
+      "title": "OpenAI - about and product links",
+      "url": "https://openai.com/about/",
+      "claim": "Develops AI models, APIs and ChatGPT. Location/operations: San Francisco; Products and research reach many markets; a base marker does not locate every inference request.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S19",
+      "title": "Anthropic - company",
+      "url": "https://www.anthropic.com/company",
+      "claim": "Develops Claude models, products and safety research. Location/operations: San Francisco; Cloud partnerships include AWS; the atlas documents one selected training relationship.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S20",
+      "title": "Google DeepMind - about",
+      "url": "https://deepmind.google/about/",
+      "claim": "AI research organization developing models and scientific applications. Location/operations: London research base; Part of Google; research teams and deployment infrastructure span countries.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S21",
+      "title": "Mistral - about",
+      "url": "https://mistral.ai/about/",
+      "claim": "Develops AI models and services, including Le Chat. Location/operations: Paris; Model access and licence terms vary by release; check the specific model card.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S22",
+      "title": "DeepSeek - privacy and service operator",
+      "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
+      "claim": "Develops language models, chat and API services. Location/operations: Hangzhou; Service operator is Hangzhou DeepSeek; downloaded weights and hosted services have different data flows.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S23",
+      "title": "Sarvam - about",
+      "url": "https://www.sarvam.ai/about-us",
+      "claim": "Develops text, speech and language AI for Indian languages. Location/operations: Bengaluru; Bengaluru address; multilingual models and APIs serve Indian-language use cases.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S24",
+      "title": "SEA-LION - models and regional evaluation",
+      "url": "https://sea-lion.ai/",
+      "claim": "Develops multilingual models and evaluation resources for Southeast Asia. Location/operations: Singapore; Regional language coverage; the program is based in Singapore.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S25",
+      "title": "TII - research institute",
+      "url": "https://www.tii.ae/",
+      "claim": "Applied research institute associated with the Falcon model family. Location/operations: Abu Dhabi; UAE research base; availability and licences depend on the model release.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S26",
+      "title": "LatamGPT - regional initiative",
+      "url": "https://www.latamgpt.org/en",
+      "claim": "AI research centre coordinating a Latin American language-model initiative. Location/operations: Santiago; Regional collaboration; Chilean coordination is not the location of every contributor.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S27",
+      "title": "Lelapa - products and research links",
+      "url": "https://lelapa.ai/",
+      "claim": "Builds multilingual speech and translation tools, including Vulavula. Location/operations: South Africa / country-level marker; Focus on African-language and code-switching use cases; no city-level HQ claim here.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S28",
+      "title": "Hugging Face - model and dataset hub",
+      "url": "https://huggingface.co/",
+      "claim": "Hosts models, datasets and developer collaboration tools. Location/operations: New York base / international team; International platform and community; hosted repositories have their own licences.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S29",
+      "title": "PyTorch Foundation - mission",
+      "url": "https://pytorch.org/foundation/",
+      "claim": "Supports the PyTorch machine-learning software ecosystem. Location/operations: US foundation / global contributors; Under the Linux Foundation; development is distributed internationally.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S30",
+      "title": "DeepL - publisher and product links",
+      "url": "https://www.deepl.com/en/publisher",
+      "claim": "Provides translation, writing and language-service interfaces. Location/operations: Cologne; Cologne registered office; users and product availability span markets.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S31",
+      "title": "Mila - about",
+      "url": "https://mila.quebec/en/about/about-mila",
+      "claim": "Nonprofit AI research institute bringing together university researchers. Location/operations: Montréal; Montréal research base; international collaborations.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S32",
+      "title": "RIKEN - computational science and contact",
+      "url": "https://www.riken.jp/en/research/labs/r-ccs/",
+      "claim": "Research centre for computational science and supercomputing. Location/operations: Kobe; Kobe centre; public scientific computing serves multiple fields, including AI research.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S33",
+      "title": "LNCC - Santos Dumont",
+      "url": "https://www.gov.br/lncc/pt-br/supercomputador-santos-dumont",
+      "claim": "National scientific computing laboratory hosting Santos Dumont. Location/operations: Petrópolis; Brazilian research computing infrastructure; not exclusively an AI facility.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S34",
+      "title": "Data Science Nigeria - about",
+      "url": "https://datasciencenigeria.org/about-data-science-nigeria/",
+      "claim": "Builds AI skills, research and social-impact applications. Location/operations: Lagos; Lagos research centre and broader training activity; international collaborations.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S35",
+      "title": "CSIRO - artificial intelligence",
+      "url": "https://www.csiro.au/en/research/technology-space/ai",
+      "claim": "Australia’s national science agency conducts AI research and applied work. Location/operations: Australia / country-level marker; Multiple Australian sites; marker represents the agency rather than a particular lab.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S36",
+      "title": "UNESCO - recommendation on AI ethics",
+      "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+      "claim": "Publishes a global recommendation on AI ethics. Location/operations: Paris secretariat; International membership; an ethical recommendation is distinct from domestic enforcement.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S37",
+      "title": "OECD.AI - policies and analysis",
+      "url": "https://oecd.ai/",
+      "claim": "Provides AI policy analysis, principles and incident resources. Location/operations: Paris secretariat; Intergovernmental work; member coverage is not universal global representation.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S38",
+      "title": "European Commission - AI Act framework",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "claim": "EU institutions implement and coordinate the AI Act framework. Location/operations: Brussels; EU jurisdiction can reach certain actors outside the EU; legal obligations depend on the case.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S39",
+      "title": "NIST - AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "claim": "Publishes the voluntary AI Risk Management Framework. Location/operations: Gaithersburg; US standards institute; voluntary use is distinct from a binding legal requirement.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S40",
+      "title": "AlgorithmWatch - investigations",
+      "url": "https://algorithmwatch.org/en/",
+      "claim": "Investigates automated systems and their effects on society. Location/operations: Berlin; European civil-society work; it is not a regulator.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S41",
+      "title": "TRUBA - ARF-ACC queue specifications",
+      "url": "https://docs.truba.gov.tr/1-kaynaklar/arf_acc/arf_acc_kuyruk_bilgisi.html",
+      "claim": "Provides national research computing, including ARF and the ARF-ACC GPU cluster. Location/operations: Ankara / research infrastructure; Published ARF-ACC queue documentation lists NVIDIA H100/H200 hardware.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Official indexed excerpt checked; direct fetch returned 502"
+    },
+    {
+      "id": "S42",
+      "title": "Turkcell - 2025 Form 20-F",
+      "url": "https://s.turkcell.com.tr/SiteAssets/Hakkimizda/yatirimci-iliskileri/documents/pdf/20F2025.pdf",
+      "claim": "Operates domestic data-centre/cloud infrastructure and has a planned Google Cloud region partnership. Location/operations: Istanbul; Existing infrastructure differs from the planned Google region, expected around 2028-2029 in the 2025 filing.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S43",
+      "title": "T3 Foundation - T3 AI",
+      "url": "https://www.t3vakfi.org/tr/projelerimiz/t3-ai",
+      "claim": "Turkish-language model and community initiative led by T3 Foundation. Location/operations: Istanbul; The foundation describes an open-source project; inspect release artefacts before treating that as a licence classification.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S44",
+      "title": "HAVELSAN - MAIN platform",
+      "url": "https://www.havelsan.com/tr/urunler/main-kurumsal-yapay-zeka-platformu",
+      "claim": "Provides the MAIN enterprise AI platform, including deployment on closed networks. Location/operations: Ankara; Company markets domestic AI capabilities; the claim does not establish a wholly domestic supply chain.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S45",
+      "title": "SESTEK - about and ownership",
+      "url": "https://www.sestek.com/about-us",
+      "claim": "Develops conversational automation and speech technology. Location/operations: Istanbul; Turkish operating base; part of Unifonic, illustrating ownership beyond the local ecosystem.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S46",
+      "title": "BOUN Treebank paper",
+      "url": "https://arxiv.org/abs/2002.10416",
+      "claim": "University research includes manually annotated Turkish-language resources. Location/operations: Istanbul; BOUN Treebank is a documented research resource; the cited paper is historical, not a 2026 release claim.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S47",
+      "title": "TRAI - ecosystem and startup map",
+      "url": "https://turkiye.ai/",
+      "claim": "Connects businesses, provides training and maintains an AI startup map. Location/operations: Istanbul ecosystem platform; A commercial ecosystem platform, not an independent regulator; its directory is a discovery tool.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S48",
+      "title": "KVKK - generative AI guide, 15 questions",
+      "url": "https://www.kvkk.gov.tr/Icerik/8547/uretken-yapay-zeka-ve-kisisel-verilerin-korunmasi-rehberi-15-soruda",
+      "claim": "Türkiye’s personal-data protection authority publishes guidance on generative AI. Location/operations: Ankara; Personal-data oversight; guidance must be distinguished from statutory obligations and decisions.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S49",
+      "title": "Ministry - September 2026 GITEX remarks",
+      "url": "https://www.sanayi.gov.tr/medya/haber/bakan-kacir-gitex-aida-konustu",
+      "claim": "Coordinates industrial technology policy and AI-related investment initiatives. Location/operations: Ankara; September 2026 ministry reporting refers to a 2026-2030 AI action plan; announcement is not an implementation audit.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Official indexed excerpt checked; direct page request rejected"
+    },
+    {
+      "id": "S50",
+      "title": "Statkraft - data-centre solutions",
+      "url": "https://prosjekter.statkraft.no/solutions-for-industry/data-center-solutions/",
+      "claim": "Offers renewable electricity and site solutions for data centres. Location/operations: Norway / country-level marker; Norwegian site offerings and power-market activities; no named customer dependency is inferred.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S51",
+      "title": "Glencore - metals and minerals",
+      "url": "https://www.glencore.com/what-we-do/metals-and-minerals",
+      "claim": "Produces and markets metals including copper and cobalt. Location/operations: Baar; Global mining and commodity activities; inclusion illustrates material foundations, not supply to a named AI vendor.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S52",
+      "title": "NVIDIA - CUDA platform",
+      "url": "https://developer.nvidia.com/cuda-zone",
+      "claim": "CUDA is NVIDIA’s parallel computing platform.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S53",
+      "title": "OVHcloud - legal headquarters",
+      "url": "https://www.ovhcloud.com/en-gb/terms-and-conditions/",
+      "claim": "Roubaix headquarters address.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S54",
+      "title": "Sarvam - models",
+      "url": "https://www.sarvam.ai/models",
+      "claim": "Text, speech and translation product families.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S55",
+      "title": "Sama - human data teams",
+      "url": "https://www.sama.com/why-sama",
+      "claim": "Data annotation teams in Kenya and Uganda.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S56",
+      "title": "CENIA - research centre",
+      "url": "https://cenia.cl/",
+      "claim": "Chilean research centre and regional work.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S57",
+      "title": "HAVELSAN - contact",
+      "url": "https://www.havelsan.com/en/contact-us",
+      "claim": "Ankara contact address.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S58",
+      "title": "SESTEK - demo contact",
+      "url": "https://www.sestek.com/request-a-demo",
+      "claim": "Istanbul operating address.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S59",
+      "title": "Boğaziçi - computer engineering",
+      "url": "https://cmpe.boun.edu.tr/tr/node?page=11",
+      "claim": "University lab list and Istanbul address.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Official indexed excerpt checked"
+    },
+    {
+      "id": "S60",
+      "title": "DeepSeek - services and model downloads",
+      "url": "https://www.deepseek.com/",
+      "claim": "Chat, API and model-release links.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S61",
+      "title": "TÜBİTAK - research computing at MODSIMMER",
+      "url": "https://tubitak.gov.tr/tr/haber/tubitaktan-arastirmacilara-buyuk-hizmet",
+      "claim": "ARF/TRUBA research infrastructure in Ankara; EuroHPC participation.",
+      "kind": "Primary / live page",
+      "published": "2024 report; historical context",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S62",
+      "title": "TÜBİTAK - 2025 annual report",
+      "url": "https://tubitak.gov.tr/sites/default/files/2026-03/TUBITAK_2025_Yili_Faaliyet_Raporu.pdf",
+      "claim": "2025 TRUBA computing activity; historical rankings are not presented as current.",
+      "kind": "Public annual report",
+      "published": "2026-03",
+      "checked": "2026-10-08",
+      "access": "Official indexed excerpt checked"
+    },
+    {
+      "id": "S63",
+      "title": "NVIDIA - Blackwell at TSMC Arizona",
+      "url": "https://blogs.nvidia.com/blog/tsmc-blackwell-manufacturing/",
+      "claim": "Blackwell wafer and volume-production milestone at TSMC Arizona.",
+      "kind": "Primary / live page",
+      "published": "2025-10-17",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S64",
+      "title": "Anthropic - Amazon compute collaboration",
+      "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
+      "claim": "Primary training/cloud relationship; includes future capacity commitments.",
+      "kind": "Primary / live page",
+      "published": "2026 announcement; live page checked",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S65",
+      "title": "TRUBA - ARF-ACC hardware queues",
+      "url": "https://docs.truba.gov.tr/1-kaynaklar/arf_acc/arf_acc_kuyruk_bilgisi.html",
+      "claim": "Queue configuration identifies NVIDIA GPU hardware.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-08",
+      "access": "Official indexed excerpt checked; direct fetch returned 502"
+    },
+    {
+      "id": "S66",
+      "title": "Google Cloud - planned Türkiye region",
+      "url": "https://cloud.google.com/blog/products/infrastructure/new-google-cloud-region-coming-to-turkiye",
+      "claim": "Planned region and Turkcell partnership.",
+      "kind": "Primary / live page",
+      "published": "2025 announcement",
+      "checked": "2026-10-08",
+      "access": "Opened or official search excerpt checked"
+    }
+  ],
+  "dependencies": [
+    {
+      "a": "nvidia",
+      "b": "tsmc",
+      "label": "NVIDIA → TSMC: chip fabrication",
+      "status": "Documented / operating milestone",
+      "desc": "NVIDIA reported Blackwell volume production at TSMC Arizona on 17 October 2025. This supports a fabrication relationship, not a claim that every NVIDIA chip is made there.",
+      "source": "S63"
+    },
+    {
+      "a": "anthropic",
+      "b": "aws",
+      "label": "Anthropic → AWS: training/cloud capacity",
+      "status": "Documented / partnership and capacity commitments",
+      "desc": "Anthropic identifies AWS as its primary training/cloud provider in its 2026 compute update. Future capacity in the agreement is not all treated as live.",
+      "source": "S64"
+    },
+    {
+      "a": "truba",
+      "b": "nvidia",
+      "label": "TRUBA ARF-ACC → NVIDIA: GPU hardware",
+      "status": "Documented / installed configuration",
+      "desc": "The published queue table identifies NVIDIA H100 and H200 GPUs. This does not establish a direct procurement contract with NVIDIA.",
+      "source": "S65"
+    },
+    {
+      "a": "turkcell",
+      "b": null,
+      "label": "Turkcell ↔ Google Cloud: planned Türkiye region",
+      "status": "Documented / planned",
+      "desc": "Google announced a Türkiye region partnership. Turkcell’s 2025 filing expects operation around 2028-2029. Existing Turkcell data centres are not relabelled as that region.",
+      "source": "S66"
+    }
+  ],
+  "operations": [
+    {
+      "org": "asml",
+      "city": "San Diego",
+      "country": "United States",
+      "lon": -117.16,
+      "lat": 32.72,
+      "role": "R&D / light-source manufacturing",
+      "status": "Operating site",
+      "source": "S05"
+    },
+    {
+      "org": "asml",
+      "city": "Berlin",
+      "country": "Germany",
+      "lon": 13.4,
+      "lat": 52.52,
+      "role": "R&D / component manufacturing",
+      "status": "Operating site",
+      "source": "S05"
+    },
+    {
+      "org": "asml",
+      "city": "Linkou",
+      "country": "Taiwan",
+      "lon": 121.39,
+      "lat": 25.08,
+      "role": "Manufacturing / support",
+      "status": "Operating site",
+      "source": "S05"
+    },
+    {
+      "org": "tsmc",
+      "city": "Phoenix",
+      "country": "United States",
+      "lon": -112.07,
+      "lat": 33.45,
+      "role": "Blackwell chip fabrication",
+      "status": "Documented 2025 production milestone",
+      "source": "S63"
+    },
+    {
+      "org": "sama",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "lon": 36.82,
+      "lat": -1.29,
+      "role": "Data labour / annotation",
+      "status": "Operating site",
+      "source": "S15"
+    },
+    {
+      "org": "sama",
+      "city": "Gulu",
+      "country": "Uganda",
+      "lon": 32.3,
+      "lat": 2.77,
+      "role": "Data labour / annotation",
+      "status": "Operating site",
+      "source": "S15"
+    },
+    {
+      "org": "appen",
+      "city": "Kirkland",
+      "country": "United States",
+      "lon": -122.21,
+      "lat": 47.68,
+      "role": "US headquarters",
+      "status": "Additional HQ",
+      "source": "S14"
+    },
+    {
+      "org": "appen",
+      "city": "Cavite",
+      "country": "Philippines",
+      "lon": 120.88,
+      "lat": 14.48,
+      "role": "Office",
+      "status": "Operating site",
+      "source": "S14"
+    },
+    {
+      "org": "appen",
+      "city": "Hyderabad",
+      "country": "India",
+      "lon": 78.49,
+      "lat": 17.39,
+      "role": "Office",
+      "status": "Operating site",
+      "source": "S14"
+    },
+    {
+      "org": "appen",
+      "city": "Hanoi",
+      "country": "Vietnam",
+      "lon": 105.83,
+      "lat": 21.03,
+      "role": "Office",
+      "status": "Operating site",
+      "source": "S14"
+    }
+  ],
+  "glossary": [
+    [
+      "AI / machine learning",
+      "AI is a broad field. Machine learning fits models from data; it includes prediction, ranking and generation."
+    ],
+    [
+      "Neural network",
+      "A model with connected numerical parameters that are adjusted during training."
+    ],
+    [
+      "Transformer",
+      "A neural-network architecture using attention to relate parts of an input; influential in language and multimodal models."
+    ],
+    [
+      "Training / inference",
+      "Training changes model parameters. Inference uses a trained model to calculate an output. An ordinary prompt does not necessarily retrain the model."
+    ],
+    [
+      "Token / context",
+      "Tokens are chunks of input/output. Context is the information available for the current calculation; it is not the entire training dataset."
+    ],
+    [
+      "Parameters / weights",
+      "The numerical values learned during training. Model size alone does not establish quality or truth."
+    ],
+    [
+      "Fine-tuning / retrieval",
+      "Fine-tuning adjusts weights. Retrieval fetches material into the current context, typically without changing weights."
+    ],
+    [
+      "Open weights / open source",
+      "Downloadable weights do not by themselves establish open-source status. Check code, data information, licences and permitted uses for the exact release."
+    ],
+    [
+      "API / agent",
+      "An API exposes a service to software. An agent combines models with tools and a workflow to take actions."
+    ],
+    [
+      "Hallucination / evaluation",
+      "A plausible but unsupported output is often called a hallucination. Evaluate task performance and errors by language, group and context."
+    ],
+    [
+      "Data sovereignty",
+      "Ask separately about location, legal control, ownership, infrastructure suppliers, access and practical exit options."
+    ]
+  ],
+  "methodology": "Editorial sample, not a ranking or census. Selected to show distinct functions, institution types, regions and language communities. One organization may occupy several layers. Blank areas mean omitted examples, not absence of AI activity. HQ/base markers describe organizations, not all compute, workers, users or ownership. Coordinates are approximate city or country positions, not facility addresses. Operations are a deliberately small sourced sample. No marker size encodes market share. Sources checked on 8 October 2026; historical reports retain their dates. Company statements verify stated products/relationships, not claimed accuracy or social benefit. Some official pages were accessible only as indexed excerpts; these are labelled in the source register.",
+  "turkiye": [
+    [
+      "Capacity already visible",
+      "TRUBA research computing; domestic commercial infrastructure; Turkish-language data and model initiatives; speech and enterprise applications."
+    ],
+    [
+      "Three evidenced connections",
+      "ARF-ACC uses NVIDIA hardware. Turkcell’s Google region is planned. SESTEK has an Istanbul base and Unifonic ownership. Each demonstrates a different kind of international connection."
+    ],
+    [
+      "Policy, not just slogans",
+      "A September 2026 ministry account refers to a 2026-2030 action plan. Obtain the adopted text and budget before judging delivery. The 2021-2025 strategy is historical context, not the current horizon."
+    ],
+    [
+      "The reporting test for “national AI”",
+      "Separate training origin, model licence, Turkish evaluation, data location, legal control, chip/cloud suppliers and procurement. A Turkish interface or local deployment proves none of the other dimensions."
+    ]
+  ]
+}
