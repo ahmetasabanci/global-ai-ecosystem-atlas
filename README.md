@@ -1,5 +1,7 @@
 # Global AI Ecosystem Atlas · October 2026
 
+[Download the offline atlas](global-ai-ecosystem-atlas-october-2026.zip) · [Türkçe PDF](global-ai-atlas-workshop-tr.pdf) · [English PDF](global-ai-atlas-workshop.pdf)
+
 A bilingual, interactive field guide for journalists, prepared by Tuhaf Studio. Turkish is the default; switch to English with the language buttons at the top right.
 
 Explore the technology stack, global organizations, a dedicated Türkiye focus, training and inference, reporting questions, and linked primary sources. The atlas distinguishes headquarters and organizational bases from selected operations, and documented relationships from illustrative process connections.
@@ -28,3 +30,7 @@ See CONTRIBUTING.md. Suggestions, primary-source corrections and translation imp
 - `tools/build.py`: rebuild the interactive HTML with Python 3, no extra packages.
 
 Font redistribution terms and basemap provenance are in FONT-NOTICES.md and the OFL files. No separate reuse license has yet been selected for the atlas's original code and editorial content; please ask the author about redistribution beyond GitHub collaboration.
+
+## Publishing status
+
+GitHub Pages is enabled from `main` / root. The account-level custom domain currently redirects this project to `tuhaf.studio/global-ai-ecosystem-atlas/`; that domain serves WordPress and does not currently route this project to GitHub Pages. A dedicated subdomain with a DNS CNAME pointing to `ahmetasabanci.github.io` can resolve this without changing the main website.
