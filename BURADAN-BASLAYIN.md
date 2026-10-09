@@ -8,7 +8,7 @@ Gazetecilik atölyesi için hazırlanmıştır. Kaynak kontrol tarihi: 8 Ekim 20
 
 Teknoloji katmanları ve Dünya haritası birbirini tamamlayan iki haritadır. Katmanlara, işaretlere veya kuruluş adlarına tıklayarak açıklamaları, konumları, araştırma sorularını ve kaynakları açın. Dünya haritasını düğmelerle, iki parmakla veya dokunmatik yüzeyle yakınlaştırıp sürükleyebilir; tüm işlevler klavyeyle de çalışır (sekmeler arasında ok tuşları, işaretler için Tab ve Enter); kuruluş, ülke veya rol arayabilir; katman, aktör ve bölge filtrelerini kullanabilirsiniz. İşaretler menüsünde merkezleri/kuruluş konumlarını seçili yurt dışı faaliyetleriyle karşılaştırın.
 
-Türkiye odağı on kuruluş ve programı, yerel yetenekleri ve uluslararası bağlantıları ele alır. Yapay zekâ nasıl çalışır? bölümü eğitim ve çıkarım farkını açıklar. Habercilik araçları araştırma sorularını ve grup çalışmasını içerir. Kaynaklar ve yöntem bölümünde sınıflandırmaları ve kanıtların sınırlarını okuyun. Sunum modu görünümü sadeleştirir.
+Türkiye odağı on kuruluş ve programı, yerel yetenekleri ve uluslararası bağlantıları ele alır. Yapay zekâ nasıl çalışır? bölümü eğitim ve çıkarım farkını açıklar. Habercilik araçları her katman için araştırma sorularını ve istenecek kanıtları bir araya getirir. Kaynaklar ve yöntem bölümünde sınıflandırmaları ve kanıtların sınırlarını okuyun. Sunum modu görünümü sadeleştirir.
 
 ## Yazdırılabilir sunum
 

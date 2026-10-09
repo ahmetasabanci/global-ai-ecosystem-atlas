@@ -8,7 +8,7 @@ Open `global-ai-atlas.html` in Chrome, Firefox, Edge or Safari. It is self-conta
 
 Use the Stack and Global map tabs as the two complementary maps. Click layers, markers or organization names to see explanations, locations, investigation questions and sources. The global map supports zoom (buttons, pinch or trackpad), dragging, search and filters. Everything also works from the keyboard: arrow keys move between the view tabs, Tab reaches each marker and Enter opens it. Switch the marker selector to selected overseas sites to compare organizational bases with operations. Presentation mode simplifies the display.
 
-The Türkiye tab brings together ten national organizations and programs, capabilities, dependencies and questions for reporting. How AI works explains training versus inference. Reporting kit supplies an exercise and workshop route. Sources & method explains the classifications and evidence limits.
+The Türkiye tab brings together ten national organizations and programs, capabilities, dependencies and questions for reporting. How AI works explains training versus inference. Reporting kit pairs investigation prompts and evidence to request for every layer. Sources & method explains the classifications and evidence limits.
 
 ## Printable presentation
 
