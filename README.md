@@ -16,7 +16,7 @@ Open `index.html` in a browser, or use the GitHub Pages site. No installation or
 
 ## Scope and verification
 
-52 selected organizations/programs, including 10 Türkiye entries; 85 source records. Sources checked 8 October 2026; corrections and additions checked 9 October 2026. This is a representative educational selection, not a complete census or ranking. Announced future operations are labelled as planned. Location proximity does not imply partnership. Only eight explicitly sourced connections are presented as documented relationships.
+52 selected organizations/programs, including 10 Türkiye entries; 102 source records. Sources checked 8 October 2026; corrections and additions checked 9 October 2026. This is a representative educational selection, not a complete census or ranking. Announced future operations are labelled as planned. Location proximity does not imply partnership. Only eight explicitly sourced connections are presented as documented relationships.
 
 ## Contribute
 

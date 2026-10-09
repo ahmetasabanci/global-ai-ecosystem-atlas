@@ -28,7 +28,7 @@ Türkçe sunum: `global-ai-atlas-workshop-tr.pdf`. İngilizce sunum: `global-ai-
 
 ## Kanıt ve kapsam
 
-Atlas, 52 kuruluş ve programdan oluşan temsilî bir örneklemdir; sıralama veya eksiksiz sayım değildir. 85 kaynak kaydı içerir. Merkez, tescilli adres, araştırma konumu ve ülke düzeyindeki işaretler ayrı etiketlenir. Yaklaşık koordinatlar tüm tesisleri, çalışanları veya kullanıcıları göstermez. Masakhane için yapay bir merkez atanmaz. Yurt dışı faaliyetleri sınırlı, kaynaklı örneklerdir.
+Atlas, 52 kuruluş ve programdan oluşan temsilî bir örneklemdir; sıralama veya eksiksiz sayım değildir. 102 kaynak kaydı içerir. Merkez, tescilli adres, araştırma konumu ve ülke düzeyindeki işaretler ayrı etiketlenir. Yaklaşık koordinatlar tüm tesisleri, çalışanları veya kullanıcıları göstermez. Masakhane için yapay bir merkez atanmaz. Yurt dışı faaliyetleri sınırlı, kaynaklı örneklerdir.
 
 Teknoloji şemaları öğreticidir. Belgelenmiş şirket ve altyapı ilişkileri ayrıca kaynaklandırılmıştır. Gelecek yatırımlar planlanan olarak işaretlenir. Bazı resmî sayfalar yalnızca indekslenmiş alıntılar üzerinden kontrol edilebilmiştir; bu sınırlar dökümde belirtilir. Türkiye Yapay Zekâ Eylem Planı (2026–2030), 2026/9 sayılı Cumhurbaşkanlığı Genelgesi ile yürürlüğe girmiştir (Resmî Gazete, 18 Ağustos 2026); hedefler taahhüttür, gerçekleştiklerinin kanıtı değildir. Resmî sayfalarına doğrudan erişilemeyen bazı 2025–2026 gelişmeleri arama sonuçları ve ikincil haberlerle kontrol edilmiştir; kaynak dökümü bunları belirtir.
 
