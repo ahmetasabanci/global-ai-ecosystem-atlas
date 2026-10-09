@@ -8,9 +8,11 @@ Gazetecilik atölyesi için hazırlanmıştır. Kaynak kontrol tarihi: 8 Ekim 20
 
 Teknoloji katmanları ve Dünya haritası birbirini tamamlayan iki haritadır. Katmanlara, işaretlere veya kuruluş adlarına tıklayarak açıklamaları, konumları, araştırma sorularını ve kaynakları açın. Dünya haritasını düğmelerle, iki parmakla veya dokunmatik yüzeyle yakınlaştırıp sürükleyebilir; tüm işlevler klavyeyle de çalışır (sekmeler arasında ok tuşları, işaretler için Tab ve Enter); kuruluş, ülke veya rol arayabilir; katman, aktör ve bölge filtrelerini kullanabilirsiniz. İşaretler menüsünde merkezleri/kuruluş konumlarını seçili yurt dışı faaliyetleriyle karşılaştırın.
 
-Türkiye odağı dokuz kuruluş ve programı, yerel yetenekleri ve uluslararası bağlantıları ele alır. Yapay zekâ nasıl çalışır? bölümü eğitim ve çıkarım farkını açıklar. Habercilik araçları araştırma sorularını ve grup çalışmasını içerir. Kaynaklar ve yöntem bölümünde sınıflandırmaları ve kanıtların sınırlarını okuyun. Sunum modu görünümü sadeleştirir.
+Türkiye odağı on kuruluş ve programı, yerel yetenekleri ve uluslararası bağlantıları ele alır. Yapay zekâ nasıl çalışır? bölümü eğitim ve çıkarım farkını açıklar. Habercilik araçları araştırma sorularını ve grup çalışmasını içerir. Kaynaklar ve yöntem bölümünde sınıflandırmaları ve kanıtların sınırlarını okuyun. Sunum modu görünümü sadeleştirir.
 
 ## Yazdırılabilir sunum
+
+PDF’ler 48 kuruluş ve 66 kaynak içeren 8 Ekim 2026 tarihli anlık görüntülerdir. 9 Ekim düzeltmelerinden (Türkiye Yapay Zekâ Eylem Planı’nın yürürlüğe girmesi ve NVIDIA–TSMC ifadesi dahil) öncesine aittir; güncel metin için etkileşimli atlası kullanın.
 
 Türkçe sunum: `global-ai-atlas-workshop-tr.pdf`. İngilizce sunum: `global-ai-atlas-workshop.pdf`. İkisi de 49 sayfa, yatay 16:9 biçiminde ve tıklanabilir kaynak bağlantılarıyla hazırlanmıştır.
 
@@ -26,9 +28,9 @@ Türkçe sunum: `global-ai-atlas-workshop-tr.pdf`. İngilizce sunum: `global-ai-
 
 ## Kanıt ve kapsam
 
-Atlas, 48 kuruluş ve programdan oluşan temsilî bir örneklemdir; sıralama veya eksiksiz sayım değildir. 66 kaynak kaydı içerir. Merkez, tescilli adres, araştırma konumu ve ülke düzeyindeki işaretler ayrı etiketlenir. Yaklaşık koordinatlar tüm tesisleri, çalışanları veya kullanıcıları göstermez. Masakhane için yapay bir merkez atanmaz. Yurt dışı faaliyetleri sınırlı, kaynaklı örneklerdir.
+Atlas, 52 kuruluş ve programdan oluşan temsilî bir örneklemdir; sıralama veya eksiksiz sayım değildir. 85 kaynak kaydı içerir. Merkez, tescilli adres, araştırma konumu ve ülke düzeyindeki işaretler ayrı etiketlenir. Yaklaşık koordinatlar tüm tesisleri, çalışanları veya kullanıcıları göstermez. Masakhane için yapay bir merkez atanmaz. Yurt dışı faaliyetleri sınırlı, kaynaklı örneklerdir.
 
-Teknoloji şemaları öğreticidir. Belgelenmiş şirket ve altyapı ilişkileri ayrıca kaynaklandırılmıştır. Gelecek yatırımlar planlanan olarak işaretlenir. Bazı resmî sayfalar yalnızca indekslenmiş alıntılar üzerinden kontrol edilebilmiştir; bu sınırlar dökümde belirtilir. Eylül 2026 Türkiye politika duyurusu, kabul edilen planın tam metninin veya uygulamasının burada doğrulandığı anlamına gelmez.
+Teknoloji şemaları öğreticidir. Belgelenmiş şirket ve altyapı ilişkileri ayrıca kaynaklandırılmıştır. Gelecek yatırımlar planlanan olarak işaretlenir. Bazı resmî sayfalar yalnızca indekslenmiş alıntılar üzerinden kontrol edilebilmiştir; bu sınırlar dökümde belirtilir. Türkiye Yapay Zekâ Eylem Planı (2026–2030), 2026/9 sayılı Cumhurbaşkanlığı Genelgesi ile yürürlüğe girmiştir (Resmî Gazete, 18 Ağustos 2026); hedefler taahhüttür, gerçekleştiklerinin kanıtı değildir. Resmî sayfalarına doğrudan erişilemeyen bazı 2025–2026 gelişmeleri arama sonuçları ve ikincil haberlerle kontrol edilmiştir; kaynak dökümü bunları belirtir.
 
 Kaynak başlıkları ve bağlantıları yayımlandıkları özgün biçimde korunmuştur. Kontrol tarihi, yayın tarihi değildir. Şirket açıklamaları şirketin ne söylediğini gösterir; bağımsız performans veya toplumsal etki denetimi sayılmaz.
 

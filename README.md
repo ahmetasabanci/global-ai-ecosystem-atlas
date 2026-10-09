@@ -16,11 +16,11 @@ Open `index.html` in a browser, or use the GitHub Pages site. No installation or
 
 ## Scope and verification
 
-48 selected organizations/programs, including 9 Türkiye entries; 66 source records. Sources checked 8 October 2026. This is a representative educational selection, not a complete census or ranking. Announced future operations are labelled as planned. Location proximity does not imply partnership. Only four explicitly sourced connections are presented as documented relationships.
+52 selected organizations/programs, including 10 Türkiye entries; 85 source records. Sources checked 8 October 2026; corrections and additions checked 9 October 2026. This is a representative educational selection, not a complete census or ranking. Announced future operations are labelled as planned. Location proximity does not imply partnership. Only eight explicitly sourced connections are presented as documented relationships.
 
 ## Contribute
 
-See CONTRIBUTING.md. Suggestions, primary-source corrections and translation improvements are welcome through issues and pull requests. Data, translations and a portable build script are included. The PDFs and PNG maps are dated workshop snapshots; changes to the interactive atlas do not automatically regenerate these snapshots.
+See CONTRIBUTING.md. Suggestions, primary-source corrections and translation improvements are welcome through issues and pull requests. Data, translations and a portable build script are included. The PDFs and PNG maps are dated workshop snapshots; changes to the interactive atlas do not automatically regenerate these snapshots. The current snapshots date from 8 October 2026 (48 organizations, 66 sources) and predate the 9 October corrections, including the Türkiye AI Action Plan's entry into force and the NVIDIA–TSMC wording; use the interactive atlas for the current text.
 
 ## Files
 
@@ -29,7 +29,7 @@ See CONTRIBUTING.md. Suggestions, primary-source corrections and translation imp
 - `organizations*.csv`, `source-register*.csv`: reusable organization and evidence registers.
 - `global-ai-atlas-workshop*.pdf`: printable workshop slides.
 - `src/`: interactive atlas template, Turkish translations and basemap paths.
-- `tools/build.py`: rebuild the interactive HTML and the offline ZIP with Python 3, no extra packages.
+- `tools/build.py`: rebuild the interactive HTML, the Turkish dataset, the CSV registers and the offline ZIP with Python 3, no extra packages.
 - `LICENSE`, `LICENSE-CONTENT.md`: MIT (code) and CC BY 4.0 (content).
 
 ## License

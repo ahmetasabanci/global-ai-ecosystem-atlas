@@ -315,12 +315,14 @@
         "data"
       ],
       "description": "İnsanlar tarafından doğrulanan veri etiketleme ve değerlendirme hizmetleri sağlar.",
-      "operations": "Kenya ve Uganda’daki ekipleri/tesisleri belgelenmiştir; faaliyet işaretleri Nairobi ve Gulu’yu gösterir.",
+      "operations": "Kenya ve Uganda’da belgelenmiş ekipleri vardır. 2026’da akıllı gözlük görüntülerine ilişkin haberlerin ardından Meta bir etiketleme sözleşmesini sonlandırdı ve Sama 1.108 işten çıkarma bildirimi yaptı. Daha önce Sama çalışanları OpenAI için zararlı metinleri etiketlemişti.",
       "prompt": "Çalışanlar ücret, izleme ve şikâyet süreçlerine ilişkin iddiaları doğrulayabiliyor mu?",
       "locationType": "Konum",
       "sources": [
         "S15",
-        "S55"
+        "S55",
+        "S73",
+        "S85"
       ]
     },
     {
@@ -403,11 +405,14 @@
         "research"
       ],
       "description": "Claude modelleri, ürünleri ve güvenlik araştırmaları geliştirir.",
-      "operations": "Bulut ortaklıkları arasında AWS vardır; atlas seçili bir eğitim ilişkisini belgeler.",
+      "operations": "Çoklu bulut: Başlıca eğitim ve bulut sağlayıcısı AWS’dir; ayrıca bir milyona kadar Google TPU’su (Ekim 2025) ve NVIDIA sistemlerinde 30 milyar dolarlık Azure taahhüdü (Kasım 2025) duyurdu.",
       "prompt": "Kontrolün ne kadarı bulut ortaklarında ve model işletmecilerinde?",
       "locationType": "Konum",
       "sources": [
-        "S19"
+        "S19",
+        "S64",
+        "S68",
+        "S69"
       ]
     },
     {
@@ -557,12 +562,14 @@
         "research"
       ],
       "description": "Latin Amerika dil modeli girişimini koordine eden yapay zekâ araştırma merkezidir.",
-      "operations": "Bölgesel işbirliğine dayanır; Şili’deki koordinasyon bütün katkıcıların yerini göstermez.",
+      "operations": "Latam-GPT Şubat 2026’da tanıtıldı: Meta’nın Llama 3.1 modelinden uyarlanan ve AWS’de eğitildiği bildirilen 70 milyar parametreli bir model. Şili’deki koordinasyon her katkıcının konumunu göstermez.",
       "prompt": "Derleme kim katkıda bulundu ve bölgedeki topluluklar nasıl temsil ediliyor?",
       "locationType": "Konum",
       "sources": [
         "S26",
-        "S56"
+        "S56",
+        "S74",
+        "S75"
       ]
     },
     {
@@ -806,11 +813,13 @@
         "governance"
       ],
       "description": "AB kurumları Yapay Zekâ Yasası çerçevesini uygular ve koordine eder.",
-      "operations": "AB’nin yetkisi bazı AB dışı aktörlere ulaşabilir; hukuki yükümlülükler somut duruma bağlıdır.",
+      "operations": "Yapay Zekâ Yasası aşamalı uygulanır: genel amaçlı yapay zekâ modeli kuralları Ağustos 2025’ten, şeffaflık yükümlülükleri Ağustos 2026’dan beri geçerlidir. 2026 Dijital Omnibus düzenlemesi yüksek risk kurallarını 2 Aralık 2027’ye (bağımsız sistemler) ve 2 Ağustos 2028’e (düzenlenmiş ürünler) erteledi.",
       "prompt": "Hangi yükümlülük geçerli, kim denetliyor ve hangi kanıtlar var?",
       "locationType": "Konum",
       "sources": [
-        "S38"
+        "S38",
+        "S71",
+        "S72"
       ]
     },
     {
@@ -890,11 +899,12 @@
         "compute"
       ],
       "description": "Türkiye’de veri merkezi/bulut altyapısı işletir; planlanan Google Cloud bölgesi için ortaklığı vardır.",
-      "operations": "Mevcut altyapı, 2025 bildiriminde 2028–2029 civarında açılması beklenen Google bölgesinden farklıdır.",
+      "operations": "Mevcut altyapı, Turkcell’in 2028–2029’da faaliyete geçmesini öngördüğü planlanan Google bölgesinden farklıdır; Turkcell veri merkezleri ve buluta 1 milyar dolar yatırım planlıyor.",
       "prompt": "Hangi kapasite çalışır durumda, hangi kısım yatırım taahhüdü?",
       "locationType": "Konum",
       "sources": [
-        "S42"
+        "S42",
+        "S70"
       ]
     },
     {
@@ -911,12 +921,13 @@
         "data",
         "research"
       ],
-      "description": "T3 Vakfı öncülüğünde Türkçe model ve topluluk girişimidir.",
+      "description": "T3 Vakfı öncülüğünde Baykar ile birlikte geliştirilen Türkçe model ve topluluk girişimi.",
       "operations": "Vakıf projeyi açık kaynaklı olarak tanımlar; bunu lisans sınıfı kabul etmeden önce yayımlanan dosyaları inceleyin.",
       "prompt": "Hangi veriler, ağırlıklar, kod ve değerlendirmeler gerçekten erişilebilir?",
       "locationType": "Merkez",
       "sources": [
-        "S43"
+        "S43",
+        "S84"
       ]
     },
     {
@@ -1038,12 +1049,13 @@
       "layers": [
         "governance"
       ],
-      "description": "Sanayi teknolojisi politikasını ve yapay zekâ yatırımlarına ilişkin girişimleri koordine eder.",
-      "operations": "Bakanlığın Eylül 2026 haberi 2026–2030 yapay zekâ eylem planına değinir; duyuru, uygulama denetimi değildir.",
-      "prompt": "Kabul edilen plan, bütçe, kilometre taşları ve kamuya açık ilerleme raporları nerede?",
+      "description": "Sanayi teknolojisi politikasını ve Türkiye Yapay Zekâ Eylem Planı’nı (2026–2030) koordine eder.",
+      "operations": "Plan, 2026/9 sayılı Cumhurbaşkanlığı Genelgesi ile yürürlüğe girdi (Resmî Gazete, 18 Ağustos 2026). Hedefler taahhüttür; gerçekleştiklerinin kanıtı değildir.",
+      "prompt": "Planın hedeflerini hangi bütçeler, sorumlu kurumlar, ara hedefler ve ilerleme raporları destekliyor?",
       "locationType": "Konum",
       "sources": [
-        "S49"
+        "S49",
+        "S67"
       ]
     },
     {
@@ -1084,6 +1096,99 @@
       "locationType": "Merkez",
       "sources": [
         "S51"
+      ]
+    },
+    {
+      "id": "google",
+      "name": "Google / Google Cloud",
+      "region": "Kuzey Amerika",
+      "country": "ABD",
+      "city": "Mountain View",
+      "lon": -122.08,
+      "lat": 37.42,
+      "type": "Şirket",
+      "layers": [
+        "chips",
+        "compute",
+        "models"
+      ],
+      "description": "TPU hızlandırıcıları tasarlar, bulut kapasitesi satar ve Gemini modellerini geliştirir; Google DeepMind’ın bağlı olduğu şirkettir.",
+      "operations": "Planlanan Türkiye bölgesi dahil dünya çapında bulut bölgeleri vardır. TPU’lar Google’ın tasarlayıp iş ortağı dökümhanelere ürettirdiği çiplerdir.",
+      "prompt": "Hangi iş yükleri Google’ın kendi çiplerinde, hangileri kiralanan NVIDIA donanımında çalışıyor?",
+      "locationType": "Merkez",
+      "sources": [
+        "S76",
+        "S68",
+        "S66"
+      ]
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "region": "Kuzey Amerika",
+      "country": "ABD",
+      "city": "Menlo Park",
+      "lon": -122.15,
+      "lat": 37.48,
+      "type": "Şirket",
+      "layers": [
+        "models",
+        "apps",
+        "research"
+      ],
+      "description": "Llama açık ağırlıklı modellerini yayımlar; sosyal platformlar ve yapay zekâ destekli cihazlar işletir.",
+      "operations": "Llama ağırlıkları, üzerine kurulan modellere de geçen Meta’ya özgü lisans koşullarıyla gelir. Cihaz verilerinin insan incelemesinde dış kaynaklı etiketleyiciler yer almıştır.",
+      "prompt": "Llama üzerine kurulan bir modelle birlikte hangi lisans koşulları ve veri uygulamaları gelir?",
+      "locationType": "Merkez",
+      "sources": [
+        "S77",
+        "S74",
+        "S73"
+      ]
+    },
+    {
+      "id": "huawei",
+      "name": "Huawei (Ascend)",
+      "region": "Doğu Asya",
+      "country": "Çin",
+      "city": "Shenzhen",
+      "lon": 114.06,
+      "lat": 22.54,
+      "type": "Şirket",
+      "layers": [
+        "chips",
+        "compute"
+      ],
+      "description": "Ascend yapay zekâ işlemcileri tasarlar; yapay zekâ hesaplama sistemleri ve bulut hizmetleri satar.",
+      "operations": "2019’dan beri ABD’nin Entity List listesindedir; 2025 tarihli ABD kılavuzu, belirli Ascend çiplerinin herhangi bir yerde kullanılmasının ABD ihracat kontrollerini ihlal edebileceği uyarısında bulunur. Paralel bir çip ekosistemini örnekler.",
+      "prompt": "NVIDIA dışı bir alternatif hangi ihracat kurallarına, tedarikçilere ve yazılım yığınına bağlıdır?",
+      "locationType": "Merkez",
+      "sources": [
+        "S78",
+        "S79"
+      ]
+    },
+    {
+      "id": "bilgem",
+      "name": "TÜBİTAK BİLGEM / BİLGE",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Gebze (Kocaeli)",
+      "lon": 29.45,
+      "lat": 40.79,
+      "type": "Kamu / akademik araştırma",
+      "layers": [
+        "models",
+        "research"
+      ],
+      "description": "TÜBİTAK’ın bilişim enstitüsü, Haziran 2026’da tanıtılan Türkçe büyük dil modeli ailesi BİLGE’yi geliştirir.",
+      "operations": "TÜBİTAK Haziran 2026’da BİLGE’nin henüz genel kullanıma açık bir hizmet olmadığını açıkladı. Basında yer alan parametre sayıları ve performans iddiaları birbirini tutmuyor ve bağımsız olarak doğrulanmış değil.",
+      "prompt": "BİLGE’nin hangi modelleri, eğitim verileri, değerlendirmeleri ve erişim koşulları gerçekten yayımlandı?",
+      "locationType": "Merkez",
+      "sources": [
+        "S82",
+        "S83",
+        "S67"
       ]
     }
   ],
@@ -1232,7 +1337,7 @@
       "id": "S15",
       "title": "Sama - contact locations",
       "url": "https://www.sama.com/contact-us",
-      "claim": "İnsanlar tarafından doğrulanan veri etiketleme ve değerlendirme hizmetleri sağlar. Konum/faaliyetler: San Francisco; Kenya ve Uganda’daki ekipleri/tesisleri belgelenmiştir; faaliyet işaretleri Nairobi ve Gulu’yu gösterir.",
+      "claim": "İnsanlar tarafından doğrulanan veri etiketleme ve değerlendirme hizmetleri sağlar. Konum/faaliyetler: San Francisco; Kenya ve Uganda’da belgelenmiş ekipleri vardır. 2026’da akıllı gözlük görüntülerine ilişkin haberlerin ardından Meta bir etiketleme sözleşmesini sonlandırdı ve Sama 1.108 işten çıkarma bildirimi yaptı. Daha önce Sama çalışanları OpenAI için zararlı metinleri etiketlemişti.",
       "kind": "Birincil / güncel sayfa",
       "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
       "checked": "2026-10-08",
@@ -1272,7 +1377,7 @@
       "id": "S19",
       "title": "Anthropic - company",
       "url": "https://www.anthropic.com/company",
-      "claim": "Claude modelleri, ürünleri ve güvenlik araştırmaları geliştirir. Konum/faaliyetler: San Francisco; Bulut ortaklıkları arasında AWS vardır; atlas seçili bir eğitim ilişkisini belgeler.",
+      "claim": "Claude modelleri, ürünleri ve güvenlik araştırmaları geliştirir. Konum/faaliyetler: San Francisco; Çoklu bulut: Başlıca eğitim ve bulut sağlayıcısı AWS’dir; ayrıca bir milyona kadar Google TPU’su (Ekim 2025) ve NVIDIA sistemlerinde 30 milyar dolarlık Azure taahhüdü (Kasım 2025) duyurdu.",
       "kind": "Birincil / güncel sayfa",
       "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
       "checked": "2026-10-08",
@@ -1342,7 +1447,7 @@
       "id": "S26",
       "title": "LatamGPT - regional initiative",
       "url": "https://www.latamgpt.org/en",
-      "claim": "Latin Amerika dil modeli girişimini koordine eden yapay zekâ araştırma merkezidir. Konum/faaliyetler: Santiago; Bölgesel işbirliğine dayanır; Şili’deki koordinasyon bütün katkıcıların yerini göstermez.",
+      "claim": "Latin Amerika dil modeli girişimini koordine eden yapay zekâ araştırma merkezidir. Konum/faaliyetler: Santiago; Latam-GPT Şubat 2026’da tanıtıldı: Meta’nın Llama 3.1 modelinden uyarlanan ve AWS’de eğitildiği bildirilen 70 milyar parametreli bir model. Şili’deki koordinasyon her katkıcının konumunu göstermez.",
       "kind": "Birincil / güncel sayfa",
       "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
       "checked": "2026-10-08",
@@ -1462,7 +1567,7 @@
       "id": "S38",
       "title": "European Commission - AI Act framework",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
-      "claim": "AB kurumları Yapay Zekâ Yasası çerçevesini uygular ve koordine eder. Konum/faaliyetler: Brüksel; AB’nin yetkisi bazı AB dışı aktörlere ulaşabilir; hukuki yükümlülükler somut duruma bağlıdır.",
+      "claim": "AB kurumları Yapay Zekâ Yasası çerçevesini uygular ve koordine eder. Konum/faaliyetler: Brüksel; Yapay Zekâ Yasası aşamalı uygulanır: genel amaçlı yapay zekâ modeli kuralları Ağustos 2025’ten, şeffaflık yükümlülükleri Ağustos 2026’dan beri geçerlidir. 2026 Dijital Omnibus düzenlemesi yüksek risk kurallarını 2 Aralık 2027’ye (bağımsız sistemler) ve 2 Ağustos 2028’e (düzenlenmiş ürünler) erteledi.",
       "kind": "Birincil / güncel sayfa",
       "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
       "checked": "2026-10-08",
@@ -1502,7 +1607,7 @@
       "id": "S42",
       "title": "Turkcell - 2025 Form 20-F",
       "url": "https://s.turkcell.com.tr/SiteAssets/Hakkimizda/yatirimci-iliskileri/documents/pdf/20F2025.pdf",
-      "claim": "Türkiye’de veri merkezi/bulut altyapısı işletir; planlanan Google Cloud bölgesi için ortaklığı vardır. Konum/faaliyetler: İstanbul; Mevcut altyapı, 2025 bildiriminde 2028–2029 civarında açılması beklenen Google bölgesinden farklıdır.",
+      "claim": "Türkiye’de veri merkezi/bulut altyapısı işletir; planlanan Google Cloud bölgesi için ortaklığı vardır. Konum/faaliyetler: İstanbul; Mevcut altyapı, Turkcell’in 2028–2029’da faaliyete geçmesini öngördüğü planlanan Google bölgesinden farklıdır; Turkcell veri merkezleri ve buluta 1 milyar dolar yatırım planlıyor.",
       "kind": "Birincil / güncel sayfa",
       "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
       "checked": "2026-10-08",
@@ -1512,7 +1617,7 @@
       "id": "S43",
       "title": "T3 Foundation - T3 AI",
       "url": "https://www.t3vakfi.org/tr/projelerimiz/t3-ai",
-      "claim": "T3 Vakfı öncülüğünde Türkçe model ve topluluk girişimidir. Konum/faaliyetler: İstanbul; Vakıf projeyi açık kaynaklı olarak tanımlar; bunu lisans sınıfı kabul etmeden önce yayımlanan dosyaları inceleyin.",
+      "claim": "T3 Vakfı öncülüğünde Baykar ile birlikte geliştirilen Türkçe model ve topluluk girişimi. Konum/faaliyetler: İstanbul; Vakıf projeyi açık kaynaklı olarak tanımlar; bunu lisans sınıfı kabul etmeden önce yayımlanan dosyaları inceleyin.",
       "kind": "Birincil / güncel sayfa",
       "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
       "checked": "2026-10-08",
@@ -1564,15 +1669,15 @@
       "url": "https://www.kvkk.gov.tr/Icerik/8547/uretken-yapay-zeka-ve-kisisel-verilerin-korunmasi-rehberi-15-soruda",
       "claim": "Türkiye’nin kişisel veri koruma otoritesi üretken yapay zekâ hakkında rehberlik yayımlar. Konum/faaliyetler: Ankara; Kişisel verileri denetler; rehberlik, yasal yükümlülüklerden ve kararlardan ayrı değerlendirilmelidir.",
       "kind": "Birincil / güncel sayfa",
-      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
-      "checked": "2026-10-08",
+      "published": "2025-11-24",
+      "checked": "2026-10-09",
       "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
     },
     {
       "id": "S49",
-      "title": "Ministry - September 2026 GITEX remarks",
+      "title": "Ministry - GITEX AI Türkiye remarks (September 2026)",
       "url": "https://www.sanayi.gov.tr/medya/haber/bakan-kacir-gitex-aida-konustu",
-      "claim": "Sanayi teknolojisi politikasını ve yapay zekâ yatırımlarına ilişkin girişimleri koordine eder. Konum/faaliyetler: Ankara; Bakanlığın Eylül 2026 haberi 2026–2030 yapay zekâ eylem planına değinir; duyuru, uygulama denetimi değildir.",
+      "claim": "Bakanın GITEX AI Türkiye’de eylem planının hedefleri ve yapay zekâ yatırım destekleri üzerine konuşması.",
       "kind": "Birincil / güncel sayfa",
       "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
       "checked": "2026-10-08",
@@ -1712,10 +1817,10 @@
       "id": "S63",
       "title": "NVIDIA - Blackwell at TSMC Arizona",
       "url": "https://blogs.nvidia.com/blog/tsmc-blackwell-manufacturing/",
-      "claim": "TSMC Arizona’da Blackwell yonga plakası ve seri üretim kilometre taşı.",
+      "claim": "TSMC Arizona’da ABD’de üretilen ilk Blackwell yonga plakası; NVIDIA, Blackwell’in seri üretime ulaştığını belirtir.",
       "kind": "Birincil / güncel sayfa",
       "published": "2025-10-17",
-      "checked": "2026-10-08",
+      "checked": "2026-10-09",
       "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
     },
     {
@@ -1724,15 +1829,15 @@
       "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
       "claim": "Başlıca eğitim/bulut ilişkisi; gelecekteki kapasite taahhütlerini içerir.",
       "kind": "Birincil / güncel sayfa",
-      "published": "2026 duyurusu; güncel sayfa kontrol edildi",
-      "checked": "2026-10-08",
+      "published": "2026-04-20",
+      "checked": "2026-10-09",
       "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
     },
     {
       "id": "S65",
       "title": "TRUBA - ARF-ACC hardware queues",
       "url": "https://docs.truba.gov.tr/1-kaynaklar/arf_acc/arf_acc_kuyruk_bilgisi.html",
-      "claim": "Kuyruk yapılandırması NVIDIA GPU donanımını belirtir.",
+      "claim": "S41 ile aynı sayfa; GPU donanım ilişkisi için kaynak gösterilir.",
       "kind": "Birincil / güncel sayfa",
       "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
       "checked": "2026-10-08",
@@ -1744,9 +1849,199 @@
       "url": "https://cloud.google.com/blog/products/infrastructure/new-google-cloud-region-coming-to-turkiye",
       "claim": "Planlanan bölge ve Turkcell ortaklığı.",
       "kind": "Birincil / güncel sayfa",
-      "published": "2025 duyurusu",
-      "checked": "2026-10-08",
+      "published": "2025-11-20",
+      "checked": "2026-10-09",
       "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S67",
+      "title": "Resmî Gazete - Presidential Circular 2026/9, Türkiye AI Action Plan (2026-2030)",
+      "url": "https://www.resmigazete.gov.tr/eskiler/2026/08/20260818-8.pdf",
+      "claim": "Türkiye Yapay Zekâ Eylem Planı’nı (2026–2030) yürürlüğe koyar: 4 eksen ve 16 öncelikli eylem; hedefler arasında 2030’a kadar en az 1 GW veri merkezi kapasitesi ve bulut ile yapay zekâ altyapısı için en az 10 milyar dolarlık kaynağın harekete geçirilmesi yer alır.",
+      "kind": "Resmî Gazete",
+      "published": "2026-08-18",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S68",
+      "title": "Anthropic - Expanding use of Google Cloud TPUs",
+      "url": "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services",
+      "claim": "Bir milyona kadar Google Cloud TPU’su ve 2026’da devreye girmesi beklenen bir gigavatın oldukça üzerinde kapasite; Amazon başlıca eğitim ortağı olmayı sürdürür.",
+      "kind": "Şirket duyurusu",
+      "published": "2025-10-23",
+      "checked": "2026-10-09",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S69",
+      "title": "Anthropic - Microsoft, NVIDIA and Anthropic partnerships",
+      "url": "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships",
+      "claim": "30 milyar dolarlık Azure hesaplama taahhüdü; NVIDIA Grace Blackwell ve Vera Rubin sistemlerinde bir gigavata kadar ilk hesaplama kapasitesi; NVIDIA ve Microsoft’tan yatırım taahhütleri.",
+      "kind": "Şirket duyurusu",
+      "published": "2025-11-18",
+      "checked": "2026-10-09",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S70",
+      "title": "Turkcell - Form 6-K, Google Cloud partnership",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001071321/000110465925109979/tm2531004d1_6k.htm",
+      "claim": "Türkiye’de planlanan Google Cloud bölgesinin 2028–2029’da faaliyete geçmesi öngörülür; altyapıyı Turkcell kurar, Google Cloud hizmetlerini satar ve veri merkezleri ile buluta 1 milyar dolar yatırım planlar.",
+      "kind": "Resmî şirket bildirimi",
+      "published": "2025-11-11",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S71",
+      "title": "Council of the EU - AI Act simplification agreement",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
+      "claim": "Yapay zekâ Dijital Omnibus düzenlemesi üzerine geçici uzlaşı: bağımsız yüksek riskli sistem kuralları 2 Aralık 2027’den, düzenlenmiş ürünlerdeki yüksek riskli yapay zekâ kuralları 2 Ağustos 2028’den itibaren uygulanır.",
+      "kind": "Resmî basın açıklaması",
+      "published": "2026-05-07",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S72",
+      "title": "European Commission - Navigating the AI Act (FAQ)",
+      "url": "https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act",
+      "claim": "Yapay zekâ Dijital Omnibus düzenlemesi 27 Temmuz 2026’da yürürlüğe girdi; 50. madde kapsamındaki şeffaflık yükümlülükleri 2 Ağustos 2026’dan itibaren uygulanır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S73",
+      "title": "The Next Web - Meta ends Sama contract after smart-glasses reporting",
+      "url": "https://thenextweb.com/news/meta-smart-glasses-sama-kenya-workers",
+      "claim": "Kenya’daki Sama etiketleyicilerinin akıllı gözlüklerden gelen mahrem görüntüleri incelediğine dair Şubat 2026 tarihli İsveç haberlerinin ardından Meta sözleşmeyi sonlandırdı ve Sama 1.108 işten çıkarma bildirimi yaptı; Sama, Meta’nın gerekçesine itiraz ediyor.",
+      "kind": "Haber",
+      "published": "Nisan 2026",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S74",
+      "title": "Hugging Face - Llama-3.1-70B-LatamGPT-SFT-1.0 model card",
+      "url": "https://huggingface.co/latam-gpt/Llama-3.1-70B-LatamGPT-SFT-1.0",
+      "claim": "Meta Llama-3.1-70B’den uyarlanan ve Llama 3.1 lisansıyla dağıtılan Latam-GPT modeli.",
+      "kind": "Model kartı",
+      "published": "2026-05-29",
+      "checked": "2026-10-09",
+      "access": "Sayfa açıldı veya resmî arama alıntısı kontrol edildi"
+    },
+    {
+      "id": "S75",
+      "title": "DPL News - Latam-GPT launch",
+      "url": "https://dplnews.com/latam-gpt-modelo-de-lenguaje-de-ia-america-latina/",
+      "claim": "10 Şubat 2026’da tanıtıldı; Llama 3.1 tabanlı 70 milyar parametre, AWS bulutunda eğitildi; ortaklar arasında CAF ve Data Observatory var.",
+      "kind": "Haber",
+      "published": "2026-02-10",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S76",
+      "title": "Google Cloud - Tensor Processing Units",
+      "url": "https://cloud.google.com/tpu",
+      "claim": "Ironwood kuşağı dahil, Google tarafından tasarlanan ve bulut kapasitesi olarak sunulan TPU hızlandırıcıları.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S77",
+      "title": "Meta - Llama FAQ and licences",
+      "url": "https://www.llama.com/faq/",
+      "claim": "Llama modelleri standart bir açık kaynak lisansıyla değil, Meta’nın kendi ticari lisans sözleşmeleriyle yayımlanır.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S78",
+      "title": "Huawei - Ascend Community",
+      "url": "https://www.hiascend.com/en/",
+      "claim": "Ascend yapay zekâ işlemcileri, Atlas hesaplama sistemleri ve CANN yazılım yığını.",
+      "kind": "Birincil / güncel sayfa",
+      "published": "Güncel sayfa; yayın tarihi belirtilmemiş",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S79",
+      "title": "US Commerce (BIS) - Rescission of the AI Diffusion Rule",
+      "url": "https://www.bis.gov/press-release/department-commerce-announces-rescission-biden-era-artificial-intelligence-diffusion-rule-strengthens",
+      "claim": "Ocak 2025 tarihli Yapay Zekâ Yayılım Kuralı’nı 15 Mayıs 2025’teki uygulama tarihinden önce kaldırdı; eşlik eden kılavuz, belirli Huawei Ascend çiplerinin kullanımının ABD ihracat kontrollerini ihlal edebileceği uyarısında bulunur.",
+      "kind": "Resmî basın açıklaması",
+      "published": "2025-05-13",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S80",
+      "title": "Türkiye Today - US AI framework puts Türkiye among restricted nations",
+      "url": "https://www.turkiyetoday.com/business/us-ai-framework-puts-turkiye-among-restricted-nations-107394/",
+      "claim": "Daha sonra kaldırılan Ocak 2025 tarihli Yapay Zekâ Yayılım Kuralı’nda Türkiye yakın ortaklar grubunun dışında kalmış ve gelişmiş yapay zekâ çiplerine sınırlı erişimle karşılaşmıştı.",
+      "kind": "Haber",
+      "published": "Ocak 2025",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S81",
+      "title": "TechSpot - Arizona Blackwell wafers packaged in Taiwan",
+      "url": "https://www.techspot.com/news/109958-tsmc-produces-first-nvidia-blackwell-gpu-us-but.html",
+      "claim": "TSMC Arizona’da üretilen Blackwell yonga plakaları CoWoS ileri paketleme için hâlâ Tayvan’a gönderiliyor.",
+      "kind": "Haber",
+      "published": "Ekim 2025",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S82",
+      "title": "TGRT Haber - TÜBİTAK statement on BİLGE",
+      "url": "https://www.tgrthaber.com/teknoloji/tubitaktan-yerli-yapay-zeka-bilge-iddialarina-net-cevap-3341760",
+      "claim": "TÜBİTAK, TÜBİTAK BİLGEM’in geliştirdiği BİLGE’nin ilk kez 13 Haziran 2026’da tanıtıldığını ve henüz genel kullanıma açık bir hizmet olmadığını açıklar.",
+      "kind": "Haber",
+      "published": "2026-06-15",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S83",
+      "title": "DHA - BİLGE to open to developers",
+      "url": "https://www.dha.com.tr/gundem/yerli-dil-modeli-bilge-kullanima-aciliyor-2918051",
+      "claim": "Bakan, BİLGE dil modelinin yakında geliştiricilerin kullanımına açılacağını söyler.",
+      "kind": "Haber",
+      "published": "Temmuz 2026",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S84",
+      "title": "DonanımHaber - T3 AI beta release",
+      "url": "https://www.donanimhaber.com/turkce-buyuk-dil-modeli-t3-ai-in-beta-surumu-yayinlandi--193724",
+      "claim": "T3 AI, T3 Vakfı ile Baykar tarafından birlikte geliştirilir; beta sürümü TEKNOFEST Sosyal Platformu’nda yayımlandı.",
+      "kind": "Haber",
+      "published": "Yayın tarihi doğrulanmadı",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
+    },
+    {
+      "id": "S85",
+      "title": "TIME - OpenAI used Kenyan workers on less than $2 per hour",
+      "url": "https://time.com/6247678/openai-chatgpt-kenya-workers/",
+      "claim": "Kasım 2021’den itibaren Kenya’daki Sama çalışanları OpenAI’ın güvenlik filtresi için şiddet ve istismar içeren metinleri etiketledi; bildirilen net ücret saatte yaklaşık 1,32–2 dolardı.",
+      "kind": "Haber",
+      "published": "2023-01-18",
+      "checked": "2026-10-09",
+      "access": "Arama sonuçları ve ikincil haberlerle kontrol edildi; sayfaya doğrudan erişim engellendi"
     }
   ],
   "dependencies": [
@@ -1754,33 +2049,86 @@
       "a": "nvidia",
       "b": "tsmc",
       "label": "NVIDIA → TSMC: çip üretimi",
-      "status": "Belgelenmiş / üretim kilometre taşı",
-      "desc": "NVIDIA, 17 Ekim 2025’te TSMC Arizona’da Blackwell seri üretimini duyurdu. Bu, üretim ilişkisini destekler; her NVIDIA çipinin orada üretildiği iddiasını değil.",
-      "source": "S63"
+      "status": "Belgelenmiş / ilk yonga plakası aşaması",
+      "desc": "NVIDIA, 17 Ekim 2025’te TSMC Arizona’da üretilen ilk Blackwell yonga plakasını duyurdu. İleri CoWoS paketleme hâlâ Tayvan’da yapıldığından bu, baştan sona ABD’de üretilmiş bir çip ya da her NVIDIA çipinin orada üretildiğinin kanıtı değildir.",
+      "source": [
+        "S63",
+        "S81"
+      ]
     },
     {
       "a": "anthropic",
       "b": "aws",
       "label": "Anthropic → AWS: eğitim/bulut kapasitesi",
       "status": "Belgelenmiş / ortaklık ve kapasite taahhütleri",
-      "desc": "Anthropic, 2026 hesaplama güncellemesinde AWS’yi başlıca eğitim/bulut sağlayıcısı olarak tanımlar. Anlaşmadaki geleceğe dönük kapasitenin tamamı çalışır kabul edilmez.",
-      "source": "S64"
+      "desc": "Anthropic Nisan 2026’da AWS’yi yeniden başlıca eğitim ve bulut sağlayıcısı olarak tanımladı ve 5 GW’a kadar yeni kapasite planladı. Gelecekteki kapasitenin tamamı devrede değil; Anthropic ayrıca Google TPU’larını ve Azure üzerindeki NVIDIA sistemlerini de kullanıyor.",
+      "source": [
+        "S64"
+      ]
     },
     {
       "a": "truba",
       "b": "nvidia",
       "label": "TRUBA ARF-ACC → NVIDIA: GPU donanımı",
       "status": "Belgelenmiş / kurulu yapılandırma",
-      "desc": "Yayımlanmış kuyruk tablosu NVIDIA H100 ve H200 GPU’larını belirtir. Bu, NVIDIA ile doğrudan satın alma sözleşmesini kanıtlamaz.",
-      "source": "S65"
+      "desc": "Yayımlanmış kuyruk tablosu NVIDIA H100 ve H200 GPU’larını belirtir. Bu, NVIDIA ile doğrudan satın alma sözleşmesini kanıtlamaz. ABD’nin Ocak 2025 tarihli Yapay Zekâ Yayılım Kuralı’nda Türkiye bu çiplere sınırlı erişimle karşı karşıyaydı; kural Mayıs 2025’te yürürlüğe girmeden kaldırıldı.",
+      "source": [
+        "S65",
+        "S80",
+        "S79"
+      ]
     },
     {
       "a": "turkcell",
-      "b": null,
+      "b": "google",
       "label": "Turkcell ↔ Google Cloud: planlanan Türkiye bölgesi",
       "status": "Belgelenmiş / planlanan",
-      "desc": "Google Türkiye bölgesi ortaklığını duyurdu. Turkcell’in 2025 bildirimi 2028–2029 civarında faaliyete geçiş öngörür. Mevcut Turkcell veri merkezleri bu bölge olarak yeniden adlandırılmaz.",
-      "source": "S66"
+      "desc": "Google, Kasım 2025’te Turkcell ile Türkiye bulut bölgesini 10 yıllık, 2 milyar dolarlık yatırım kapsamında duyurdu; Turkcell faaliyete geçişi 2028–2029 olarak öngörüyor. Mevcut Turkcell veri merkezleri bu bölge olarak yeniden adlandırılmaz.",
+      "source": [
+        "S66",
+        "S70",
+        "S42"
+      ]
+    },
+    {
+      "a": "anthropic",
+      "b": "google",
+      "label": "Anthropic → Google Cloud: TPU kapasitesi",
+      "status": "Belgelenmiş / duyurulan kapasite artışı",
+      "desc": "Anthropic Ekim 2025’te bir milyona kadar Google Cloud TPU’su kullanacağını ve 2026’da bir gigavatın oldukça üzerinde kapasitenin devreye girmesinin beklendiğini duyurdu. Duyurulan kapasitenin tamamı devrede değildir.",
+      "source": [
+        "S68"
+      ]
+    },
+    {
+      "a": "anthropic",
+      "b": "nvidia",
+      "label": "Anthropic → Microsoft Azure / NVIDIA: hesaplama taahhüdü",
+      "status": "Belgelenmiş / satın alma taahhüdü",
+      "desc": "Anthropic Kasım 2025’te 30 milyar dolarlık Azure hesaplama kapasitesi satın almayı taahhüt etti; ilk aşamada NVIDIA Grace Blackwell ve Vera Rubin sistemlerinde bir gigavata kadar. Satın alma taahhüdü, kullanımdaki kapasite demek değildir.",
+      "source": [
+        "S69"
+      ]
+    },
+    {
+      "a": "meta",
+      "b": "sama",
+      "label": "Meta → Sama: veri etiketleme (2026’da sona erdi)",
+      "status": "Belgelenmiş / sona erdi",
+      "desc": "Kenya’daki Sama etiketleyicileri Meta’nın akıllı gözlüklerinden gelen görüntüleri etiketledi. Mahrem görüntülere ilişkin Şubat 2026 tarihli İsveç haberlerinin ardından Meta sözleşmeyi sonlandırdı ve Sama 1.108 işten çıkarma bildirimi yaptı. Meta, Sama’nın standartlarını karşılamadığını söylüyor; Sama buna itiraz ediyor.",
+      "source": [
+        "S73"
+      ]
+    },
+    {
+      "a": "cenia",
+      "b": "meta",
+      "label": "Latam-GPT → Meta Llama: temel model",
+      "status": "Belgelenmiş / model kökeni",
+      "desc": "Şubat 2026’da tanıtılan Latam-GPT, Meta’nın Llama-3.1-70B modelini uyarlar ve Llama 3.1 lisansıyla dağıtılır. Bölgesel bir model de yabancı bir temel modelin ağırlıklarına ve koşullarına bağlı olabilir.",
+      "source": [
+        "S74"
+      ]
     }
   ],
   "operations": [
@@ -1820,8 +2168,8 @@
       "country": "ABD",
       "lon": -112.07,
       "lat": 33.45,
-      "role": "Blackwell çip üretimi",
-      "status": "Belgelenmiş 2025 üretim kilometre taşı",
+      "role": "Blackwell yonga plakası üretimi; CoWoS paketleme Tayvan’da",
+      "status": "İlk yonga plakası Ekim 2025’te duyuruldu",
       "source": "S63"
     },
     {
@@ -1931,11 +2279,11 @@
       "Konumu, hukuki kontrolü, sahipliği, altyapı tedarikçilerini, erişimi ve uygulanabilir çıkış seçeneklerini ayrı ayrı sorgulayın."
     ]
   ],
-  "methodology": "Bu çalışma bir sıralama veya sayım değil, editoryal örneklemdir. Farklı işlevleri, kurum türlerini, bölgeleri ve dil topluluklarını göstermek için seçilmiştir. Bir kuruluş birden fazla katmanda yer alabilir. Boş alanlar yapay zekâ faaliyeti bulunmadığını değil, örneklerin kapsam dışında kaldığını gösterir. Merkez/konum işaretleri kuruluşları tanımlar; tüm hesaplamayı, çalışanları, kullanıcıları veya sahipliği göstermez. Koordinatlar yaklaşık şehir veya ülke konumlarıdır, tesis adresleri değildir. Faaliyetler bilerek küçük tutulmuş, kaynaklı bir örneklemdir. İşaret büyüklüğü pazar payını kodlamaz. Kaynaklar 8 Ekim 2026’da kontrol edilmiştir; tarihsel raporlar kendi tarihlerini korur. Şirket açıklamaları belirtilen ürün ve ilişkileri doğrular, doğruluk veya toplumsal yarar iddialarını değil. Bazı resmî sayfalara yalnızca indekslenmiş alıntılar üzerinden erişilebilmiştir; bunlar kaynak dökümünde belirtilir.",
+  "methodology": "Bu çalışma bir sıralama veya sayım değil, editoryal örneklemdir. Farklı işlevleri, kurum türlerini, bölgeleri ve dil topluluklarını göstermek için seçilmiştir. Bir kuruluş birden fazla katmanda yer alabilir. Boş alanlar yapay zekâ faaliyeti bulunmadığını değil, örneklerin kapsam dışında kaldığını gösterir. Merkez/konum işaretleri kuruluşları tanımlar; tüm hesaplamayı, çalışanları, kullanıcıları veya sahipliği göstermez. Koordinatlar yaklaşık şehir veya ülke konumlarıdır, tesis adresleri değildir. Faaliyetler bilerek küçük tutulmuş, kaynaklı bir örneklemdir. İşaret büyüklüğü pazar payını kodlamaz. Kaynaklar 8 Ekim 2026’da kontrol edilmiş, düzeltmeler ve eklemeler 9 Ekim 2026’da kontrol edilmiştir; tarihsel raporlar kendi tarihlerini korur. Şirket açıklamaları belirtilen ürün ve ilişkileri doğrular, doğruluk veya toplumsal yarar iddialarını değil. Bazı resmî sayfalara yalnızca indekslenmiş alıntılar üzerinden erişilebilmiştir; bunlar kaynak dökümünde belirtilir.",
   "turkiye": [
     [
       "Görünür mevcut kapasite",
-      "TRUBA araştırma hesaplaması; yerel ticari altyapı; Türkçe veri ve model girişimleri; konuşma ve kurumsal uygulamalar."
+      "TRUBA araştırma hesaplaması; yerel ticari veri merkezleri; T3 AI, BİLGE ve MAIN gibi Türkçe modeller; konuşma ve kurumsal uygulamalar."
     ],
     [
       "Kanıtlı üç bağlantı",
@@ -1943,7 +2291,7 @@
     ],
     [
       "Sloganların ötesinde politika",
-      "Bakanlığın Eylül 2026 haberi 2026–2030 eylem planına değinir. Uygulamayı değerlendirmeden önce kabul edilen metni ve bütçeyi edinin. 2021–2025 stratejisi güncel dönem değil, tarihsel bağlamdır."
+      "Türkiye Yapay Zekâ Eylem Planı (2026–2030), 18 Ağustos 2026’da 2026/9 sayılı Cumhurbaşkanlığı Genelgesi ile yürürlüğe girdi. Hedefleri arasında 2030’a kadar en az 1 GW veri merkezi kapasitesi bulunuyor. Uygulamayı değerlendirmeden önce bütçeleri, sorumlu kurumları ve ilerleme raporlarını edinin; 2021–2025 stratejisi artık tarihsel bağlamdır."
     ],
     [
       "“Millî yapay zekâ” için habercilik testi",

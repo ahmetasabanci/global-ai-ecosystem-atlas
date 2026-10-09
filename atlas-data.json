@@ -315,12 +315,14 @@
         "data"
       ],
       "description": "Provides human-verified data annotation and evaluation.",
-      "operations": "Documented teams/sites in Kenya and Uganda; operations markers show Nairobi and Gulu.",
+      "operations": "Documented teams in Kenya and Uganda. In 2026 Meta ended an annotation contract after reporting on smart-glasses footage, and Sama issued 1,108 redundancy notices. Earlier, Sama workers labelled harmful text for OpenAI.",
       "prompt": "Can workers verify pay, monitoring and grievance claims?",
       "locationType": "Base",
       "sources": [
         "S15",
-        "S55"
+        "S55",
+        "S73",
+        "S85"
       ]
     },
     {
@@ -403,11 +405,14 @@
         "research"
       ],
       "description": "Develops Claude models, products and safety research.",
-      "operations": "Cloud partnerships include AWS; the atlas documents one selected training relationship.",
+      "operations": "Multi-cloud: AWS is its primary training and cloud provider; it also announced up to one million Google TPUs (October 2025) and a $30 billion Azure commitment on NVIDIA systems (November 2025).",
       "prompt": "How much control rests with cloud partners and model operators?",
       "locationType": "Base",
       "sources": [
-        "S19"
+        "S19",
+        "S64",
+        "S68",
+        "S69"
       ]
     },
     {
@@ -557,12 +562,14 @@
         "research"
       ],
       "description": "AI research centre coordinating a Latin American language-model initiative.",
-      "operations": "Regional collaboration; Chilean coordination is not the location of every contributor.",
+      "operations": "Latam-GPT launched in February 2026: a 70-billion-parameter model adapted from Meta’s Llama 3.1 and reportedly trained on AWS. Chilean coordination is not the location of every contributor.",
       "prompt": "Who contributed the corpus, and how are regional communities represented?",
       "locationType": "Base",
       "sources": [
         "S26",
-        "S56"
+        "S56",
+        "S74",
+        "S75"
       ]
     },
     {
@@ -806,11 +813,13 @@
         "governance"
       ],
       "description": "EU institutions implement and coordinate the AI Act framework.",
-      "operations": "EU jurisdiction can reach certain actors outside the EU; legal obligations depend on the case.",
+      "operations": "The AI Act applies in phases: general-purpose AI model rules since August 2025 and transparency duties since August 2026. The 2026 Digital Omnibus moved high-risk rules to 2 December 2027 (stand-alone) and 2 August 2028 (in regulated products).",
       "prompt": "Which obligation applies, who supervises it, and what evidence exists?",
       "locationType": "Base",
       "sources": [
-        "S38"
+        "S38",
+        "S71",
+        "S72"
       ]
     },
     {
@@ -890,11 +899,12 @@
         "compute"
       ],
       "description": "Operates domestic data-centre/cloud infrastructure and has a planned Google Cloud region partnership.",
-      "operations": "Existing infrastructure differs from the planned Google region, expected around 2028-2029 in the 2025 filing.",
+      "operations": "Existing infrastructure differs from the planned Google region, which Turkcell estimates will operate in 2028-2029; Turkcell plans to invest $1 billion in data centres and cloud.",
       "prompt": "Which capacity is live, and which part is an investment commitment?",
       "locationType": "Base",
       "sources": [
-        "S42"
+        "S42",
+        "S70"
       ]
     },
     {
@@ -911,12 +921,13 @@
         "data",
         "research"
       ],
-      "description": "Turkish-language model and community initiative led by T3 Foundation.",
+      "description": "Turkish-language model and community initiative led by T3 Foundation and developed with Baykar.",
       "operations": "The foundation describes an open-source project; inspect release artefacts before treating that as a licence classification.",
       "prompt": "What data, weights, code and evaluation are actually available?",
       "locationType": "HQ",
       "sources": [
-        "S43"
+        "S43",
+        "S84"
       ]
     },
     {
@@ -1038,12 +1049,13 @@
       "layers": [
         "governance"
       ],
-      "description": "Coordinates industrial technology policy and AI-related investment initiatives.",
-      "operations": "September 2026 ministry reporting refers to a 2026-2030 AI action plan; announcement is not an implementation audit.",
-      "prompt": "Where are the adopted plan, budget, milestones and public progress reports?",
+      "description": "Coordinates industrial technology policy and the Türkiye AI Action Plan (2026-2030).",
+      "operations": "The plan entered into force through Presidential Circular 2026/9 (Official Gazette, 18 August 2026). Targets are commitments, not evidence of delivery.",
+      "prompt": "Which budgets, responsible agencies, milestones and progress reports back the plan’s targets?",
       "locationType": "Base",
       "sources": [
-        "S49"
+        "S49",
+        "S67"
       ]
     },
     {
@@ -1084,6 +1096,99 @@
       "locationType": "HQ",
       "sources": [
         "S51"
+      ]
+    },
+    {
+      "id": "google",
+      "name": "Google / Google Cloud",
+      "region": "North America",
+      "country": "United States",
+      "city": "Mountain View",
+      "lon": -122.08,
+      "lat": 37.42,
+      "type": "Company",
+      "layers": [
+        "chips",
+        "compute",
+        "models"
+      ],
+      "description": "Designs TPU accelerators, sells cloud capacity and develops Gemini models; parent of Google DeepMind.",
+      "operations": "Cloud regions worldwide, including a planned Türkiye region with Turkcell. TPUs are Google-designed chips made by partner foundries.",
+      "prompt": "Which workloads run on Google’s own chips, and which on rented NVIDIA hardware?",
+      "locationType": "HQ",
+      "sources": [
+        "S76",
+        "S68",
+        "S66"
+      ]
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "region": "North America",
+      "country": "United States",
+      "city": "Menlo Park",
+      "lon": -122.15,
+      "lat": 37.48,
+      "type": "Company",
+      "layers": [
+        "models",
+        "apps",
+        "research"
+      ],
+      "description": "Publishes Llama open-weight models and runs social platforms and AI-enabled devices.",
+      "operations": "Llama weights come with Meta’s own licence terms, which models built on them inherit. Human review of device data has involved outsourced annotators.",
+      "prompt": "Which licence terms and data practices travel with a model built on Llama?",
+      "locationType": "HQ",
+      "sources": [
+        "S77",
+        "S74",
+        "S73"
+      ]
+    },
+    {
+      "id": "huawei",
+      "name": "Huawei (Ascend)",
+      "region": "East Asia",
+      "country": "China",
+      "city": "Shenzhen",
+      "lon": 114.06,
+      "lat": 22.54,
+      "type": "Company",
+      "layers": [
+        "chips",
+        "compute"
+      ],
+      "description": "Designs Ascend AI processors and sells AI computing systems and cloud services.",
+      "operations": "On the US Entity List since 2019; 2025 US guidance warns that using certain Ascend chips anywhere may breach US export controls. Illustrates a parallel chip ecosystem.",
+      "prompt": "Which export rules, suppliers and software stack does a non-NVIDIA alternative depend on?",
+      "locationType": "HQ",
+      "sources": [
+        "S78",
+        "S79"
+      ]
+    },
+    {
+      "id": "bilgem",
+      "name": "TÜBİTAK BİLGEM / BİLGE",
+      "region": "Türkiye",
+      "country": "Türkiye",
+      "city": "Gebze (Kocaeli)",
+      "lon": 29.45,
+      "lat": 40.79,
+      "type": "Public / academic research",
+      "layers": [
+        "models",
+        "research"
+      ],
+      "description": "TÜBİTAK’s informatics institute develops BİLGE, a Turkish large-language-model family unveiled in June 2026.",
+      "operations": "TÜBİTAK said in June 2026 that BİLGE was not yet a public service. Parameter counts and benchmark claims in media reports differ and are not independently verified.",
+      "prompt": "Which BİLGE models, training data, evaluations and access terms are actually published?",
+      "locationType": "HQ",
+      "sources": [
+        "S82",
+        "S83",
+        "S67"
       ]
     }
   ],
@@ -1232,7 +1337,7 @@
       "id": "S15",
       "title": "Sama - contact locations",
       "url": "https://www.sama.com/contact-us",
-      "claim": "Provides human-verified data annotation and evaluation. Location/operations: San Francisco; Documented teams/sites in Kenya and Uganda; operations markers show Nairobi and Gulu.",
+      "claim": "Provides human-verified data annotation and evaluation. Location/operations: San Francisco; Documented teams in Kenya and Uganda. In 2026 Meta ended an annotation contract after reporting on smart-glasses footage, and Sama issued 1,108 redundancy notices. Earlier, Sama workers labelled harmful text for OpenAI.",
       "kind": "Primary / live page",
       "published": "Live page; publication date not stated",
       "checked": "2026-10-08",
@@ -1272,7 +1377,7 @@
       "id": "S19",
       "title": "Anthropic - company",
       "url": "https://www.anthropic.com/company",
-      "claim": "Develops Claude models, products and safety research. Location/operations: San Francisco; Cloud partnerships include AWS; the atlas documents one selected training relationship.",
+      "claim": "Develops Claude models, products and safety research. Location/operations: San Francisco; Multi-cloud: AWS is its primary training and cloud provider; it also announced up to one million Google TPUs (October 2025) and a $30 billion Azure commitment on NVIDIA systems (November 2025).",
       "kind": "Primary / live page",
       "published": "Live page; publication date not stated",
       "checked": "2026-10-08",
@@ -1342,7 +1447,7 @@
       "id": "S26",
       "title": "LatamGPT - regional initiative",
       "url": "https://www.latamgpt.org/en",
-      "claim": "AI research centre coordinating a Latin American language-model initiative. Location/operations: Santiago; Regional collaboration; Chilean coordination is not the location of every contributor.",
+      "claim": "AI research centre coordinating a Latin American language-model initiative. Location/operations: Santiago; Latam-GPT launched in February 2026: a 70-billion-parameter model adapted from Meta’s Llama 3.1 and reportedly trained on AWS. Chilean coordination is not the location of every contributor.",
       "kind": "Primary / live page",
       "published": "Live page; publication date not stated",
       "checked": "2026-10-08",
@@ -1462,7 +1567,7 @@
       "id": "S38",
       "title": "European Commission - AI Act framework",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
-      "claim": "EU institutions implement and coordinate the AI Act framework. Location/operations: Brussels; EU jurisdiction can reach certain actors outside the EU; legal obligations depend on the case.",
+      "claim": "EU institutions implement and coordinate the AI Act framework. Location/operations: Brussels; The AI Act applies in phases: general-purpose AI model rules since August 2025 and transparency duties since August 2026. The 2026 Digital Omnibus moved high-risk rules to 2 December 2027 (stand-alone) and 2 August 2028 (in regulated products).",
       "kind": "Primary / live page",
       "published": "Live page; publication date not stated",
       "checked": "2026-10-08",
@@ -1502,7 +1607,7 @@
       "id": "S42",
       "title": "Turkcell - 2025 Form 20-F",
       "url": "https://s.turkcell.com.tr/SiteAssets/Hakkimizda/yatirimci-iliskileri/documents/pdf/20F2025.pdf",
-      "claim": "Operates domestic data-centre/cloud infrastructure and has a planned Google Cloud region partnership. Location/operations: Istanbul; Existing infrastructure differs from the planned Google region, expected around 2028-2029 in the 2025 filing.",
+      "claim": "Operates domestic data-centre/cloud infrastructure and has a planned Google Cloud region partnership. Location/operations: Istanbul; Existing infrastructure differs from the planned Google region, which Turkcell estimates will operate in 2028-2029; Turkcell plans to invest $1 billion in data centres and cloud.",
       "kind": "Primary / live page",
       "published": "Live page; publication date not stated",
       "checked": "2026-10-08",
@@ -1512,7 +1617,7 @@
       "id": "S43",
       "title": "T3 Foundation - T3 AI",
       "url": "https://www.t3vakfi.org/tr/projelerimiz/t3-ai",
-      "claim": "Turkish-language model and community initiative led by T3 Foundation. Location/operations: Istanbul; The foundation describes an open-source project; inspect release artefacts before treating that as a licence classification.",
+      "claim": "Turkish-language model and community initiative led by T3 Foundation and developed with Baykar. Location/operations: Istanbul; The foundation describes an open-source project; inspect release artefacts before treating that as a licence classification.",
       "kind": "Primary / live page",
       "published": "Live page; publication date not stated",
       "checked": "2026-10-08",
@@ -1564,15 +1669,15 @@
       "url": "https://www.kvkk.gov.tr/Icerik/8547/uretken-yapay-zeka-ve-kisisel-verilerin-korunmasi-rehberi-15-soruda",
       "claim": "Türkiye’s personal-data protection authority publishes guidance on generative AI. Location/operations: Ankara; Personal-data oversight; guidance must be distinguished from statutory obligations and decisions.",
       "kind": "Primary / live page",
-      "published": "Live page; publication date not stated",
-      "checked": "2026-10-08",
+      "published": "2025-11-24",
+      "checked": "2026-10-09",
       "access": "Opened or official search excerpt checked"
     },
     {
       "id": "S49",
-      "title": "Ministry - September 2026 GITEX remarks",
+      "title": "Ministry - GITEX AI Türkiye remarks (September 2026)",
       "url": "https://www.sanayi.gov.tr/medya/haber/bakan-kacir-gitex-aida-konustu",
-      "claim": "Coordinates industrial technology policy and AI-related investment initiatives. Location/operations: Ankara; September 2026 ministry reporting refers to a 2026-2030 AI action plan; announcement is not an implementation audit.",
+      "claim": "Ministerial remarks at GITEX AI Türkiye on the action plan’s targets and AI investment support.",
       "kind": "Primary / live page",
       "published": "Live page; publication date not stated",
       "checked": "2026-10-08",
@@ -1712,10 +1817,10 @@
       "id": "S63",
       "title": "NVIDIA - Blackwell at TSMC Arizona",
       "url": "https://blogs.nvidia.com/blog/tsmc-blackwell-manufacturing/",
-      "claim": "Blackwell wafer and volume-production milestone at TSMC Arizona.",
+      "claim": "First US-produced Blackwell wafer at TSMC Arizona; NVIDIA says Blackwell has reached volume production.",
       "kind": "Primary / live page",
       "published": "2025-10-17",
-      "checked": "2026-10-08",
+      "checked": "2026-10-09",
       "access": "Opened or official search excerpt checked"
     },
     {
@@ -1724,15 +1829,15 @@
       "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
       "claim": "Primary training/cloud relationship; includes future capacity commitments.",
       "kind": "Primary / live page",
-      "published": "2026 announcement; live page checked",
-      "checked": "2026-10-08",
+      "published": "2026-04-20",
+      "checked": "2026-10-09",
       "access": "Opened or official search excerpt checked"
     },
     {
       "id": "S65",
       "title": "TRUBA - ARF-ACC hardware queues",
       "url": "https://docs.truba.gov.tr/1-kaynaklar/arf_acc/arf_acc_kuyruk_bilgisi.html",
-      "claim": "Queue configuration identifies NVIDIA GPU hardware.",
+      "claim": "Same page as S41, cited for the GPU hardware relationship.",
       "kind": "Primary / live page",
       "published": "Live page; publication date not stated",
       "checked": "2026-10-08",
@@ -1744,9 +1849,199 @@
       "url": "https://cloud.google.com/blog/products/infrastructure/new-google-cloud-region-coming-to-turkiye",
       "claim": "Planned region and Turkcell partnership.",
       "kind": "Primary / live page",
-      "published": "2025 announcement",
-      "checked": "2026-10-08",
+      "published": "2025-11-20",
+      "checked": "2026-10-09",
       "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S67",
+      "title": "Resmî Gazete - Presidential Circular 2026/9, Türkiye AI Action Plan (2026-2030)",
+      "url": "https://www.resmigazete.gov.tr/eskiler/2026/08/20260818-8.pdf",
+      "claim": "Puts the Türkiye AI Action Plan (2026-2030) into force: 4 axes and 16 priority actions; targets include at least 1 GW of data-centre capacity and at least $10 billion mobilised for cloud and AI infrastructure by 2030.",
+      "kind": "Official Gazette",
+      "published": "2026-08-18",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S68",
+      "title": "Anthropic - Expanding use of Google Cloud TPUs",
+      "url": "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services",
+      "claim": "Up to one million Google Cloud TPUs, with well over a gigawatt of capacity expected online in 2026; Amazon remains the primary training partner.",
+      "kind": "Company announcement",
+      "published": "2025-10-23",
+      "checked": "2026-10-09",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S69",
+      "title": "Anthropic - Microsoft, NVIDIA and Anthropic partnerships",
+      "url": "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships",
+      "claim": "$30 billion Azure compute commitment; initial compute of up to one gigawatt on NVIDIA Grace Blackwell and Vera Rubin systems; investment commitments from NVIDIA and Microsoft.",
+      "kind": "Company announcement",
+      "published": "2025-11-18",
+      "checked": "2026-10-09",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S70",
+      "title": "Turkcell - Form 6-K, Google Cloud partnership",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001071321/000110465925109979/tm2531004d1_6k.htm",
+      "claim": "Planned Google Cloud region in Türkiye estimated to become operational in 2028-2029; Turkcell builds the infrastructure, resells Google Cloud and plans to invest $1 billion in data centres and cloud.",
+      "kind": "Regulatory filing",
+      "published": "2025-11-11",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S71",
+      "title": "Council of the EU - AI Act simplification agreement",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
+      "claim": "Provisional agreement on the Digital Omnibus on AI: stand-alone high-risk rules apply from 2 December 2027 and high-risk AI in regulated products from 2 August 2028.",
+      "kind": "Government press release",
+      "published": "2026-05-07",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S72",
+      "title": "European Commission - Navigating the AI Act (FAQ)",
+      "url": "https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act",
+      "claim": "The Digital Omnibus on AI entered into force on 27 July 2026; Article 50 transparency obligations apply from 2 August 2026.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S73",
+      "title": "The Next Web - Meta ends Sama contract after smart-glasses reporting",
+      "url": "https://thenextweb.com/news/meta-smart-glasses-sama-kenya-workers",
+      "claim": "After February 2026 Swedish reporting that Sama annotators in Kenya reviewed intimate smart-glasses footage, Meta ended the contract and Sama issued 1,108 redundancy notices; Sama disputes Meta’s stated reason.",
+      "kind": "News report",
+      "published": "April 2026",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S74",
+      "title": "Hugging Face - Llama-3.1-70B-LatamGPT-SFT-1.0 model card",
+      "url": "https://huggingface.co/latam-gpt/Llama-3.1-70B-LatamGPT-SFT-1.0",
+      "claim": "Latam-GPT model adapted from Meta Llama-3.1-70B and distributed under the Llama 3.1 licence.",
+      "kind": "Model card",
+      "published": "2026-05-29",
+      "checked": "2026-10-09",
+      "access": "Opened or official search excerpt checked"
+    },
+    {
+      "id": "S75",
+      "title": "DPL News - Latam-GPT launch",
+      "url": "https://dplnews.com/latam-gpt-modelo-de-lenguaje-de-ia-america-latina/",
+      "claim": "Launched on 10 February 2026; 70 billion parameters on a Llama 3.1 base, trained on the AWS cloud; partners include CAF and Data Observatory.",
+      "kind": "News report",
+      "published": "2026-02-10",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S76",
+      "title": "Google Cloud - Tensor Processing Units",
+      "url": "https://cloud.google.com/tpu",
+      "claim": "Google-designed TPU accelerators offered as cloud capacity, including the Ironwood generation.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S77",
+      "title": "Meta - Llama FAQ and licences",
+      "url": "https://www.llama.com/faq/",
+      "claim": "Llama models are released under Meta’s own commercial licence agreements rather than a standard open-source licence.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S78",
+      "title": "Huawei - Ascend Community",
+      "url": "https://www.hiascend.com/en/",
+      "claim": "Ascend AI processors, Atlas computing systems and the CANN software stack.",
+      "kind": "Primary / live page",
+      "published": "Live page; publication date not stated",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S79",
+      "title": "US Commerce (BIS) - Rescission of the AI Diffusion Rule",
+      "url": "https://www.bis.gov/press-release/department-commerce-announces-rescission-biden-era-artificial-intelligence-diffusion-rule-strengthens",
+      "claim": "Rescinded the January 2025 AI Diffusion Rule before its 15 May 2025 compliance date; accompanying guidance warns that using certain Huawei Ascend chips may violate US export controls.",
+      "kind": "Government press release",
+      "published": "2025-05-13",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S80",
+      "title": "Türkiye Today - US AI framework puts Türkiye among restricted nations",
+      "url": "https://www.turkiyetoday.com/business/us-ai-framework-puts-turkiye-among-restricted-nations-107394/",
+      "claim": "Under the January 2025 AI Diffusion Rule, later rescinded, Türkiye was outside the group of close partners and faced capped access to advanced AI chips.",
+      "kind": "News report",
+      "published": "January 2025",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S81",
+      "title": "TechSpot - Arizona Blackwell wafers packaged in Taiwan",
+      "url": "https://www.techspot.com/news/109958-tsmc-produces-first-nvidia-blackwell-gpu-us-but.html",
+      "claim": "Blackwell wafers made at TSMC Arizona still go to Taiwan for CoWoS advanced packaging.",
+      "kind": "News report",
+      "published": "October 2025",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S82",
+      "title": "TGRT Haber - TÜBİTAK statement on BİLGE",
+      "url": "https://www.tgrthaber.com/teknoloji/tubitaktan-yerli-yapay-zeka-bilge-iddialarina-net-cevap-3341760",
+      "claim": "TÜBİTAK states that BİLGE, developed by TÜBİTAK BİLGEM, was first presented on 13 June 2026 and is not yet a publicly available service.",
+      "kind": "News report",
+      "published": "2026-06-15",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S83",
+      "title": "DHA - BİLGE to open to developers",
+      "url": "https://www.dha.com.tr/gundem/yerli-dil-modeli-bilge-kullanima-aciliyor-2918051",
+      "claim": "The minister says the BİLGE language model will soon be opened to developers.",
+      "kind": "News report",
+      "published": "July 2026",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S84",
+      "title": "DonanımHaber - T3 AI beta release",
+      "url": "https://www.donanimhaber.com/turkce-buyuk-dil-modeli-t3-ai-in-beta-surumu-yayinlandi--193724",
+      "claim": "T3 AI is developed by T3 Foundation together with Baykar; a beta was released on the TEKNOFEST social platform.",
+      "kind": "News report",
+      "published": "Publication date not verified",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
+    },
+    {
+      "id": "S85",
+      "title": "TIME - OpenAI used Kenyan workers on less than $2 per hour",
+      "url": "https://time.com/6247678/openai-chatgpt-kenya-workers/",
+      "claim": "From November 2021 Sama workers in Kenya labelled violent and abusive text for OpenAI’s safety filter; reported take-home pay was about $1.32-$2 per hour.",
+      "kind": "News report",
+      "published": "2023-01-18",
+      "checked": "2026-10-09",
+      "access": "Checked through search results and secondary reports; direct page request blocked"
     }
   ],
   "dependencies": [
@@ -1754,33 +2049,86 @@
       "a": "nvidia",
       "b": "tsmc",
       "label": "NVIDIA → TSMC: chip fabrication",
-      "status": "Documented / operating milestone",
-      "desc": "NVIDIA reported Blackwell volume production at TSMC Arizona on 17 October 2025. This supports a fabrication relationship, not a claim that every NVIDIA chip is made there.",
-      "source": "S63"
+      "status": "Documented / first-wafer milestone",
+      "desc": "On 17 October 2025 NVIDIA announced the first Blackwell wafer produced at TSMC Arizona. Advanced CoWoS packaging still took place in Taiwan, so this is neither an end-to-end US-made chip nor evidence that every NVIDIA chip is made there.",
+      "source": [
+        "S63",
+        "S81"
+      ]
     },
     {
       "a": "anthropic",
       "b": "aws",
       "label": "Anthropic → AWS: training/cloud capacity",
       "status": "Documented / partnership and capacity commitments",
-      "desc": "Anthropic identifies AWS as its primary training/cloud provider in its 2026 compute update. Future capacity in the agreement is not all treated as live.",
-      "source": "S64"
+      "desc": "In April 2026 Anthropic again named AWS its primary training and cloud provider, with up to 5 GW of new capacity planned. Future capacity is not all live, and Anthropic also uses Google TPUs and NVIDIA systems on Azure.",
+      "source": [
+        "S64"
+      ]
     },
     {
       "a": "truba",
       "b": "nvidia",
       "label": "TRUBA ARF-ACC → NVIDIA: GPU hardware",
       "status": "Documented / installed configuration",
-      "desc": "The published queue table identifies NVIDIA H100 and H200 GPUs. This does not establish a direct procurement contract with NVIDIA.",
-      "source": "S65"
+      "desc": "The published queue table identifies NVIDIA H100 and H200 GPUs. This does not establish a direct procurement contract with NVIDIA. Under the US AI Diffusion Rule of January 2025, Türkiye faced capped access to such chips; the rule was rescinded in May 2025 before taking effect.",
+      "source": [
+        "S65",
+        "S80",
+        "S79"
+      ]
     },
     {
       "a": "turkcell",
-      "b": null,
+      "b": "google",
       "label": "Turkcell ↔ Google Cloud: planned Türkiye region",
       "status": "Documented / planned",
-      "desc": "Google announced a Türkiye region partnership. Turkcell’s 2025 filing expects operation around 2028-2029. Existing Turkcell data centres are not relabelled as that region.",
-      "source": "S66"
+      "desc": "Google announced a Türkiye cloud region with Turkcell in November 2025, citing a 10-year, $2 billion investment; Turkcell estimates operation in 2028-2029. Existing Turkcell data centres are not relabelled as that region.",
+      "source": [
+        "S66",
+        "S70",
+        "S42"
+      ]
+    },
+    {
+      "a": "anthropic",
+      "b": "google",
+      "label": "Anthropic → Google Cloud: TPU capacity",
+      "status": "Documented / announced capacity expansion",
+      "desc": "Anthropic announced in October 2025 that it would use up to one million Google Cloud TPUs, with well over a gigawatt expected online in 2026. Announced capacity is not all live.",
+      "source": [
+        "S68"
+      ]
+    },
+    {
+      "a": "anthropic",
+      "b": "nvidia",
+      "label": "Anthropic → Microsoft Azure / NVIDIA: compute commitment",
+      "status": "Documented / purchase commitment",
+      "desc": "In November 2025 Anthropic committed to buy $30 billion of Azure compute, initially up to one gigawatt on NVIDIA Grace Blackwell and Vera Rubin systems. A purchase commitment is not capacity in use.",
+      "source": [
+        "S69"
+      ]
+    },
+    {
+      "a": "meta",
+      "b": "sama",
+      "label": "Meta → Sama: data annotation (ended 2026)",
+      "status": "Documented / ended",
+      "desc": "Sama annotators in Kenya labelled footage from Meta’s smart glasses. After Swedish reporting in February 2026 on intimate footage, Meta ended the contract and Sama issued 1,108 redundancy notices. Meta says Sama did not meet its standards; Sama disputes this.",
+      "source": [
+        "S73"
+      ]
+    },
+    {
+      "a": "cenia",
+      "b": "meta",
+      "label": "Latam-GPT → Meta Llama: base model",
+      "status": "Documented / model lineage",
+      "desc": "Latam-GPT, launched in February 2026, adapts Meta’s Llama-3.1-70B and is distributed under the Llama 3.1 licence. A regional model can still depend on a foreign base model’s weights and terms.",
+      "source": [
+        "S74"
+      ]
     }
   ],
   "operations": [
@@ -1820,8 +2168,8 @@
       "country": "United States",
       "lon": -112.07,
       "lat": 33.45,
-      "role": "Blackwell chip fabrication",
-      "status": "Documented 2025 production milestone",
+      "role": "Blackwell wafer fabrication; CoWoS packaging in Taiwan",
+      "status": "First wafer announced October 2025",
       "source": "S63"
     },
     {
@@ -1931,11 +2279,11 @@
       "Ask separately about location, legal control, ownership, infrastructure suppliers, access and practical exit options."
     ]
   ],
-  "methodology": "Editorial sample, not a ranking or census. Selected to show distinct functions, institution types, regions and language communities. One organization may occupy several layers. Blank areas mean omitted examples, not absence of AI activity. HQ/base markers describe organizations, not all compute, workers, users or ownership. Coordinates are approximate city or country positions, not facility addresses. Operations are a deliberately small sourced sample. No marker size encodes market share. Sources checked on 8 October 2026; historical reports retain their dates. Company statements verify stated products/relationships, not claimed accuracy or social benefit. Some official pages were accessible only as indexed excerpts; these are labelled in the source register.",
+  "methodology": "Editorial sample, not a ranking or census. Selected to show distinct functions, institution types, regions and language communities. One organization may occupy several layers. Blank areas mean omitted examples, not absence of AI activity. HQ/base markers describe organizations, not all compute, workers, users or ownership. Coordinates are approximate city or country positions, not facility addresses. Operations are a deliberately small sourced sample. No marker size encodes market share. Sources checked on 8 October 2026, with corrections and additions checked on 9 October 2026; historical reports retain their dates. Company statements verify stated products/relationships, not claimed accuracy or social benefit. Some official pages were accessible only as indexed excerpts; these are labelled in the source register.",
   "turkiye": [
     [
       "Capacity already visible",
-      "TRUBA research computing; domestic commercial infrastructure; Turkish-language data and model initiatives; speech and enterprise applications."
+      "TRUBA research computing; domestic commercial data centres; Turkish-language models such as T3 AI, BİLGE and MAIN; speech and enterprise applications."
     ],
     [
       "Three evidenced connections",
@@ -1943,7 +2291,7 @@
     ],
     [
       "Policy, not just slogans",
-      "A September 2026 ministry account refers to a 2026-2030 action plan. Obtain the adopted text and budget before judging delivery. The 2021-2025 strategy is historical context, not the current horizon."
+      "The Türkiye AI Action Plan (2026-2030) entered into force through Presidential Circular 2026/9 on 18 August 2026. Its targets include at least 1 GW of data-centre capacity by 2030. Obtain budgets, responsible agencies and progress reports before judging delivery; the 2021-2025 strategy is now historical context."
     ],
     [
       "The reporting test for “national AI”",
