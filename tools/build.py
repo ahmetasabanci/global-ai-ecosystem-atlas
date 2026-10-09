@@ -13,7 +13,7 @@ def embed(value):
 data = json.loads((root / 'atlas-data.json').read_text())
 translations = json.loads((root / 'src/translations-tr.json').read_text())
 pattern = re.compile(r'(?<!\w)(?:' + '|'.join(re.escape(k) for k in sorted(translations, key=len, reverse=True)) + r')(?!\w)')
-KEEP = {'id', 'url', 'org', 'source', 'a', 'b', 'layers', 'sources'}
+KEEP = {'id', 'url', 'org', 'source', 'a', 'b', 'layers', 'sources', 'precision'}
 
 def tr(text):
     stripped = text.strip()

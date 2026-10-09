@@ -347,7 +347,8 @@
       "sources": [
         "S16",
         "S97"
-      ]
+      ],
+      "precision": "country"
     },
     {
       "id": "masakhane",
@@ -600,7 +601,8 @@
       "locationType": "Base",
       "sources": [
         "S27"
-      ]
+      ],
+      "precision": "country"
     },
     {
       "id": "hf",
@@ -643,7 +645,8 @@
       "locationType": "Base",
       "sources": [
         "S29"
-      ]
+      ],
+      "precision": "country"
     },
     {
       "id": "deepl",
@@ -769,7 +772,8 @@
       "locationType": "Base",
       "sources": [
         "S35"
-      ]
+      ],
+      "precision": "country"
     },
     {
       "id": "unesco",
