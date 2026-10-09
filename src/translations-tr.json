@@ -650,5 +650,10 @@
   "Statkraft": "Statkraft",
   "Glencore": "Glencore",
   "Downloads": "İndir",
-  "Download offline package": "Çevrimdışı paketi indir"
+  "Download offline package": "Çevrimdışı paketi indir",
+  "Skip to content": "İçeriğe geç",
+  "Drag to pan, pinch or use the buttons to zoom. Click a marker or a name below.": "Kaydırmak için sürükleyin; yakınlaştırmak için iki parmakla sıkıştırın veya düğmeleri kullanın. Bir işarete veya aşağıdaki ada tıklayın.",
+  "Code license": "Kod lisansı",
+  "Content license": "İçerik lisansı",
+  "Fonts": "Yazı tipleri"
 }

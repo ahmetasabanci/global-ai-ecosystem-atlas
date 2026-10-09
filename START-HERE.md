@@ -6,7 +6,7 @@ Prepared for a journalism workshop. Sources checked 8 October 2026. English/Turk
 
 Open `global-ai-atlas.html` in Chrome, Firefox, Edge or Safari. It is self-contained and works offline; following its evidence links requires an internet connection. No installation or server is needed. It opens in Turkish on first use. The TR/EN buttons at the top right switch the language; your choice is remembered when browser storage is available. Switching language preserves the active view, search, filters, zoom and presentation mode.
 
-Use the Stack and Global map tabs as the two complementary maps. Click layers, markers or organization names to see explanations, locations, investigation questions and sources. The global map supports zoom, dragging, search and filters. Switch the marker selector to selected overseas sites to compare organizational bases with operations. Presentation mode simplifies the display.
+Use the Stack and Global map tabs as the two complementary maps. Click layers, markers or organization names to see explanations, locations, investigation questions and sources. The global map supports zoom (buttons, pinch or trackpad), dragging, search and filters. Everything also works from the keyboard: arrow keys move between the view tabs, Tab reaches each marker and Enter opens it. Switch the marker selector to selected overseas sites to compare organizational bases with operations. Presentation mode simplifies the display.
 
 The Türkiye tab brings together nine national organizations and programs, capabilities, dependencies and questions for reporting. How AI works explains training versus inference. Reporting kit supplies an exercise and workshop route. Sources & method explains the classifications and evidence limits.
 
@@ -41,5 +41,7 @@ Historical research is included where it explains a continuing resource or metho
 - `organizations-tr.csv` and `source-register-tr.csv`: localized content with stable column identifiers. Published source titles and URLs retain their original form.
 
 The map uses Natural Earth public-domain land outlines and shows no political boundaries. The atlas is available in English and Turkish. Translation preserves evidence, source IDs, qualifications and distinctions between plans and existing activity.
+
+License: code under MIT (`LICENSE`); editorial content, data, PDFs and maps under CC BY 4.0 (`LICENSE-CONTENT.md`); fonts under SIL OFL 1.1.
 
 Comfortaa headings and Montserrat body text are embedded in the interactive atlas and PDFs. The four brand colours (#238197, #59BFC5, #DE8859, #FFCF70) and both supplied gradient sequences provide shared design elements. Dark supporting text colours keep paragraphs and labels readable.

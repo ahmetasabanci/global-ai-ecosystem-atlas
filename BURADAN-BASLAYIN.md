@@ -6,7 +6,7 @@ Gazetecilik atölyesi için hazırlanmıştır. Kaynak kontrol tarihi: 8 Ekim 20
 
 `global-ai-atlas.html` dosyasını tarayıcıda açın. Kurulum gerektirmez ve çevrimdışı çalışır. İlk açılışta Türkçe görünür; sağ üstteki TR/EN düğmeleriyle dili değiştirin. Tarayıcı depolamayı destekliyorsa dil tercihiniz hatırlanır. Kaynak bağlantıları için internet gerekir.
 
-Teknoloji katmanları ve Dünya haritası birbirini tamamlayan iki haritadır. Katmanlara, işaretlere veya kuruluş adlarına tıklayarak açıklamaları, konumları, araştırma sorularını ve kaynakları açın. Dünya haritasını yakınlaştırıp sürükleyebilir; kuruluş, ülke veya rol arayabilir; katman, aktör ve bölge filtrelerini kullanabilirsiniz. İşaretler menüsünde merkezleri/kuruluş konumlarını seçili yurt dışı faaliyetleriyle karşılaştırın.
+Teknoloji katmanları ve Dünya haritası birbirini tamamlayan iki haritadır. Katmanlara, işaretlere veya kuruluş adlarına tıklayarak açıklamaları, konumları, araştırma sorularını ve kaynakları açın. Dünya haritasını düğmelerle, iki parmakla veya dokunmatik yüzeyle yakınlaştırıp sürükleyebilir; tüm işlevler klavyeyle de çalışır (sekmeler arasında ok tuşları, işaretler için Tab ve Enter); kuruluş, ülke veya rol arayabilir; katman, aktör ve bölge filtrelerini kullanabilirsiniz. İşaretler menüsünde merkezleri/kuruluş konumlarını seçili yurt dışı faaliyetleriyle karşılaştırın.
 
 Türkiye odağı dokuz kuruluş ve programı, yerel yetenekleri ve uluslararası bağlantıları ele alır. Yapay zekâ nasıl çalışır? bölümü eğitim ve çıkarım farkını açıklar. Habercilik araçları araştırma sorularını ve grup çalışmasını içerir. Kaynaklar ve yöntem bölümünde sınıflandırmaları ve kanıtların sınırlarını okuyun. Sunum modu görünümü sadeleştirir.
 
@@ -37,5 +37,7 @@ Kaynak başlıkları ve bağlantıları yayımlandıkları özgün biçimde koru
 - `technology-map-tr.png`, `global-map-tr.png`: Türkçe genel haritalar. Aynı adların `-tr` içermeyen sürümleri İngilizcedir.
 - `organizations-tr.csv`, `source-register-tr.csv`: Türkçe kuruluş ve kaynak içeriği; sütun kimlikleri sabittir.
 - `atlas-data-tr.json`: Türkçe yapılandırılmış içerik. İngilizce sürümler de pakettedir.
+
+Lisans: kod MIT (`LICENSE`); editoryal içerik, veriler, PDF'ler ve haritalar CC BY 4.0 (`LICENSE-CONTENT.md`); yazı tipleri SIL OFL 1.1 kapsamındadır.
 
 Comfortaa başlıklar, Montserrat gövde yazıları, dört marka rengi ve iki gradyan dizisi kullanılmıştır. Yazı tipleri dosyalara gömülüdür. Harita Natural Earth kamu malı kara verilerini kullanır; siyasi sınırları göstermez.

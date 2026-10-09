@@ -29,9 +29,15 @@ See CONTRIBUTING.md. Suggestions, primary-source corrections and translation imp
 - `organizations*.csv`, `source-register*.csv`: reusable organization and evidence registers.
 - `global-ai-atlas-workshop*.pdf`: printable workshop slides.
 - `src/`: interactive atlas template, Turkish translations and basemap paths.
-- `tools/build.py`: rebuild the interactive HTML with Python 3, no extra packages.
+- `tools/build.py`: rebuild the interactive HTML and the offline ZIP with Python 3, no extra packages.
+- `LICENSE`, `LICENSE-CONTENT.md`: MIT (code) and CC BY 4.0 (content).
 
-Font redistribution terms and basemap provenance are in FONT-NOTICES.md and the OFL files. No separate reuse license has yet been selected for the atlas's original code and editorial content; please ask the author about redistribution beyond GitHub collaboration.
+## License
+
+- **Code** (HTML template, JavaScript, CSS, `tools/`): [MIT License](LICENSE).
+- **Editorial content** (datasets, CSV registers, PDFs, PNG maps, documentation and written text): [CC BY 4.0](LICENSE-CONTENT.md). Please credit *Global AI Ecosystem Atlas, Tuhaf Studio / Ahmet A. Sabancı* and link to https://aiatlas.tuhaf.studio/.
+- **Fonts**: SIL Open Font License 1.1 (see FONT-NOTICES.md and the OFL files). **Basemap**: Natural Earth, public domain.
+- Third-party sources, organization names and trademarks belong to their owners.
 
 ## Public website
 
