@@ -12,17 +12,15 @@ The Türkiye tab brings together ten national organizations and programs, capabi
 
 ## Printable presentation
 
-The PDFs are 8 October 2026 snapshots with 48 organizations and 66 sources. They predate the 9 October corrections (among them the Türkiye AI Action Plan's entry into force and the NVIDIA–TSMC wording); the interactive atlas has the current text.
+`global-ai-atlas-workshop.pdf` (English) and `global-ai-atlas-workshop-tr.pdf` (Turkish) each contain 57 landscape, 16:9 pages with clickable evidence links:
 
-`global-ai-atlas-workshop.pdf` (English) and `global-ai-atlas-workshop-tr.pdf` (Turkish) each contain 49 landscape, 16:9 pages with clickable evidence links:
-
-- Pages 1–7: introduction, legend, technology stack and explanations.
-- Pages 8–16: world map, regional examples, selected operations and documented dependencies.
-- Pages 17–21: dedicated Türkiye section and national reporting questions.
-- Pages 22–25: group exercise, glossary and method.
-- Pages 26–37: organization directory.
-- Pages 38–48: source register.
-- Page 49: closing takeaways.
+- Pages 1–7: introduction, legend, technology stack, training and inference, and layer explanations.
+- Pages 8–17: world map, regional examples, selected operations and documented connections.
+- Pages 18–22: dedicated Türkiye section and national reporting checklist.
+- Pages 23–26: group exercise, glossary and method.
+- Pages 27–39: organization directory.
+- Pages 40–56: source register.
+- Page 57: closing takeaways.
 
 For a 60-minute session: opening question and training/inference (10 minutes), stack (15), global geography and dependencies (10), Türkiye (10), group reporting exercise (15). Treat the directory and source register as reference material. Print landscape and fit to page; the two PNG maps can also be inserted into an existing slide deck.
 

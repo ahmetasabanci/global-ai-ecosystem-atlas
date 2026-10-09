@@ -516,12 +516,10 @@
   "Sama also has sourced operations in Kenya and Uganda. These are workforce sites, distinct from its US organizational base.": "Sama’nın Kenya ve Uganda faaliyetleri de kaynaklıdır. Bunlar çalışanların bulunduğu yerlerdir; ABD’deki kuruluş konumundan farklıdır.",
   "Operations can tell a different geography": "Faaliyetler farklı bir coğrafya anlatabilir",
   "Ten selected overseas-site records; not an exhaustive footprint.": "Seçili on yurt dışı tesis kaydı; tüm faaliyetleri kapsamaz.",
-  "Hollow circles = selected sites. NVIDIA’s 2025 announcement documents TSMC Arizona fabrication. Appen’s Kirkland marker is an additional US headquarters; other markers are selected offices. Office presence does not locate all contributors.": "İçi boş daireler = seçili tesisler. NVIDIA’nın 2025 duyurusu TSMC Arizona üretimini belgeler. Appen’in Kirkland işareti ek ABD merkezidir; diğerleri seçili ofislerdir. Ofis varlığı tüm katkıcıların yerini göstermez.",
   "Documented connections, with limits": "Belgelenmiş bağlantılar ve sınırları",
   "RELATIONSHIPS / EVIDENCE AND STATUS": "İLİŞKİLER / KANIT VE DURUM",
   "These are the only named relationships presented as evidenced connections. Stack diagrams and the chatbot journey are illustrative. Partnerships and capacity commitments do not establish exclusivity or delivery.": "Yalnızca bu ilişkiler kanıtlı bağlantı olarak sunulur. Katman şemaları ve sohbet botunun işleyişi örnekleyicidir. Ortaklık ve kapasite taahhütleri münhasırlığı veya teslimatı kanıtlamaz.",
   "Türkiye / Capabilities across the stack": "Türkiye / Katmanlar boyunca yetenekler",
-  "Nine selected institutions and programs. Local activity and international dependencies coexist.": "Seçili dokuz kurum ve program. Yerel faaliyetler ve uluslararası bağımlılıklar birlikte bulunur.",
   "Türkiye / Organizations and questions": "Türkiye / Kuruluşlar ve sorular",
   "TÜRKIYE / DETAIL": "TÜRKİYE / AYRINTI",
   "The test for “national AI”": "“Millî yapay zekâ” testi",
@@ -800,5 +798,8 @@
   "Lists AI Singapore’s addresses at innovation 4.0 and Nanyang Drive, Singapore.": "AI Singapore’un Singapur’daki innovation 4.0 ve Nanyang Drive adreslerini listeler.",
   "London": "Londra",
   "Corporate HQ Sydney; US HQ Kirkland; offices listed in the UK, China, Japan, the Philippines, India and Vietnam.": "Kurumsal merkez Sidney, ABD merkezi Kirkland; İngiltere, Çin, Japonya, Filipinler, Hindistan ve Vietnam’da ofisleri listelenir.",
-  "Dashed ring = country-level position, not a city": "Kesikli halka = şehir değil, ülke düzeyinde konum"
+  "Dashed ring = country-level position, not a city": "Kesikli halka = şehir değil, ülke düzeyinde konum",
+  "Hollow circles = selected sites. NVIDIA’s first US-made Blackwell wafer (October 2025) documents TSMC Arizona fabrication; packaging remained in Taiwan. Appen’s Kirkland marker is an additional US headquarters; other markers are selected offices. Office presence does not locate all contributors.": "İçi boş daireler = seçili tesisler. NVIDIA’nın ABD’de üretilen ilk Blackwell yonga plakası (Ekim 2025) TSMC Arizona üretimini belgeler; paketleme Tayvan’da kaldı. Appen’in Kirkland işareti ek ABD merkezidir; diğerleri seçili ofislerdir. Ofis varlığı tüm katkıcıların yerini göstermez.",
+  "Ten selected institutions and programs. Local activity and international dependencies coexist.": "On seçili kurum ve program. Yerel faaliyet ile uluslararası bağımlılıklar bir arada bulunur.",
+  "Türkiye": "Türkiye"
 }

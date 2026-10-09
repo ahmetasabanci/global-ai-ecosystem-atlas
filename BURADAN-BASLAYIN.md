@@ -12,17 +12,15 @@ Türkiye odağı on kuruluş ve programı, yerel yetenekleri ve uluslararası ba
 
 ## Yazdırılabilir sunum
 
-PDF’ler 48 kuruluş ve 66 kaynak içeren 8 Ekim 2026 tarihli anlık görüntülerdir. 9 Ekim düzeltmelerinden (Türkiye Yapay Zekâ Eylem Planı’nın yürürlüğe girmesi ve NVIDIA–TSMC ifadesi dahil) öncesine aittir; güncel metin için etkileşimli atlası kullanın.
+Türkçe sunum: `global-ai-atlas-workshop-tr.pdf`. İngilizce sunum: `global-ai-atlas-workshop.pdf`. İkisi de 57 sayfa, yatay 16:9 biçiminde ve tıklanabilir kaynak bağlantılarıyla hazırlanmıştır.
 
-Türkçe sunum: `global-ai-atlas-workshop-tr.pdf`. İngilizce sunum: `global-ai-atlas-workshop.pdf`. İkisi de 49 sayfa, yatay 16:9 biçiminde ve tıklanabilir kaynak bağlantılarıyla hazırlanmıştır.
-
-- 1–7: giriş, açıklamalar, teknoloji katmanları ve eğitim/çıkarım.
-- 8–16: dünya haritası, bölgeler, seçili faaliyetler ve belgelenmiş bağlantılar.
-- 17–21: Türkiye odağı ve habercilik soruları.
-- 22–25: grup çalışması, sözlük ve yöntem.
-- 26–37: kuruluş dizini.
-- 38–48: kaynak dökümü.
-- 49: kapanış.
+- 1–7: giriş, açıklamalar, teknoloji katmanları, eğitim/çıkarım ve katman ayrıntıları.
+- 8–17: dünya haritası, bölgeler, seçili faaliyetler ve belgelenmiş bağlantılar.
+- 18–22: Türkiye odağı ve habercilik kontrol listesi.
+- 23–26: grup çalışması, sözlük ve yöntem.
+- 27–39: kuruluş dizini.
+- 40–56: kaynak dökümü.
+- 57: kapanış.
 
 60 dakikalık akış: sohbet botunun işleyişi (10 dakika), teknoloji katmanları (15), dünya haritası ve bağlantılar (10), Türkiye (10), grup çalışması (15). Dizin ve kaynak sayfalarını başvuru malzemesi olarak kullanın. Yazdırırken yatay yönü ve sayfaya sığdırmayı seçin. PNG haritaları başka bir sunuma da ekleyebilirsiniz.
 

@@ -20,7 +20,7 @@ Open `index.html` in a browser, or use the GitHub Pages site. No installation or
 
 ## Contribute
 
-See CONTRIBUTING.md. Suggestions, primary-source corrections and translation improvements are welcome through issues and pull requests. Data, translations and a portable build script are included. The PDFs and PNG maps are dated workshop snapshots; changes to the interactive atlas do not automatically regenerate these snapshots. The current snapshots date from 8 October 2026 (48 organizations, 66 sources) and predate the 9 October corrections, including the Türkiye AI Action Plan's entry into force and the NVIDIA–TSMC wording; use the interactive atlas for the current text.
+See CONTRIBUTING.md. Suggestions, primary-source corrections and translation improvements are welcome through issues and pull requests. Data, translations and a portable build script are included. The PDFs and PNG maps are generated from the same data by `tools/export.mjs`; regenerate them whenever the content changes.
 
 ## Files
 
@@ -30,6 +30,7 @@ See CONTRIBUTING.md. Suggestions, primary-source corrections and translation imp
 - `global-ai-atlas-workshop*.pdf`: printable workshop slides.
 - `src/`: interactive atlas template, Turkish translations and basemap paths.
 - `tools/build.py`: rebuild the interactive HTML, the Turkish dataset, the CSV registers and the offline ZIP with Python 3, no extra packages.
+- `tools/export.mjs`: regenerate the workshop PDFs and PNG maps (Node.js 18+ and Playwright with Chromium).
 - `LICENSE`, `LICENSE-CONTENT.md`: MIT (code) and CC BY 4.0 (content).
 
 ## License
